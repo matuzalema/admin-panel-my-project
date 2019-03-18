@@ -1,0 +1,150 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body {
+  font-size: 20px;
+  background-color: $body-bg-color;
+}
+
+.container {
+  background-color: $second-color;
+  width: 83%;
+  margin-left: 16%;
+  display: inline-block;
+  margin-top:  70px;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear: both;
+ }
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col-"] {
+    width: 100%;
+    padding: 12px;
+   float:left;
+}
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: $main-font;
+}
+
+h1 {
+	font-size: $first-font-size;
+}
+
+h2 {
+	font-size: $second-font-size;
+}
+
+h3 {
+	font-size: $third-font-size;
+}
+
+h4 {
+	font-size: $fourth-font-size;
+}
+
+p {
+	font-size: $fiveth-font-size;
+}
+
+ul>li, ol>li {
+	font-size: $fourth-font-size;
+}
+
+a {
+	font-size: $fourth-font-size;
+	font-weight: 300;
+	color: #56819f;
+	text-decoration: none;
+}
+ 
+@import "../images/icons/icon-font/css/Glyphter.css";
+/* Components */
+// import "components/form_field";
+
+@import "../sass/components/_top-nav.scss";
+
+@import "../sass/components/_header.scss";
+
+@import "../sass/components/calendar.scss";
+
+@import "../sass/components/_current_values.scss";
+
+@import "../sass/components/_graph.scss";
+
+@import "../sass/components/_button.scss";
+
+@import "../sass/components/_link_item.scss";
+
+@import "../sass/components/_top_sidebar.scss";
+
+@import "../sass/components/_sidebar.scss";
+
+
+// /* Sections */
+// import "section/registration_form";
+
+// @import "../sass/sections/_top-navigation.scss";
+
+@import "../sass/pages/general.scss";
+
+@import "../sass/sections/_links.scss";
+
+@import "../sass/sections/_sidebar.scss";
+
+// /* Pages / Views */
+
+// @import "../sass/pages/_registration_form_template.scss";
+// import "pages/registration";

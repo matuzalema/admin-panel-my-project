@@ -1,0 +1,102 @@
+.sidebar {
+	background-color: $bg-color;
+	color: $second-color;
+	width: 188px;
+	height: 100vh;
+	position: fixed;
+
+	.top {
+		line-height: 60px;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+
+		.hamburger-icon {
+			width: 18px;
+			height: 16px;
+			cursor: pointer;
+		}
+	}
+
+	ul  {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			margin: 0;
+			line-height: 30px;
+
+			&.active {
+				background-color: $sidebar-active-bg;
+				border-left: 4px solid $first-color;
+			}
+
+			a {
+				text-decoration: none;
+				color: $second-color;
+				display: flex;
+				flex-direction: row;
+				.icon {
+					width: 15px;
+					height: 14px;
+					// font-family: glyphter !important;
+					position: relative;
+					font-weight: 200;
+					bottom: 4px;
+					padding-left: 13px;
+					cursor: pointer;
+				}
+
+				.desc {
+					font-size: $fourth-font-size;
+					font-weight: 300;
+					margin-left: 36px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.sidebar-team {
+		padding: 10px 0 0 20px;
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid #333333;
+
+		.head {
+			text-transform: uppercase;
+			font-size: $fourth-font-size;
+			font-weight: 500;
+			letter-spacing: -0.28px;
+			color: $font-color-fiveth;
+			padding: 19px 0 20px 0;
+			font-size: $third-font-size;
+		}
+
+		.wrapper {
+			display: flex;
+
+			.photo {
+				display: inline-block;
+				padding: 0 10px 5px 0;
+			}
+
+			.name {
+				color: $link-color;
+				cursor: pointer;
+				font-weight: 300;
+			}
+
+			.round {
+				width: 12px;
+				height: 11px;
+				background-color: $third-color;
+				border-radius: 50%;
+				position: relative;
+				bottom: 0;
+			    right: 80px;
+			}
+		}
+	}
+}
