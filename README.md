@@ -1,1 +1,1 @@
-https://matuzalema.github.io/administration-panel-my-project/
+https://matuzalema.github.io/admin-panel-my-project/
