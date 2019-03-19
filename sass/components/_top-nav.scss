@@ -15,6 +15,9 @@
 		justify-content: center;
 		align-items: center;
 		padding: 20px;
+		&:hover {
+			background-color: $body-bg-color;
+		}
 
 		h2 {
 			font-weight: 400;

@@ -25,9 +25,8 @@
 		
 		li {
 			margin: 0;
-			line-height: 40px;
-
-			&.active {
+			border-left: 4px solid $bg-color;
+			&:hover, &.active {
 				background-color: $sidebar-active-bg;
 				border-left: 4px solid $first-color;
 			}
@@ -37,6 +36,7 @@
 				color: $second-color;
 				display: flex;
 				flex-direction: row;
+				line-height: 40px;
 				
 				.icon {
 					width: 15px;
@@ -97,5 +97,34 @@
 			    right: 80px;
 			}
 		}
+	}
+}
+
+@media (max-width: 576px) {
+	.sidebar {
+		width: 50px;
+
+		.hamburger-icon {
+		position: relative;
+		right: 4px;
+		}
+
+		.logo {
+			display: none;
+		}
+
+		nav ul li .icon {
+			bottom: 10px;
+		}
+
+		.desc{
+			display: none;
+		}
+		.sidebar-team {
+			display: none;
+		}
+	}
+	.top-nav {
+		display: none;
 	}
 }
