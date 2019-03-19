@@ -1,31 +1,32 @@
-// .btn {
-// 	height: 40px;
-// 	background-color: $first-color;
-// 	border-radius: 3px;
-// 	font-size: $second-font-size;
-// 	color: $second-color;
-// 	border: none;
-// 	padding: 12px;
-// 	outline: none;
-// 	cursor: pointer;
-// 	padding: 0 20px;
-// }
+.btn {
+	height: 40px;
+	background-color: $first-color;
+	border-radius: 3px;
+	font-size: $second-font-size;
+	color: $second-color;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0 20px;
+}
 
-// .icon-refresh {
-// 	width: 40px;
-// }
+.icon-refresh {
+	min-width: 41px;
+	min-height: 40px;
+	padding: 0;
+}
 
-// .btn.icon-general {
-// 	font-family: glyphter !important;
-// }
+.btn.icon-general {
+	font-family: glyphter !important;
+}
 
-// .btn-wrapper {
-// 	width: 100%;
-// 	display: flex;
-// 	align-items: center;
-// }
+.btn-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
 
-// .btn.add {
-// 	display: flex;
-// 	margin: 23px auto;
-// }
+.btn.add {
+	display: flex;
+	margin: 23px auto;
+}

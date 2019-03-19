@@ -1,5 +1,80 @@
-.general {
-	// background-color: yellow;
-	// height: 700px;
-	// width: 300px;
+.section--general {	
+	.calendar-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 110px;
+	border-bottom: 1px solid $border-color;
+
+		.calendar {
+			border: 1px solid $border-color;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			padding: 17px;
+			border-radius: 3px;
+			font-size: $fourth-font-size;
+			max-width: 325px;
+			color: $font-color-second;
+
+			.date1 {
+				border-right: 1px solid $border-color;
+				padding-right: 50px;
+				cursor: pointer;
+			}
+
+			.date2 {
+				padding-left: 17px;
+				padding-right: 43px;
+				cursor: pointer;
+			}
+
+			.calendar-icon {
+				max-width: 13px;
+				max-height: 13px;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+		}
+
+		.btn {
+			margin-left: 15px;
+		}
+	}
+
+	.values {
+		margin: 40px auto 80px;
+
+		.current-values {
+			max-width: 310px;
+			border-bottom: 1px solid $border-color;
+			display: flex;
+			justify-content: space-between;
+
+			.values-name {
+				color: #a6a6a6;
+				font-weight: 700;
+				font-size: $third-font-size;
+			}
+
+			.values-data {
+				color: $font-color-second;
+				font-weight: 700;
+				align-self: flex-end;
+				font-size: $third-font-size;
+			}
+		}
+	}
+	
+	.header-graph {
+	color: $font-color-third;
+	}
+
+	.graph {
+		padding: 55px 0;
+		margin: 0 auto;
+		display: flex;
+		max-width: 100%;
+		height: auto;
+	}
 }

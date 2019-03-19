@@ -4,17 +4,27 @@
 @import "layout";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
+html {
+  font-size: 16px;
+}
+
 body {
-  font-size: 20px;
   background-color: $body-bg-color;
 }
 
 .container {
   background-color: $second-color;
-  width: 83%;
-  margin-left: 16%;
+  width: calc(100% - 212px);
+  margin: 0 12px 0 200px;
   display: inline-block;
   margin-top:  70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
+}
+
+.wrapper {
+  max-width: 726px;
+  margin: 0 auto;
 }
 
 .row:before,
