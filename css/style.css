@@ -485,6 +485,59 @@ template {
   display: flex;
   margin: 23px auto; }
 
+.links {
+  border-top: 1px solid #EAEAEA;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .links .link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    height: 56px;
+    -ms-flex-pack: left;
+        justify-content: left;
+    text-align: left;
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 10px; }
+    .links .link:hover {
+      background-color: #F1F3F3; }
+    .links .link .link-desc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #a6a6a6;
+      line-height: 40px;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+      min-width: 250px; }
+    .links .link .link-item {
+      color: #56819f;
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 40px;
+      cursor: pointer;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+      min-width: 250px; }
+    .links .link .fa-link {
+      line-height: 56px;
+      color: #f58220;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+      min-width: 30px;
+      font-size: 14px; }
+    .links .link .fa-trash-alt {
+      font-size: 14px;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+      line-height: 56px;
+      min-width: 30px;
+      color: #a6a6a6; }
+
 .sidebar {
   background-color: #191919;
   color: #ffffff;
@@ -572,6 +625,8 @@ template {
     .sidebar .hamburger-icon {
       position: relative;
       right: 4px; }
+      .sidebar .hamburger-icon:active .sidebar {
+        background-color: red; }
     .sidebar .logo {
       display: none; }
     .sidebar nav ul li .icon {

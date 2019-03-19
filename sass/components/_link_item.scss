@@ -1,25 +1,60 @@
-// .links {
-// 	border-top: 1px solid $border-color;
-// 	height: 65px;
-// 	&:hover {
-// 		background-color: $link-bg-color-active;
-// 	}
-// }
+.links {
+	border-top: 1px solid $border-color;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 
-// .link-desc {
-// 	font-size: $third-font-size;
-// 	font-weight: 500;
-// 	color: $font-color-third;
-// 	line-height: 40px;
-// }
+	.link {
+		display: flex;
+		flex-direction: row;
+		height: 56px;
+		justify-content: left;
+		text-align: left;
+		border-bottom: 1px solid $border-color;
+		padding-left: 10px;
+		&:hover {
+			background-color: $link-bg-color-active;
+		}
 
-// .link-item {
-// 	color: $link-color;
-// 	font-size: $third-font-size;
-// 	font-weight: 300;
-// 	line-height: 40px;
-// 	cursor: pointer;
-// }
+		.link-desc {
+			font-size: $third-font-size;
+			font-weight: 500;
+			color: $font-color-third;
+			line-height: 40px;
+			flex-grow: 3;
+			min-width: 250px;
+		}
+
+		.link-item {
+			color: $link-color;
+			font-size: $third-font-size;
+			font-weight: 300;
+			line-height: 40px;
+			cursor: pointer;
+			flex-grow: 3;
+			min-width: 250px;
+		}
+
+		.fa-link {
+			// width: 16px;
+			// height: 8px;
+			line-height: 56px;
+			color: $first-color;
+			flex-grow: 2;
+			min-width: 30px;
+			font-size: 14px;
+		}
+
+		.fa-trash-alt {
+			font-size: 14px;
+			flex-grow: 2;
+			line-height: 56px;
+			min-width: 30px;
+			color: $font-color;
+		}
+	}
+}
+
 
 // .link-active {
 // 	background-color: $link-bg-color-active;
