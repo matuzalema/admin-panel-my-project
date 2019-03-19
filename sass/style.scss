@@ -4,6 +4,22 @@
 @import "layout";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
+@import "../images/icons/icon-font/css/Glyphter.css";
+
+/* Components */
+@import "../sass/components/_top-nav.scss";
+@import "../sass/components/_header.scss";
+@import "../sass/components/_button.scss";
+@import "../sass/components/_link_item.scss";
+@import "../sass/components/_sidebar.scss";
+
+
+/* Sections */
+@import "../sass/sections/_general.scss";
+@import "../sass/sections/_links.scss";
+@import "../sass/sections/_sidebar.scss";
+
+
 html {
   font-size: 16px;
 }
@@ -30,7 +46,7 @@ body {
 .row:before,
 .row:after {
   content:"";
-  display: table ;
+  display: table;
   clear: both;
  }
 
@@ -119,42 +135,3 @@ a {
 	color: #56819f;
 	text-decoration: none;
 }
- 
-@import "../images/icons/icon-font/css/Glyphter.css";
-/* Components */
-// import "components/form_field";
-
-@import "../sass/components/_top-nav.scss";
-
-@import "../sass/components/_header.scss";
-
-@import "../sass/components/calendar.scss";
-
-@import "../sass/components/_current_values.scss";
-
-@import "../sass/components/_graph.scss";
-
-@import "../sass/components/_button.scss";
-
-@import "../sass/components/_link_item.scss";
-
-@import "../sass/components/_top_sidebar.scss";
-
-@import "../sass/components/_sidebar.scss";
-
-
-// /* Sections */
-// import "section/registration_form";
-
-// @import "../sass/sections/_top-navigation.scss";
-
-@import "../sass/pages/general.scss";
-
-@import "../sass/sections/_links.scss";
-
-@import "../sass/sections/_sidebar.scss";
-
-// /* Pages / Views */
-
-// @import "../sass/pages/_registration_form_template.scss";
-// import "pages/registration";
