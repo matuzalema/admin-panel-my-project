@@ -1,2 +1,107 @@
+.links {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	.link {
+		display: flex;
+		flex-direction: row;
+		height: 56px;
+		justify-content: left;
+		text-align: left;
+		border-bottom: 1px solid $fourth-color;
+		padding-left: 10px;
+		&:hover {
+			background-color: $fiveth-color;
+			.icon-links,  .icon-trash{
+				opacity: 1;
+			}
+		}
 
 
+		.link-desc {
+			font-size: $third-font-size;
+			font-weight: 500;
+			color: $second-color;
+			line-height: 40px;
+			height: 56px;
+			flex-grow: 2;
+			min-width: 150px;
+		}
+
+		.link-item {
+			color: $link-color;
+			font-size: $third-font-size;
+			font-weight: 300;
+			line-height: 40px;
+			cursor: pointer;
+			flex-grow: 3;
+			min-width: 150px;
+			cursor: pointer;
+			height: 56px;
+			&:hover {
+				color: $sixth-color-light;
+			}
+		}
+
+		.icon-links{
+			line-height: 56px;
+			color: $second-color;
+			flex-grow: 1;
+			font-size: 14px;
+			cursor: pointer;
+			opacity: 0;
+			&:hover {
+				color: $sixth-color-light;
+			};
+		}
+
+		.icon-trash {
+			font-size: 14px;
+			flex-grow: 1;
+			line-height: 56px;
+			color: $second-color;
+			cursor: pointer;
+			opacity: 0;
+
+			&:hover {
+				color: $sixth-color-light;
+			};
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.section--links .link-desc {
+		min-width: 100px;
+	}
+}
+
+@media (max-width: 576px) {
+	.section--links .container {
+		margin: 0 0 0 50px;
+		width: calc(100% - 50px);
+		.header {
+			text-align: center;
+		}
+		.links .link{
+			.link-desc {
+				min-width: 66px;
+				font-size: 10px;
+			}
+			.link-item {
+				min-width: 150px;
+				font-size: 10px;
+			}
+			.icon-links {
+				min-width: 20px;
+				opacity: 1;
+				color: $sixth-color-light;
+			}
+			.icon-trash {
+				min-width: 10px;
+				opacity: 1;
+			}
+		}
+	}
+}

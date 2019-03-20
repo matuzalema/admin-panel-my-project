@@ -1,13 +1,17 @@
 .btn {
 	height: 40px;
-	background-color: $first-color;
+	background-color: $sixth-color;
 	border-radius: 3px;
 	font-size: $second-font-size;
-	color: $second-color;
+	color: $fiveth-color;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	padding: 0 20px;
+
+	&:hover {
+		background-color: $sixth-color-light;
+	}
 }
 
 .icon-refresh {

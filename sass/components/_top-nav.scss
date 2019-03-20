@@ -1,73 +1,98 @@
 .top-nav {
 	width: 100%;
 	height: 60px;
-	border: 1px solid $border-color;
+	border: 1px solid $fourth-color;
 	position: fixed;
+	top: 0;
 	display: flex;
 	flex-direction: row-reverse;
-	color: $font-color;
-	background-color: $second-color;
+	color: $second-color;
+	background-color: $fiveth-color-bright;
 
 	.nav-item {
-		border-left: 1px solid $border-color;
+		border-left: 1px solid $fourth-color;
 		height: 60px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 20px;
+
 		&:hover {
-			background-color: $body-bg-color;
+			background-color: $fiveth-color;
 		}
 
 		h2 {
 			font-weight: 400;
-			color: $font-color;
+			color: $second-color;
 			margin: 0 15px;
 			font-size: $first-font-size;
 		}
 
-		.profile-icon {
+		.icon-profile {
 			width: 17px;
 			height: 17px;
 			margin-right: 12px;
+
+			&:hover {
+				color: $sixth-color-light;
+			}
 		}
 
 		.name {
 			font-size: 13px;
 		}
 
-		.wallet-icon {
+		.icon-wallet {
 			width: 17px;
 			height: 18px;
 			cursor: pointer;
+
+			&:hover {
+				color: $sixth-color-light;
+			}
 		}
 
-		.arrow-down-icon {
+		.icon-arrow-down {
+			font-size: 11px;
 			width: 11px;
 			height: 7px;
 			cursor: pointer;
+
+			&:hover {
+				color: $sixth-color-light;
+			}
 		}
 
-		.notification-icon {
+		.icon-notification {
 			width: 16px;
 			height: 17px;
 			position: relative;
 			left: 5px;
 			cursor: pointer;
+
+			&:hover {
+				color: $sixth-color-light;
+			}
 		}
 
 		.notification-icon-round {
 			width: 9px;
 			height: 8px;
-			background-color: $first-color;
+			background-color: $sixth-color;
 			border-radius: 50%;
 			position: relative;
 			bottom: 7px;
 			right: 4px;
 		}
-		.exit {
+
+		.icon-quit {
 			width: 19px;
 			height: 15px;
+			cursor: pointer;
+
+			&:hover {
+				color: $sixth-color-light;
+			}
 		}
 	}
 }
@@ -134,7 +159,7 @@
 // .notification-icon-round {
 // 	width: 7px;
 // 	height: 6px;
-// 	background-color: $first-color;
+// 	background-color: $sixth-color;
 // 	border-radius: 50%;
 // 	position: relative;
 // 	bottom: 6px;

@@ -1,8 +1,8 @@
 .sidebar {
-	background-color: $bg-color;
-	color: $second-color;
+	background-color: #191919;
+	color: $fiveth-color;
 	width: 188px;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 
 	.top {
@@ -25,25 +25,22 @@
 		
 		li {
 			margin: 0;
-			border-left: 4px solid $bg-color;
+			border-left: 4px solid $main-color;
 			&:hover, &.active {
-				background-color: $sidebar-active-bg;
-				border-left: 4px solid $first-color;
+				background-color: $main-color;
+				border-left: 4px solid $sixth-color;
 			}
 
 			a {
 				text-decoration: none;
-				color: $second-color;
+				color: $fiveth-color;
 				display: flex;
 				flex-direction: row;
-				line-height: 40px;
 				
 				.icon {
 					width: 15px;
 					height: 14px;
-					position: relative;
 					font-weight: 200;
-					bottom: 4px;
 					padding-left: 13px;
 					cursor: pointer;
 				}
@@ -51,8 +48,10 @@
 				.desc {
 					font-size: $fourth-font-size;
 					font-weight: 300;
-					margin-left: 36px;
+					margin: 0 0 0 36px;
 					cursor: pointer;
+					line-height: 40px;
+					height: 40px;
 				}
 			}
 		}
@@ -69,7 +68,7 @@
 			font-size: $fourth-font-size;
 			font-weight: 500;
 			letter-spacing: -0.28px;
-			color: $font-color-fiveth;
+			color: $fiveth-color;
 			font-size: $third-font-size;
 		}
 
@@ -85,12 +84,16 @@
 				color: $link-color;
 				cursor: pointer;
 				font-weight: 300;
+
+				&:hover {
+					color: $sixth-color-light;
+				}
 			}
 
 			.round {
 				width: 12px;
 				height: 11px;
-				background-color: $third-color;
+				background-color: $eighth-color-dark;
 				border-radius: 50%;
 				position: relative;
 				bottom: 0;

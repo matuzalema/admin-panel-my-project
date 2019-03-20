@@ -1,19 +1,33 @@
 /* Colors */
-$font-color: #9c9c9c; /*grey*/
-$font-color-second: #333333;
-$font-color-third: #a6a6a6;
-$font-color-fourth: #999999;
-$font-color-fiveth: #808080;
-$border-color: #EAEAEA;
-$second-border-color: #e3e3e3;
-$first-color: #f58220; // orange
-$second-color: #ffffff; //white
-$third-color: #04ae00; //green
-$link-color: #56819f;
-$link-bg-color-active: #F1F3F3;
-$bg-color: #191919; //black
-$body-bg-color: #F5F5F2; //grey
-$font-color: #a6a6a6; //grey
+$main-color: #333333; //black
+
+// grey
+$second-color: #979797; //dark-grey, button
+$third-color-dark: #BABABA; //grey:hover; button:hover;
+$fourth-color: #e3e3e3; //light-grey, border
+
+$fiveth-color: #f5f5f2; //bright-grey bg:hover
+$fiveth-color-bright: #fff; //white
+
+// orange
+$sixth-color: #f58220; // orange
+$sixth-color-light: #ffa200; //orange-light:hover
+
+// green
+$eighth-color-dark: #04ae00; //dark-green
+$eighth-color:#74b67a; //bright green:hover;
+$eight-color-bright: #96cc9b; //very bright green
+
+//pink
+$nineth-color-dark: #de5252; //dark-pink:hover;
+$nineth-color: #ec7171; //light-pink;
+
+
+$link-color: #56819f; //blue
+$danger-color: #ff0000; //red
+
+
+
 
 // /* Font sizes */
 $first-font-size: 1rem; //16px
