@@ -101,3 +101,13 @@
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.section--links .container {
+		margin: 0 0 0 50px;
+		width: calc(100% - 50px);
+		.header {
+			text-align: center;
+		}
+	}
+}

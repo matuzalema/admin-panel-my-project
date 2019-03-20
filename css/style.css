@@ -506,6 +506,8 @@ template {
     padding-left: 10px; }
     .links .link:hover {
       background-color: #F1F3F3; }
+      .links .link:hover .fa-link, .links .link:hover .fa-trash-alt {
+        opacity: 1; }
     .links .link .link-desc {
       font-size: 0.8rem;
       font-weight: 500;
@@ -522,21 +524,30 @@ template {
       cursor: pointer;
       -ms-flex-positive: 3;
           flex-grow: 3;
-      min-width: 250px; }
+      min-width: 250px;
+      cursor: pointer; }
     .links .link .fa-link {
       line-height: 56px;
       color: #f58220;
       -ms-flex-positive: 2;
           flex-grow: 2;
       min-width: 30px;
-      font-size: 14px; }
+      font-size: 14px;
+      cursor: pointer;
+      opacity: 0; }
+      .links .link .fa-link:hover {
+        color: #80BFCA; }
     .links .link .fa-trash-alt {
       font-size: 14px;
       -ms-flex-positive: 2;
           flex-grow: 2;
       line-height: 56px;
       min-width: 30px;
-      color: #a6a6a6; }
+      color: #a6a6a6;
+      cursor: pointer;
+      opacity: 0; }
+      .links .link .fa-trash-alt:hover {
+        color: #80BFCA; }
 
 .sidebar {
   background-color: #191919;
@@ -728,6 +739,13 @@ template {
     margin: 0 0 0 50px;
     width: calc(100% - 50px); }
     .section--general .container .header {
+      text-align: center; } }
+
+@media (max-width: 576px) {
+  .section--links .container {
+    margin: 0 0 0 50px;
+    width: calc(100% - 50px); }
+    .section--links .container .header {
       text-align: center; } }
 
 html {

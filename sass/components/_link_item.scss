@@ -14,7 +14,11 @@
 		padding-left: 10px;
 		&:hover {
 			background-color: $link-bg-color-active;
+			.fa-link,  .fa-trash-alt{
+				opacity: 1;
+			}
 		}
+
 
 		.link-desc {
 			font-size: $third-font-size;
@@ -33,16 +37,20 @@
 			cursor: pointer;
 			flex-grow: 3;
 			min-width: 250px;
+			cursor: pointer;
 		}
 
 		.fa-link {
-			// width: 16px;
-			// height: 8px;
 			line-height: 56px;
 			color: $first-color;
 			flex-grow: 2;
 			min-width: 30px;
 			font-size: 14px;
+			cursor: pointer;
+			opacity: 0;
+			&:hover {
+				color: #80BFCA;
+			};
 		}
 
 		.fa-trash-alt {
@@ -51,6 +59,11 @@
 			line-height: 56px;
 			min-width: 30px;
 			color: $font-color;
+			cursor: pointer;
+			opacity: 0;
+			&:hover {
+				color: #80BFCA;
+			};
 		}
 	}
 }
