@@ -1,39 +1,45 @@
-.section--personal-data .fields-wrapper {
-	margin: 0 auto;
-	min-width: 50%;
+.section--personal-data .container {
+	padding: 0;
 
-
-	.field {
+	.fields-wrapper {
 		padding: 20px 0;
+		border-bottom: 1px solid $fourth-color;
 
-		label {
-			max-width: 30%;
-			width: 100%;
-			display: inline-block;
-			color: $third-color-dark;
-			font-size: $third-font-size;
-		}
 
-		input {
-			max-width: 60%;
-			width: 70%;
-			height: 40px;
-			border: 1px solid $fourth-color;
-			border-radius: 2px;
-			padding-left: 10px;
-			color: red;
-			font-size: $third-font-size;
+		.field {
+			padding: 10px 0;
+			width: 50%;
+			margin: 0 auto;
 
-			&:hover {
-				border: 1px solid $second-color;
-			};
+			label {
+				max-width: 30%;
+				width: 100%;
+				display: inline-block;
+				color: $third-color-dark;
+				font-size: $third-font-size;
+			}
 
-			&:focus {
-				outline: none;
-				border: 1px solid $second-color;
-			};
-			
+			input {
+				max-width: 60%;
+				width: 70%;
+				height: 40px;
+				border: 1px solid $fourth-color;
+				border-radius: 2px;
+				padding-left: 10px;
+				color: red;
+				font-size: $third-font-size;
 
+				&:hover {
+					border: 1px solid $second-color;
+				};
+
+				&:focus {
+					outline: none;
+					border: 1px solid $second-color;
+				};
+				
+
+			}
 		}
 	}
 }
@@ -42,13 +48,18 @@
 	.section--personal-data .container {
 		margin: 5px 0 0 50px;
 		width: calc(100% - 50px);
-
+		
 		.header {
 			text-align: center;
 		}
 		
-		.field {
-			padding: 10px;
+		.fields-wrapper {
+			width: 100%;
+
+			.field {
+				width: 100%;
+				padding-left: 20px;
+			}
 		}
 	}
 }

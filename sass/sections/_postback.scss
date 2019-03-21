@@ -1,0 +1,54 @@
+.section--postback {
+	p {
+		margin: 20px 0 0 10px;
+	}
+
+	label {
+		font-size: $third-font-size;
+		color: $third-color-dark;
+	}
+
+	textarea {
+		margin-top: 10px;
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid $fourth-color;
+			padding: 10px;
+			color: $third-color-dark;
+			font-size: $fiveth-font-size;
+			&:hover {
+				border: 1px solid $third-color-dark;
+			}
+		}
+	input, select {
+		border: 1px solid $fourth-color;
+		border-radius: 2px;
+
+		&:hover {
+				border: 1px solid $third-color-dark;
+			}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	select {
+		font-size: $fourth-font-size;
+		color: $second-color;
+		width: 100%;
+		padding: 8px;
+		margin-top: 10px;
+	}	
+}
+
+@media (max-width: 576px) {
+	.section--postback .container {
+		margin: 5px 0 0 50px;
+		width: calc(100% - 50px);
+
+		.header {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
+	.details-table {
+		margin: 20px auto 0;
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		font-size: 0.8rem;
+
+		thead th {
+			padding: 20px 0;
+			border-bottom: 1px solid $fourth-color;
+			text-align: center;	
+		}
+
+		tbody tr {
+			&:hover {
+				background-color: $fiveth-color;
+			}
+
+			td {
+				padding: 20px 0;
+				border-bottom: 1px solid $fourth-color;
+				text-align: center;
+			}		
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	table {
+		border: 0;
+		min-width: 80%;
+		color: $third-color-dark;
+
+		thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			}
+
+		tbody {
+
+			tr {
+				border-bottom: 3px solid $fourth-color;
+				display: block;
+				margin-bottom: .625em;
+			}
+
+			td {
+				border-bottom: 1px solid $fourth-color;
+				display: block;
+				font-size: .6em;
+
+				&::before {
+					content: attr(data-label);
+					float: left;
+					font-weight: bold;
+					text-transform: uppercase;
+					min-width: 150px;
+					text-align: left;
+				}
+
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}
