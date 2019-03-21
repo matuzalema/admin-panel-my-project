@@ -1,20 +1,31 @@
-.details-table {
-	margin: 20px auto 10px;
-	thead {
-		th {
-			padding: 20px;
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
+	.details-table {
+		margin: 20px auto 0;
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		font-size: 0.8rem;
+
+		thead th {
+			padding: 20px 0;
 			border-bottom: 1px solid $fourth-color;
+			text-align: center;	
 		}
-	}
-	tbody {
-		tr {
+
+		tbody tr {
 			&:hover {
 				background-color: $fiveth-color;
 			}
+
 			td {
-				padding: 20px;
+				padding: 20px 0;
 				border-bottom: 1px solid $fourth-color;
-			}
+				text-align: center;
+			}		
 		}
 	}
 }
@@ -24,6 +35,7 @@
 		border: 0;
 		min-width: 80%;
 		color: $third-color-dark;
+
 		thead {
 			border: none;
 			clip: rect(0 0 0 0);
@@ -34,25 +46,31 @@
 			position: absolute;
 			width: 1px;
 			}
-		tr {
-			border-bottom: 3px solid $fourth-color;
-			display: block;
-			margin-bottom: .625em;
+
+		tbody {
+
+			tr {
+				border-bottom: 3px solid $fourth-color;
+				display: block;
+				margin-bottom: .625em;
+			}
+
 			td {
 				border-bottom: 1px solid $fourth-color;
 				display: block;
-				font-size: .8em;
-				text-align: right;
-				&::before {
+				font-size: .6em;
 
-				content: attr(data-label);
-				float: left;
-				font-weight: bold;
-				text-transform: uppercase;
+				&::before {
+					content: attr(data-label);
+					float: left;
+					font-weight: bold;
+					text-transform: uppercase;
+					min-width: 150px;
+					text-align: left;
 				}
 
 				&:last-child {
-				border-bottom: 0;
+					border-bottom: 0;
 				}
 			}
 		}
@@ -61,13 +79,13 @@
 
  @media (max-width: 576px) {
 	.section--details .container {
-		margin: 0 0 0 50px;
+		margin: 5px 0 0 50px;
 		width: calc(100% - 50px);
+
 		.header {
 			text-align: center;
 		}
 	}
 }
 
-  
   

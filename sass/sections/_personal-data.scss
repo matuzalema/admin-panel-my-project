@@ -1,0 +1,54 @@
+.section--personal-data .fields-wrapper {
+	margin: 0 auto;
+	min-width: 50%;
+
+
+	.field {
+		padding: 20px 0;
+
+		label {
+			max-width: 30%;
+			width: 100%;
+			display: inline-block;
+			color: $third-color-dark;
+			font-size: $third-font-size;
+		}
+
+		input {
+			max-width: 60%;
+			width: 70%;
+			height: 40px;
+			border: 1px solid $fourth-color;
+			border-radius: 2px;
+			padding-left: 10px;
+			color: red;
+			font-size: $third-font-size;
+
+			&:hover {
+				border: 1px solid $second-color;
+			};
+
+			&:focus {
+				outline: none;
+				border: 1px solid $second-color;
+			};
+			
+
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.section--personal-data .container {
+		margin: 5px 0 0 50px;
+		width: calc(100% - 50px);
+
+		.header {
+			text-align: center;
+		}
+		
+		.field {
+			padding: 10px;
+		}
+	}
+}
