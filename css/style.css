@@ -708,7 +708,8 @@ template {
         font-weight: bold;
         text-transform: uppercase;
         min-width: 150px;
-        text-align: left; }
+        text-align: left;
+        padding-left: 10px; }
       table tbody td:last-child {
         border-bottom: 0; } }
 
@@ -1008,7 +1009,8 @@ template {
   border: 1px solid #e3e3e3;
   padding: 10px;
   color: #BABABA;
-  font-size: 0.65rem; }
+  font-size: 0.65rem;
+  resize: none; }
   .section--postback textarea:hover {
     border: 1px solid #BABABA; }
 
@@ -1025,7 +1027,34 @@ template {
   color: #979797;
   width: 100%;
   padding: 8px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.section--postback .select-wrapper {
+  position: relative; }
+  .section--postback .select-wrapper:after {
+    font-family: Glyphter;
+    content: '\0041';
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    color: #e3e3e3;
+    pointer-events: none; }
+
+.section--postback .send {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0; }
+  .section--postback .send .col {
+    min-height: 250px; }
+    .section--postback .send .col:first-child {
+      border-right: 1px solid #e3e3e3; }
+    .section--postback .send .col label {
+      display: block;
+      padding: 10px; }
 
 @media (max-width: 576px) {
   .section--postback .container {
@@ -1087,8 +1116,7 @@ body {
   width: calc(100% - 212px);
   margin: 70px 12px -55px 200px;
   display: inline-block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 0 15px; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 .wrapper {
   max-width: 726px;

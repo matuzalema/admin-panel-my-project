@@ -16,10 +16,13 @@
 			padding: 10px;
 			color: $third-color-dark;
 			font-size: $fiveth-font-size;
+			resize: none;
+
 			&:hover {
 				border: 1px solid $third-color-dark;
 			}
 		}
+
 	input, select {
 		border: 1px solid $fourth-color;
 		border-radius: 2px;
@@ -39,7 +42,42 @@
 		width: 100%;
 		padding: 8px;
 		margin-top: 10px;
-	}	
+		appearance: none;
+	}
+
+	.select-wrapper {
+		position: relative;
+
+		&:after {
+			font-family: Glyphter;
+		  	content: '\0041';
+		  	font-size: 12px;
+		  	position: absolute;
+		  	top: 20px;
+		  	right: 12px;
+		  	color: $fourth-color;
+		  	pointer-events: none;
+		}
+	}
+
+	.send {
+		border-top: 1px solid $fourth-color;
+		border-bottom: 1px solid $fourth-color;
+		margin: 0;
+
+		.col {
+			min-height: 250px;
+			&:first-child {
+				border-right: 1px solid $fourth-color;
+			}
+			label {
+				display: block;
+				padding: 10px;
+			}
+		}
+	}
+
+
 }
 
 @media (max-width: 576px) {

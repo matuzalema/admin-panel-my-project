@@ -592,44 +592,51 @@
 				<div class="row">
 					<div class="col-s-12 col-m-4">
 						<label>Postback type</label>
-						<select>
-							<option value="http://www.blurax.com">S2S(http//..)</option>
-							<option value="http://www.blurax.com">http://www.blurax.com</option>
-							<option value="http://www.currently.com">http://www.currently.com</option>
-							<option value="http://www.dashboard.com">http://www.dashboard.com</option>
-						</select>
+						<div class="select-wrapper">
+							<select>
+								<option value="S2">S2S(http//..)</option>
+								<option value="http://www.blurax.com">http://www.blurax.com</option>
+								<option value="http://www.currently.com">http://www.currently.com</option>
+								<option value="http://www.dashboard.com">http://www.dashboard.com</option>
+							</select>
+						</div>
 					</div>
 					<div class="col-s-12 col-m-4">
 						<label>To countries</label>
-						<select>
-							<option vaalue="france">Select countries</option>
-							<option vaalue="france">France</option>
-							<option value="poland">Poland</option>
-							<option value="switzeland">Switzeland</option>
-						</select>
+						<div class="select-wrapper">
+							<select>
+								<option vaalue="france">Select countries</option>
+								<option vaalue="france">France</option>
+								<option value="poland">Poland</option>
+								<option value="switzeland">Switzeland</option>
+							</select>
+						</div>
 					</div>
 					<div class="col-s-12 col-m-4">
 						<label>Sending options</label>
-						<select>
-							<option value="option 1">Select</option>
-							<option value="option 1">option 1</option>
-							<option value="option 2">option 2</option>
-							<option value="option 3">option 3</option>
-						</select>
+						<div class="select-wrapper">
+							<select>
+								<option value="selected">Select</option>
+								<option value="option 1">option 1</option>
+								<option value="option 2">option 2</option>
+								<option value="option 3">option 3</option>
+							</select>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-s-12 col-m-6">
-						<div class="statuses">
-							<h2> <span>NOT</span> send statues </h2>
-							<label><input type="checkbox">CheckNumber</label>
-							<label><input type="checkbox">noAnswer</label>
-							<label><input type="checkbox">noCall</label>
-							<label><input type="checkbox">callAgain</label>
+				<div class="send">
+					<div class="row">
+						<div class="col col-s-12 col-m-6">
+							<div class="statuses">
+								<h2> <span>NOT</span> send statues </h2>
+								<label><input type="checkbox">CheckNumber</label>
+								<label><input type="checkbox">noAnswer</label>
+								<label><input type="checkbox">noCall</label>
+								<label><input type="checkbox">callAgain</label>
+							</div>
 						</div>
-
-					</div>
-					<div class="col-s-12 col-m-6">
+						<div class="col col-s-12 col-m-6">
+						</div>
 					</div>
 				</div>
 			</form>
