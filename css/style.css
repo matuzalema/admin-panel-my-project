@@ -1000,7 +1000,8 @@ template {
 
 .section--postback label {
   font-size: 0.8rem;
-  color: #BABABA; }
+  color: #979797;
+  font-weight: 500; }
 
 .section--postback textarea {
   margin-top: 10px;
@@ -1048,13 +1049,61 @@ template {
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   margin: 0; }
-  .section--postback .send .col {
-    min-height: 250px; }
-    .section--postback .send .col:first-child {
-      border-right: 1px solid #e3e3e3; }
-    .section--postback .send .col label {
+  .section--postback .send .col:first-child {
+    border-right: 1px solid #e3e3e3; }
+  .section--postback .send .col .statuses {
+    overflow-x: auto;
+    height: 170px; }
+    .section--postback .send .col .statuses h2 {
+      margin-bottom: 10px; }
+      .section--postback .send .col .statuses h2 span {
+        color: #ff0000; }
+    .section--postback .send .col .statuses .checkbox-wrapper {
       display: block;
-      padding: 10px; }
+      position: relative;
+      padding: 10px 0 10px 35px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+      .section--postback .send .col .statuses .checkbox-wrapper:hover {
+        background-color: #f5f5f2; }
+      .section--postback .send .col .statuses .checkbox-wrapper input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+        .section--postback .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark {
+          background-color: #74b67a;
+          border: 1px solid #74b67a; }
+        .section--postback .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark:after {
+          display: block; }
+      .section--postback .send .col .statuses .checkbox-wrapper .checkmark {
+        position: absolute;
+        top: 10;
+        left: 10px;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #e3e3e3; }
+        .section--postback .send .col .statuses .checkbox-wrapper .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 5px;
+          top: 2px;
+          width: 2px;
+          height: 5px;
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          transform: rotate(45deg); }
+      .section--postback .send .col .statuses .checkbox-wrapper:focus {
+        outline: none; }
+      .section--postback .send .col .statuses .checkbox-wrapper:hover input ~ .checkmark {
+        background-color: #96cc9b;
+        border: 1px solid #96cc9b; }
 
 @media (max-width: 576px) {
   .section--postback .container {
