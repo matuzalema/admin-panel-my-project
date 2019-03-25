@@ -18,6 +18,12 @@
 @import "../sass/components/_scrollbar.scss";
 @import "../sass/components/_range-input.scss";
 @import "../sass/components/_glyphter.scss";
+@import "../sass/components/_inputs-form-3-col.scss";
+@import "../sass/components/_checkboxes.scss";
+@import "../sass/components/_input.scss";
+@import "../sass/components/_down-page.scss";
+
+
 
 
 
@@ -30,6 +36,8 @@
 @import "../sass/sections/_payout.scss";
 @import "../sass/sections/_postback.scss";
 @import "../sass/sections/_personal-data.scss";
+@import "../sass/sections/_add-banners.scss";
+@import "../sass/sections/_add-url.scss";
 
 
 
@@ -48,6 +56,10 @@ body {
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   // padding: 0 15px;
+}
+
+.padding-wrapper {
+  padding: 0 15px;
 }
 
 .wrapper {

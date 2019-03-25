@@ -8,6 +8,7 @@
 	flex-direction: row-reverse;
 	color: $second-color;
 	background-color: $fiveth-color-bright;
+	z-index: 1;
 
 	.nav-item {
 		border-left: 1px solid $fourth-color;

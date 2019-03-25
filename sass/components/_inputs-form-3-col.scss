@@ -1,0 +1,238 @@
+form {
+	h2 {
+		font-size: $third-font-size;
+		color: $second-color;
+	}
+
+	p {
+		margin: 20px 0 0 10px;
+	}
+
+	label {
+		font-size: $third-font-size;
+		color: $second-color;
+		font-weight: 500;
+	}
+
+	textarea {
+		margin-top: 10px;
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid $fourth-color;
+			padding: 10px;
+			color: $third-color-dark;
+			font-size: $fiveth-font-size;
+			resize: none;
+
+			&:hover {
+				border: 1px solid $third-color-dark;
+			}
+		}
+
+	input, select {
+		border: 1px solid $fourth-color;
+		border-radius: 2px;
+
+		&:hover {
+				border: 1px solid $third-color-dark;
+			}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	select {
+		font-size: $fourth-font-size;
+		color: $second-color;
+		width: 100%;
+		padding: 8px;
+		margin-top: 10px;
+		appearance: none;
+	}
+
+	.select-wrapper {
+		position: relative;
+
+		&:after {
+			font-family: Glyphter;
+		  	content: '\0041';
+		  	font-size: 12px;
+		  	position: absolute;
+		  	top: 20px;
+		  	right: 12px;
+		  	color: $fourth-color;
+		  	pointer-events: none;
+		}
+	}
+
+// =============== checkboxes ====================
+	.send {
+		border-top: 1px solid $fourth-color;
+		border-bottom: 1px solid $fourth-color;
+		margin: 0;
+
+		.col {
+			
+			&:first-child {
+				border-right: 1px solid $fourth-color;
+			}
+
+			h2 {
+				margin-bottom: 10px;
+
+				span {
+					color: $danger-color;
+				}
+			}
+
+			.statuses {
+				overflow-x: auto;
+				height: 170px;
+
+
+				.checkbox-wrapper {
+					display: block;
+					position: relative;
+					padding: 14px 0 14px 35px;
+					cursor: pointer;
+					font-size: $third-font-size;
+					user-select: none;
+
+					&:hover {
+						background-color: $fiveth-color;
+					}
+
+					input {
+						position: absolute;
+						opacity: 0;
+						cursor: pointer;
+						height: 0;
+						width: 0;
+
+						&:checked ~ .checkmark {
+						  background-color: $eighth-color;
+						  border: 1px solid $eighth-color;
+						}
+
+						&:checked ~ .checkmark:after {
+						  display: block;
+						}
+					}
+
+					.checkmark {
+						position: absolute;
+						top: 10;
+						left: 10px;
+						height: 15px;
+						width: 15px;
+						border: 1px solid $fourth-color;
+
+						&:after {
+							content: "";
+							position: absolute;
+							display: none;
+							left: 5px;
+							top: 2px;
+							width: 2px;
+							height: 5px;
+							border: solid white;
+							border-width: 0 1.5px 1.5px 0;
+							transform: rotate(45deg);
+						}
+					}
+
+					&:focus {
+						outline: none;
+					}
+
+					&:hover input ~ .checkmark {
+						background-color: $eight-color-bright;
+						border: 1px solid $eight-color-bright;	
+					}
+				}
+			}
+		}
+
+	// =============== input range ====================
+		.range-wrapper {
+			width: 100%;
+
+			.range {
+				position: relative;
+				appearance: none;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				width: 100%;
+				height: 7px;
+				background-color: $sixth-color;
+				border: none;
+				border-radius: 1px;
+				&::-webkit-slider-thumb {
+					appearance: none;
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-bottom: 20px solid $sixth-color;
+					cursor: pointer;
+					margin-top: 25px;
+					}
+
+				&::-moz-range-thumb  {
+					border: 1px solid $third-color-dark;
+					background-color: $fiveth-color;
+					appearance: none;
+					width: 7px;
+					height: 15px;
+				}
+
+				&::before{
+					content: "0";
+					position: absolute;
+					bottom: 7px;
+					font-size: $third-font-size;
+					}
+
+				&::after {
+					content: "168";
+					position: absolute;
+					bottom: 7px;
+					right: 0;
+					font-size: $third-font-size;
+				}
+			}
+
+			.hours-range{
+				margin: 40px 0 10px 0;
+				display: inline;
+				font-size: $fourth-font-size;
+			}
+
+			.hours-value {
+				margin: 0;
+				display: inline;
+				font-size: $fourth-font-size;
+			}		
+		}
+	}
+	
+	.create-pixel {
+		display: block;
+		margin: 20px 10px 20px auto;
+	}
+}
+
+
+
+
+@media (max-width: 576px) {
+	.section--postback .container {
+		margin: 5px 0 0 50px;
+		width: calc(100% - 50px);
+
+		.header {
+			text-align: center;
+		}
+	}
+}

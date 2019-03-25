@@ -1,0 +1,22 @@
+.down-page {
+	padding: 20px 0;
+	
+	.padding-wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		input {
+			padding-left: 10px;
+			width: 100%;
+			font-size: $third-font-size;
+			height: 40px;
+		}
+
+		button.copy {
+			margin: 0 10px;
+			min-width: 140px;
+		}
+
+	}
+}

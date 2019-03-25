@@ -15,3 +15,12 @@ output.innerHTML = range.value;
 range.oninput = function() {
   output.innerHTML = this.value;
 };
+
+// add banners
+
+var btnAdd= document.querySelector(".add");
+var 
+
+btnAdd.addEventListener('click', function(){
+
+});

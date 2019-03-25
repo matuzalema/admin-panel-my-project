@@ -8,9 +8,17 @@
 	outline: none;
 	cursor: pointer;
 	padding: 0 20px;
+	line-height: 40px;
 
 	&:hover {
 		background-color: $sixth-color-light;
+	}
+	&.icon-general {
+		font-family: glyphter !important;
+	}
+	&.add {
+		display: flex;
+		margin: 23px auto;
 	}
 }
 
@@ -20,9 +28,6 @@
 	padding: 0;
 }
 
-.btn.icon-general {
-	font-family: glyphter !important;
-}
 
 .btn-wrapper {
 	width: 100%;
@@ -30,7 +35,15 @@
 	align-items: center;
 }
 
-.btn.add {
-	display: flex;
-	margin: 23px auto;
+
+.copy {
+	background-color: $third-color-dark;
+
+	i {
+		padding-right: 5px;
+	}
+
+	&:hover {
+		background-color: $second-color;
+	}
 }
