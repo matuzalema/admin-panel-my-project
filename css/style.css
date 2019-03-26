@@ -1066,29 +1066,26 @@ form .create-pixel {
     background-color: #96cc9b;
     border: 1px solid #96cc9b; }
 
-.field {
-  padding: 10px 0;
-  margin: 0 auto; }
-  .field label {
-    max-width: 30%;
-    width: 100%;
-    display: inline-block;
-    color: #BABABA;
-    font-size: 0.8rem; }
-  .field input {
-    min-width: 100%;
-    width: 100%;
-    height: 30px;
-    border: 1px solid #e3e3e3;
-    border-radius: 2px;
-    padding-left: 10px;
-    color: red;
-    font-size: 0.8rem; }
-    .field input:hover {
-      border: 1px solid #979797; }
-    .field input:focus {
-      outline: none;
-      border: 1px solid #979797; }
+.field label {
+  max-width: 30%;
+  width: 100%;
+  color: #BABABA;
+  font-size: 0.8rem; }
+
+.field input {
+  min-width: 100%;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  padding-left: 10px;
+  color: red;
+  font-size: 0.8rem; }
+  .field input:hover {
+    border: 1px solid #979797; }
+  .field input:focus {
+    outline: none;
+    border: 1px solid #979797; }
 
 .down-page {
   padding: 20px 0; }
@@ -1158,13 +1155,6 @@ form .create-pixel {
     margin: 0 0 0 50px;
     width: calc(100% - 50px); }
     .section--general .container .header {
-      text-align: center; } }
-
-@media (max-width: 576px) {
-  .section--details .container {
-    margin: 5px 0 0 50px;
-    width: calc(100% - 50px); }
-    .section--details .container .header {
       text-align: center; } }
 
 .links {
@@ -1368,19 +1358,34 @@ form .create-pixel {
   padding: 0; }
   .section--personal-data .container .fields-wrapper {
     padding: 20px 0;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     .section--personal-data .container .fields-wrapper .field {
-      padding: 10px 0;
-      max-width: 50%;
+      padding: 10px 20px;
+      min-width: 600px;
+      width: 50%;
       margin: 0 auto;
-      width: 100%; }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
       .section--personal-data .container .fields-wrapper .field label {
-        display: inline-block;
+        max-width: 100px;
+        width: 100%;
         color: #BABABA;
-        font-size: 0.8rem;
-        background-color: red; }
+        font-size: 0.8rem; }
       .section--personal-data .container .fields-wrapper .field input {
-        display: inline-block;
+        min-width: 250px;
+        width: 80%;
         height: 40px;
         border: 1px solid #e3e3e3;
         border-radius: 2px;
