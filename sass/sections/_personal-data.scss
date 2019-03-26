@@ -2,57 +2,41 @@
 	padding: 0;
 
 	.fields-wrapper {
-		
-		
+			
 		padding: 20px 0;
 		border-bottom: 1px solid $fourth-color;
 
-
 		.field {
 			padding: 10px 20px;
-			width: 726px;
+			max-width: 726px;
+			width: 100%;
 			margin: 0 auto;
 
-			label {
-				// max-width: 100px;
-				// width: 10%;
-				// color: $third-color-dark;
-				// font-size: $third-font-size;
-			}
-
 			input {
-				width: 70%;
-			// min-width: 250px;
-			// background-color: red;
-			// width: 80%;
-				
-			// 	height: 40px;
-			// 	border: 1px solid $fourth-color;
-			// 	border-radius: 2px;
-			// 	padding-left: 10px;
-			// 	color: red;
-			// 	font-size: $third-font-size;
-
-			// 	&:hover {
-			// 		border: 1px solid $second-color;
-			// 	};
-
-			// 	&:focus {
-			// 		outline: none;
-			// 		border: 1px solid $second-color;
-			// 	};
-				
-
+			width: 70%;
 			 }
 		}
 	}
 }
 
-// @media (max-width: 576px) {
-// 	.section--personal-data input {
-// 				width: 50%;
-// 				// width: 100%;
-// 				// padding-left: 20px;
+@media (max-width: 767px) {
+	.section--personal-data .container {
+		.fields-wrapper {
+			padding: 0 0 30px 0;
 
-// 			}
-// 		}
+			.field {
+				padding: 20px 20px;
+				// max-width: 726px;
+				// width: 100%;
+				// margin: 0 auto;
+				.col-s-12 {
+					padding: 2.5px 0;
+				}
+				input {
+				width: 100%;
+				 }
+			}
+		}
+	}
+
+}
