@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="registration-form-template">
+	<div class='main'>
 
 <!-- =========================== top nav ============================= -->
 
@@ -40,10 +41,10 @@
 			<ul>
 				<li class="active"><a href="#general">
 					<h2 class="icon icon-general"></h2>
-					<h2 class="desc">General</h2>
+					<h2 class="desc general">General</h2>
 					</a>	
 				</li>
-				<li><a href="#details">
+				<li id="nav-details"><a href="#details">
 					<h2 class="icon icon-details"></h2>
 					<h2 class="desc">Details</h2>
 					</a>
@@ -1053,9 +1054,15 @@
 			</div>		
 			<div class="down-page">
 				<div class="padding-wrapper">
-						<input type="text" name="link" placeholder="Generated link" class="field" />
-						<button class="btn copy"><i class="icon-links"></i> Copy link</button>
-						<button class="btn btn-save">save</button>
+					<div class="row">
+						<div class="col col-s-12 col-m-4">
+							<input type="text" name="link" placeholder="Generated link" class="field" />
+						</div>
+						<div class="col col-s-12 col-m-4">
+							<button class="btn copy"><i class="icon-links"></i> Copy link</button>
+							<button class="btn btn-save">save</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</form>			
@@ -1069,7 +1076,7 @@
 <br>
 <br>
 <br>
-
+</div>
 
 <script src="js/script.js"></script>
 </body>

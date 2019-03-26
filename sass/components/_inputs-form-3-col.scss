@@ -32,6 +32,8 @@ form {
 	input, select {
 		border: 1px solid $fourth-color;
 		border-radius: 2px;
+		width: 100%;
+		margin-top: 10px;
 
 		&:hover {
 				border: 1px solid $third-color-dark;
@@ -47,8 +49,8 @@ form {
 		color: $second-color;
 		width: 100%;
 		padding: 8px;
-		margin-top: 10px;
 		appearance: none;
+		background-color: $fiveth-color-bright;
 	}
 
 	.select-wrapper {

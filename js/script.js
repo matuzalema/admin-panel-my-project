@@ -24,3 +24,13 @@ var btnAdd= document.querySelector(".add");
 // btnAdd.addEventListener('click', function(){
 
 // });
+
+//navigation
+
+// var navDetails = document.getElementById("nav-details");
+// var detailsSection = document.getElementById("details");
+
+// navDetails.addEventListener('click', function (){
+// 	detailsSection.classList.toggle('.display');
+// 	console.log("Powinno pojawić sie");
+// });
