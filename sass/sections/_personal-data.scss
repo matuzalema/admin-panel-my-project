@@ -8,20 +8,23 @@
 
 		.field {
 			padding: 10px 0;
-			width: 50%;
+			max-width: 50%;
 			margin: 0 auto;
+			width: 100%;
 
 			label {
-				max-width: 30%;
-				width: 100%;
+				// max-width: 350px;
+				// width: 100%;
 				display: inline-block;
 				color: $third-color-dark;
 				font-size: $third-font-size;
+				background-color: red;
 			}
 
 			input {
-				max-width: 60%;
-				width: 70%;
+				// max-width: 60%;
+				// width: 70%;
+				display: inline-block;
 				height: 40px;
 				border: 1px solid $fourth-color;
 				border-radius: 2px;
@@ -45,14 +48,7 @@
 }
 
 @media (max-width: 576px) {
-	.section--personal-data .container {
-		margin: 5px 0 0 50px;
-		width: calc(100% - 50px);
-		
-		.header {
-			text-align: center;
-		}
-		
+	.section--personal-data {
 		.fields-wrapper {
 			width: 100%;
 

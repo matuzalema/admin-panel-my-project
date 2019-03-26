@@ -6,11 +6,14 @@
 	padding-left: 16px;
 	border-bottom: 1px solid $fourth-color;
 	position: relative;
+	h1 {
+		font-size: $second-font-size;
+	}
 	i {
 		position: absolute;
 		top: 0px;
 		right: 20px;
 		cursor: pointer;
-		font-size: $third-font-size	
+		font-size: $third-font-size;
 	}
 }

@@ -47,12 +47,13 @@ html {
 
 body {
   background-color: $fiveth-color;
+  padding-top: 55px;
 }
 
 .container {
   background-color: $fiveth-color-bright;
   width: calc(100% - 212px);
-  margin: 70px 12px -55px 200px;
+  margin: 15px 12px 0 200px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   // padding: 0 15px;
@@ -158,4 +159,16 @@ a {
 	font-weight: 300;
 	color: #56819f;
 	text-decoration: none;
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    margin: 5px 0 0 50px;
+    width: calc(100% - 50px);
+
+    .header {
+      text-align: center;
+    }
+}
 }

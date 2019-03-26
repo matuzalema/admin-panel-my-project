@@ -483,6 +483,8 @@ template {
   padding-left: 16px;
   border-bottom: 1px solid #e3e3e3;
   position: relative; }
+  .header h1 {
+    font-size: 0.9rem; }
   .header i {
     position: absolute;
     top: 0px;
@@ -534,7 +536,9 @@ template {
   color: #f5f5f2;
   width: 188px;
   height: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 2;
+  top: 0; }
   .sidebar .top {
     line-height: 60px;
     display: -ms-flexbox;
@@ -1187,17 +1191,16 @@ form .create-pixel {
       font-size: 0.8rem;
       font-weight: 500;
       color: #979797;
-      width: 80px;
-      min-width: 40%;
-      background-color: red; }
+      width: 70px;
+      min-width: 40%; }
     .links .link .link-item {
       color: #56819f;
       font-size: 0.8rem;
       font-weight: 300;
       cursor: pointer;
-      width: 170px;
-      cursor: pointer;
-      background-color: yellow; }
+      min-width: 100px;
+      width: 100%;
+      cursor: pointer; }
       .links .link .link-item:hover {
         color: #ffa200; }
     .links .link .icon-links {
@@ -1205,7 +1208,8 @@ form .create-pixel {
       color: #979797;
       font-size: 14px;
       cursor: pointer;
-      opacity: 0; }
+      opacity: 0;
+      min-width: 30px; }
       .links .link .icon-links:hover {
         color: #ffa200; }
     .links .link .icon-trash {
@@ -1213,7 +1217,8 @@ form .create-pixel {
       line-height: 56px;
       color: #979797;
       cursor: pointer;
-      opacity: 0; }
+      opacity: 0;
+      min-width: 40px; }
       .links .link .icon-trash:hover {
         color: #ffa200; }
 
@@ -1228,16 +1233,22 @@ form .create-pixel {
     .section--links .container .header {
       text-align: center; }
     .section--links .container .links .link .link-desc {
-      min-width: 100px;
+      min-width: 80px;
       font-size: 10px; }
     .section--links .container .links .link .link-item {
-      min-width: 150px;
+      width: 140px;
       font-size: 10px; }
     .section--links .container .links .link .icon-links {
-      min-width: 20px;
-      color: #ffa200; }
+      min-width: 30px;
+      color: #ffa200;
+      opacity: 1;
+      font-size: 10px;
+      line-height: 75px; }
     .section--links .container .links .link .icon-trash {
-      min-width: 10px; } }
+      min-width: 10px;
+      opacity: 1;
+      font-size: 10px;
+      line-height: 75px; } }
 
 @media (max-width: 992px) {
   .section--banners .link-desc {
@@ -1257,14 +1268,19 @@ form .create-pixel {
     .section--banners .container .header {
       text-align: center; }
     .section--banners .container .links .link .link-desc {
-      min-width: 100px;
+      min-width: 75px;
       font-size: 10px; }
     .section--banners .container .links .link .link-item {
       font-size: 10px; }
     .section--banners .container .links .link .icon-links {
-      color: #ffa200; }
+      color: #ffa200;
+      min-width: 20px;
+      line-height: 75px;
+      opacity: 1; }
     .section--banners .container .links .link .icon-trash {
-      min-width: 10px; } }
+      min-width: 15px;
+      line-height: 75px;
+      opacity: 1; } }
 
 @media (max-width: 576px) {
   .section--payout .container {
@@ -1355,17 +1371,16 @@ form .create-pixel {
     border-bottom: 1px solid #e3e3e3; }
     .section--personal-data .container .fields-wrapper .field {
       padding: 10px 0;
-      width: 50%;
-      margin: 0 auto; }
+      max-width: 50%;
+      margin: 0 auto;
+      width: 100%; }
       .section--personal-data .container .fields-wrapper .field label {
-        max-width: 30%;
-        width: 100%;
         display: inline-block;
         color: #BABABA;
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        background-color: red; }
       .section--personal-data .container .fields-wrapper .field input {
-        max-width: 60%;
-        width: 70%;
+        display: inline-block;
         height: 40px;
         border: 1px solid #e3e3e3;
         border-radius: 2px;
@@ -1379,16 +1394,11 @@ form .create-pixel {
           border: 1px solid #979797; }
 
 @media (max-width: 576px) {
-  .section--personal-data .container {
-    margin: 5px 0 0 50px;
-    width: calc(100% - 50px); }
-    .section--personal-data .container .header {
-      text-align: center; }
-    .section--personal-data .container .fields-wrapper {
-      width: 100%; }
-      .section--personal-data .container .fields-wrapper .field {
-        width: 100%;
-        padding-left: 20px; } }
+  .section--personal-data .fields-wrapper {
+    width: 100%; }
+    .section--personal-data .fields-wrapper .field {
+      width: 100%;
+      padding-left: 20px; } }
 
 .select-banners {
   overflow-x: auto;
@@ -1402,12 +1412,13 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: #f5f5f2; }
+  background-color: #f5f5f2;
+  padding-top: 55px; }
 
 .container {
   background-color: #fff;
   width: calc(100% - 212px);
-  margin: 70px 12px -55px 200px;
+  margin: 15px 12px 0 200px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
@@ -1521,3 +1532,10 @@ a {
   font-weight: 300;
   color: #56819f;
   text-decoration: none; }
+
+@media (max-width: 576px) {
+  .container {
+    margin: 5px 0 0 50px;
+    width: calc(100% - 50px); }
+    .container .header {
+      text-align: center; } }
