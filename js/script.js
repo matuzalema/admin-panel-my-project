@@ -19,8 +19,8 @@ range.oninput = function() {
 // add banners
 
 var btnAdd= document.querySelector(".add");
-var 
+// var 
 
-btnAdd.addEventListener('click', function(){
+// btnAdd.addEventListener('click', function(){
 
-});
+// });
