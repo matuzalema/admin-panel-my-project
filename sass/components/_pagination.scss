@@ -3,16 +3,30 @@
 	flex-direction: row;
 	justify-content: center;
 	// text-align: center;
-	height: 80px;
-	line-height: 80px;
+	// height: 80px;
+	// line-height: 80px;
 	font-size: 36px;
 	color: $link-color;
 
 	a {
-		margin: 0 10px;
+		// padding: 10px;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		margin: 20px 0;
+		line-height: 25px;
+
+		i {
+			line-height: 30px;
+		}
 
 		&:hover {
 			color: $sixth-color-light;
+			
 		};
+
+		&:nth-child(2) {
+			background-color: $fiveth-color;
+		}
 	}
 }

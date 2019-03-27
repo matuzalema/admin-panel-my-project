@@ -82,13 +82,6 @@
 }
 
 @media (max-width: 576px) {
-	.section--links .container {
-		margin: 5px 0 0 50px;
-		width: calc(100% - 50px);
-
-		.header {
-			text-align: center;
-		}
 
 		.links .link {
 			.link-desc {
@@ -103,19 +96,19 @@
 			}
 
 			.icon-links {
-				min-width: 30px;
+				min-width: 20px;
 				color: $sixth-color-light;
 				opacity: 1;
 				font-size: 10px;
 				line-height: 75px;
+				margin-left: 20px;
 			}
 
 			.icon-trash {
-				min-width: 10px;
+				min-width: 15px;
 				opacity: 1;
 				font-size: 10px;
 				line-height: 75px;
 			}
 		}
 	}
-}
