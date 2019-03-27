@@ -28,7 +28,7 @@
 		li {
 			margin: 0;
 			border-left: 4px solid $main-color;
-			&:hover, &.active {
+			&:hover, &.nav-active {
 				background-color: $main-color;
 				border-left: 4px solid $sixth-color;
 			}
@@ -103,6 +103,10 @@
 			}
 		}
 	}
+
+	.top-nav-mobile {
+			display: none;
+		}
 }
 
 
@@ -138,33 +142,143 @@
 	.top-nav {
 		display: none;
 	}
+	
+	.sidebar-mobile {
+		width: 100%;
+
+		nav {
+			margin-left: 30%;
+
+
+			ul li {
+				border-left: 0;
+				border-bottom: 1px solid $main-color;
+				width: 60%;
+				margin-bottom: 20px;
+
+				&:hover, &.nav-active {
+					border-left: 0;
+					border-bottom: 1px solid $sixth-color;
+				}
+			
+				a {
+					.icon {
+						bottom: 10px;
+						font-size: 16px;
+
+					}
+
+					.desc {
+						display: block;
+						font-size: 16px;
+					}
+
+				}
+			}
+		}
+
+		.sidebar-team .head {
+			text-align: center;
+			margin-bottom: 15x;
+		}
+		
+		.top-nav-mobile {
+			display: block;
+			margin: 0;
+			width: 100%;
+			height: 50px;
+			border: 1px solid $fourth-color;
+			position: fixed;
+			bottom: 0;
+			display: flex;
+			flex-direction: row-reverse;
+			color: $second-color;
+			background-color: $fiveth-color-bright;
+
+			.nav-item {
+				border-left: 1px solid $fourth-color;
+				height: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 10px;
+
+				h2 {
+					font-weight: 400;
+					color: $second-color;
+					margin: 0 15px;
+					font-size: $first-font-size;
+				}
+
+				.icon-profile {
+					width: 17px;
+					height: 17px;
+					margin-right: 12px;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+
+				.name {
+					font-size: 13px;
+				}
+
+				.icon-wallet {
+					width: 17px;
+					height: 18px;
+					cursor: pointer;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+
+				.icon-arrow-down {
+					font-size: 11px;
+					width: 11px;
+					height: 7px;
+					cursor: pointer;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+
+				.icon-notification {
+					width: 16px;
+					height: 17px;
+					position: relative;
+					left: 5px;
+					cursor: pointer;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+
+				.notification-icon-round {
+					width: 9px;
+					height: 8px;
+					background-color: $sixth-color;
+					border-radius: 50%;
+					position: relative;
+					bottom: 7px;
+					right: 4px;
+				}
+
+				.icon-quit {
+					width: 19px;
+					height: 15px;
+					cursor: pointer;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+			}
+		}
+		
+	}
+
 }
-
-// @media (max-width: 576px) {
-// 	.sidebar {
-// 		width: 50px;
-
-// 		.hamburger-icon {
-// 		position: relative;
-// 		right: 4px;
-// 		}
-
-// 		.logo {
-// 			display: none;
-// 		}
-
-// 		nav ul li .icon {
-// 			bottom: 10px;
-// 		}
-
-// 		.desc{
-// 			display: none;
-// 		}
-// 		.sidebar-team {
-// 			display: none;
-// 		}
-// 	}
-// 	.top-nav {
-// 		display: none;
-// 	}
-// }

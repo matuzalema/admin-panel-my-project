@@ -1,12 +1,14 @@
+// ======================== mobile navigation ========================================
+
 var hamburgerIcon = document.getElementsByClassName('hamburger-icon')[0];
 var sidebar = document.getElementsByClassName('sidebar')[0];
 
 hamburgerIcon.addEventListener('click', function(){
-	console.log('hamburger klikniety');
-	sidebar.classList.toggle("full-sidebar");
+	sidebar.classList.toggle("sidebar-mobile");
 });
 
-// range
+
+// ======================== range =====================================================
 
 var range = document.getElementById("range");
 var output = document.querySelector(".hours-range");
@@ -16,21 +18,15 @@ range.oninput = function() {
   output.innerHTML = this.value;
 };
 
-// add banners
 
-var btnAdd= document.querySelector(".add");
-// var 
+// ======================== navigation toggle class active =============================
 
-// btnAdd.addEventListener('click', function(){
+var navActive = document.getElementsByClassName("menu-item");
 
-// });
-
-//navigation
-
-// var navDetails = document.getElementById("nav-details");
-// var detailsSection = document.getElementById("details");
-
-// navDetails.addEventListener('click', function (){
-// 	detailsSection.classList.toggle('.display');
-// 	console.log("Powinno pojawić sie");
-// });
+for ( var i=0; i<navActive.length; i++) {
+	navActive[i].addEventListener('click', function(){
+		var current = document.getElementsByClassName("nav-active");
+		current[0].className = current[0].classList.toggle("active");
+		this.className += "nav-active";
+	}
+)};
