@@ -568,8 +568,7 @@ template {
       margin: 0;
       border-left: 4px solid #333333; }
       .sidebar ul li:hover {
-        background-color: #333333;
-        border-left: 4px solid #f58220; }
+        background-color: #333333; }
       .sidebar ul li.active {
         background-color: #333333;
         border-left: 4px solid #f58220; }
@@ -1500,13 +1499,12 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: #f5f5f2;
-  padding-top: 55px; }
+  background-color: #f5f5f2; }
 
 .container {
   background-color: #fff;
   width: calc(100% - 212px);
-  margin: 15px 12px 0 200px;
+  margin: 70px 12px 0 200px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
