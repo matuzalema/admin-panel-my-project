@@ -39,39 +39,39 @@
 		</div>
 		<nav>
 			<ul>
-				<li class="menu-item nav-active">
+				<li class="menu-item nav-general active">
 					<a href="#general">
 						<h2 class="icon icon-general"></h2>
 						<h2 class="desc general">General</h2>
 					</a>	
 				</li>
-				<li class="menu-item">
+				<li class="menu-item nav-details">
 					<a href="#details">
 						<h2 class="icon icon-details"></h2>
 						<h2 class="desc">Details</h2>
 					</a>
 				</li>
-				<li class="menu-item"><a href="#links">
+				<li class="menu-item nav-links"><a href="#links">
 					<h2 class="icon icon-links"></h2>
 					<h2 class="desc">Links</h2>
 					</a>
 				</li>
-				<li class="menu-item"><a href="#banners">
+				<li class="menu-item nav-banners"><a href="#banners">
 					<h2 class="icon icon-banners"></h2>
 					<h2 class="desc">Banners</h2>
 					</a>
 				</li>
-				<li class="menu-item"><a href="#personal-data">
+				<li class="menu-item nav-personal-data"><a href="#personal-data">
 					<h2 class="icon icon-personaldata"></h2>
 					<h2 class="desc">Personal data</h2>
 					</a>
 				</li>
-				<li class="menu-item"><a href="#payout">
+				<li class="menu-item nav-payout"><a href="#payout">
 					<h2 class="icon icon-payout"></h2>
 					<h2 class="desc">Payout</h2>
 					</a>
 				</li>
-				<li class="menu-item"><a href="#postback">
+				<li class="menu-item nav-postback"><a href="#postback">
 					<h2 class="icon icon-postback"></h2>
 					<h2 class="desc">Postback</h2>
 					</a>	
@@ -108,7 +108,7 @@
 
 <!-- =========================== general section ============================= -->
 
-	<section id="general" class="section--general">
+	<section id="general" class="section--general section-item">
 		<div class="container">
 			<header class="header">
 				<h1>General statistic</h1>
@@ -155,7 +155,7 @@
 	</section>
 
 <!-- =========================== details section ============================= -->
-	<section id="details" class="section--details">
+	<section id="details" class="section--details section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>Details</h1>
@@ -315,7 +315,7 @@
 	</section>>
 
 <!-- =========================== links section ============================= -->
-	<section id="links" class="section--links">
+	<section id="links" class="section--links section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>Links</h1>
@@ -390,14 +390,14 @@
 	</section>
 
 <!-- =========================== banners section ============================= -->
-	<section id="banners" class="section--banners">
+	<section id="banners" class="section--banners section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>Banners</h1>
 			</header>
 			<div class="padding-wrapper">
 				<div class="links wrapper">
-					<button class="btn add"> + add new</button>
+					<button class="btn add btn-add-banners"> + add new</button>
 					<div class="link">
 						<h2 class="link-desc">Banner main</h2>
 						<h2 class="link-item">http://www.website.com/banner.gif</h2>
@@ -436,12 +436,12 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn add bottom"> + add new</button>
+			<button class="btn add bottom btn-add-banners"> + add new</button>
 		</div>
 	</section>
 
 <!-- =========================== personal data section ============================= -->
-	<section id="personal-data" class="section--personal-data">
+	<section id="personal-data" class="section--personal-data section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>Personal data</h1>
@@ -564,7 +564,7 @@
 	</section>
 
 	<!-- =========================== payout section ============================= -->
-	<section id="payout" class="section--payout">
+	<section id="payout" class="section--payout section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>Payout history</h1>
@@ -660,7 +660,7 @@
 	</section>
 <!-- =========================== postback section ============================= -->
 
-	<section id="postback" class="section--postback">
+	<section id="postback" class="section--postback section-item display">
 		<div class="container">
 			<header class="header">
 				<h1>New postback</h1>
@@ -768,7 +768,7 @@
 
 <!-- =========================== add banners section ============================= -->
 
-<section id="add-banners" class="section--add-banners">
+<section id="add-banners" class="section--add-banners section-item display">
 	<div class="container">
 		<header class="header">
 			<h1>Add banners</h1>
@@ -911,7 +911,7 @@
 
 <!-- =========================== add url ============================= -->
 
-<section id="add-url" class="section--add-url">
+<section id="add-url" class="section--add-url section-item display">
 	<div class="container">
 		<header class="header">
 			<h1>Add url</h1>
@@ -1088,14 +1088,6 @@
 		</form>			
 	</div>	
 </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </div>
 
 <script src="js/script.js"></script>

@@ -567,7 +567,10 @@ template {
     .sidebar ul li {
       margin: 0;
       border-left: 4px solid #333333; }
-      .sidebar ul li:hover, .sidebar ul li.nav-active {
+      .sidebar ul li:hover {
+        background-color: #333333;
+        border-left: 4px solid #f58220; }
+      .sidebar ul li.active {
         background-color: #333333;
         border-left: 4px solid #f58220; }
       .sidebar ul li a {
@@ -1377,6 +1380,9 @@ form .create-pixel {
       opacity: 1;
       font-size: 10px; } }
 
+.details-table .icon-arrow-up {
+  margin-left: 5px; }
+
 @media (max-width: 576px) {
   .section--payout .container {
     margin: 5px 0 0 50px;
@@ -1503,6 +1509,9 @@ body {
   margin: 15px 12px 0 200px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.display {
+  display: none; }
 
 @media (max-width: 576px) {
   body {

@@ -59,6 +59,10 @@ body {
   // padding: 0 15px;
 }
 
+.display {
+  display: none;
+}
+
 @media (max-width: 576px)  {
   body {
     padding-top: 0;

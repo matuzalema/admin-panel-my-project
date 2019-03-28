@@ -28,7 +28,13 @@
 		li {
 			margin: 0;
 			border-left: 4px solid $main-color;
-			&:hover, &.nav-active {
+
+			&:hover{
+				background-color: $main-color;
+				border-left: 4px solid $sixth-color;
+			}
+
+			&.active  {
 				background-color: $main-color;
 				border-left: 4px solid $sixth-color;
 			}
