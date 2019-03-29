@@ -142,3 +142,23 @@ var hideModalAddUrl = function(e) {
 btnAddUrlClose.addEventListener('click', hideModalAddUrl);
 
 document.querySelector("#add-url-overlay").addEventListener('click', hideModalAddUrl);
+
+// ======================== modal login =============================
+
+var loginSection = document.querySelector(".section--login-modal");
+var navLogin = document.querySelector(".login");
+var btnLoginEnter = document.querySelector(".btn-login-enter");
+
+var showLogin = function(e) {
+	loginSection.classList.remove("display");
+};
+
+navLogin.addEventListener('click', showLogin);
+
+var hideModalLogin = function(e) {
+	loginSection.classList.add("display");
+};
+
+btnLoginEnter.addEventListener('click', hideModalLogin);
+
+document.querySelector("#login-modal-overlay").addEventListener('click', hideModalLogin);

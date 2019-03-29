@@ -1560,6 +1560,35 @@ form .create-pixel {
       .overlay .modal-login .field .input-container input {
         margin-bottom: 15px; } }
 
+.modal-chat {
+  background-color: #fff;
+  width: 80%;
+  height: 90vh; }
+  .modal-chat .chat-manager {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 10px 0 10px 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .modal-chat .chat-manager img {
+      width: 70px;
+      height: 70px;
+      margin-right: 20px; }
+    .modal-chat .chat-manager .manager-name {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .modal-chat .chat-manager .manager-name h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0; }
+      .modal-chat .chat-manager .manager-name .status p {
+        background-color: #04ae00;
+        color: #fff;
+        padding: 5px; }
+
 html {
   font-size: 16px; }
 
