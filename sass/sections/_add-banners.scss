@@ -1,3 +1,7 @@
+.section--add-banners .container {
+	// margin: 0 auto;
+}
+
 .select-banners {
 		overflow-x: auto;
 		max-height: 340px;
@@ -6,7 +10,5 @@
 
 @media (max-width: 992px) {
 	.generate-link {
-		// width: 100%;
-		// background-color: red;
 	}
 }

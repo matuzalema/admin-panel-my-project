@@ -22,10 +22,7 @@
 @import "../sass/components/_checkboxes.scss";
 @import "../sass/components/_input.scss";
 @import "../sass/components/_down-page.scss";
-
-
-
-
+@import "../sass/components/_overlay.scss";
 
 /* Sections */
 @import "../sass/sections/_general.scss";
@@ -78,6 +75,10 @@ body {
 .wrapper {
   max-width: 726px;
   margin: 0 auto;
+}
+
+.icon-close:hover {
+  color: $sixth-color;
 }
 
 .row:before,
@@ -176,7 +177,7 @@ a {
 
 @media (max-width: 576px) {
   .container {
-    margin: 5px 0 0 50px;
+    margin: 0 0 0 50px;
     width: calc(100% - 50px);
 
     .header {

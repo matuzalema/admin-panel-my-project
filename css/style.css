@@ -1213,6 +1213,15 @@ form .create-pixel {
       margin-left: 20px;
       min-width: 140px; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2; }
+
 /* Sections */
 .section--general .values {
   display: -ms-flexbox;
@@ -1345,6 +1354,11 @@ form .create-pixel {
     font-size: 10px;
     line-height: 75px; } }
 
+.section--banners .container {
+  position: absolute;
+  top: 20px;
+  margin-top: 55px; }
+
 @media (max-width: 992px) {
   .section--banners .link-desc {
     min-width: 100px; }
@@ -1358,7 +1372,7 @@ form .create-pixel {
 
 @media (max-width: 576px) {
   .section--banners .container {
-    margin: 5px 0 0 50px;
+    margin: 0 0 0 50px;
     width: calc(100% - 50px); }
     .section--banners .container .header {
       text-align: center; }
@@ -1381,13 +1395,6 @@ form .create-pixel {
 
 .details-table .icon-arrow-up {
   margin-left: 5px; }
-
-@media (max-width: 576px) {
-  .section--payout .container {
-    margin: 5px 0 0 50px;
-    width: calc(100% - 50px); }
-    .section--payout .container .header {
-      text-align: center; } }
 
 .section--postback p {
   margin: 20px 0 0 10px; }
@@ -1459,7 +1466,7 @@ form .create-pixel {
 
 @media (max-width: 576px) {
   .section--postback .container {
-    margin: 5px 0 0 50px;
+    margin: 0 0 0 50px;
     width: calc(100% - 50px); }
     .section--postback .container .header {
       text-align: center; } }
@@ -1490,6 +1497,9 @@ form .create-pixel {
 .select-banners {
   overflow-x: auto;
   max-height: 340px; }
+
+.section--add-url .container {
+  margin-top: 20px; }
 
 .section--add-url .select-3-col {
   border-bottom: 1px solid #e3e3e3;
@@ -1524,6 +1534,9 @@ body {
 .wrapper {
   max-width: 726px;
   margin: 0 auto; }
+
+.icon-close:hover {
+  color: #f58220; }
 
 .row:before,
 .row:after {
@@ -1631,7 +1644,7 @@ a {
 
 @media (max-width: 576px) {
   .container {
-    margin: 5px 0 0 50px;
+    margin: 0 0 0 50px;
     width: calc(100% - 50px); }
     .container .header {
       text-align: center; } }

@@ -95,12 +95,50 @@ for (var i = 0; i < navItems.length; i++) {
 	});
 }
 
+// ======================== modal add banners =============================
+
+var btnsAddBanners = document.querySelectorAll(".btn-add-banners");
+var btnAddBannersClose = document.querySelector(".add-banners-close");
+
+var showAddBanners = function(e){
+	e.preventDefault();
+	document.querySelector(".section--add-banners").classList.toggle("display");
+};
+
+for (var i=0; i<btnsAddBanners.length; i++) {
+	btnsAddBanners[i].addEventListener('click', showAddBanners);	
+}
+
+var hideModalAddBanner = function(e){
+	e.preventDefault();
+	document.querySelector(".section--add-banners").classList.add("display");
+};
 
 
-// ======================== add banners button =============================
+btnAddBannersClose.addEventListener('click', hideModalAddBanner);
 
-// var btnAddBanners = document.querySelector(".btn-add-banners");
+document.querySelector("#add-banners-overlay").addEventListener('click', hideModalAddBanner);
 
-// document.addEventListener('click', function(){
-// 	document.querySelector(".section--add-banners").classList.toggle("display");
-// });
+// ======================== modal add url =============================
+
+var btnsAddUrl = document.querySelectorAll(".add-url");
+var bannerAddUrl = document.querySelector(".section--add-url");
+var btnAddUrlClose = document.querySelector(".close-add-url");
+
+var showAddUrl = function(e){
+	e.preventDefault();
+	bannerAddUrl.classList.toggle("display");
+};
+
+for (var i=0; i<btnsAddUrl.length; i++){
+	btnsAddUrl[i].addEventListener('click', showAddUrl);
+}
+
+var hideModalAddUrl = function(e) {
+	e.preventDefault();
+	bannerAddUrl.classList.add("display");
+};
+
+btnAddUrlClose.addEventListener('click', hideModalAddUrl);
+
+document.querySelector("#add-url-overlay").addEventListener('click', hideModalAddUrl);
