@@ -1505,6 +1505,61 @@ form .create-pixel {
   border-bottom: 1px solid #e3e3e3;
   padding: 10px 0; }
 
+.overlay {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .overlay .modal-login {
+    width: 560px;
+    min-height: 180px;
+    background-color: #fff; }
+    .overlay .modal-login .field {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 40px 20px 15px 20px; }
+      .overlay .modal-login .field .input-container {
+        position: relative; }
+        .overlay .modal-login .field .input-container .icon-login {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          font-size: 12px; }
+        .overlay .modal-login .field .input-container .icon-password {
+          position: absolute;
+          top: 8px;
+          left: 10px;
+          font-size: 16px; }
+        .overlay .modal-login .field .input-container input {
+          width: 200px;
+          display: inline-block;
+          padding-left: 35px;
+          margin: 0; }
+      .overlay .modal-login .field button {
+        width: 100px;
+        height: 30px;
+        line-height: 30px; }
+
+@media (max-width: 576px) {
+  .overlay .modal-login {
+    width: 400px;
+    min-height: 260px; }
+    .overlay .modal-login .field {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .overlay .modal-login .field .input-container input {
+        margin-bottom: 15px; } }
+
 html {
   font-size: 16px; }
 
