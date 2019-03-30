@@ -162,3 +162,25 @@ var hideModalLogin = function(e) {
 btnLoginEnter.addEventListener('click', hideModalLogin);
 
 document.querySelector("#login-modal-overlay").addEventListener('click', hideModalLogin);
+
+// ======================== modal chat =============================
+
+var btnChatClose = document.querySelector(".icon-chat-close");
+var chatSection = document.querySelector(".section--chat-modal");
+var managerOpenChat = document.querySelector(".manager-chat");
+var btnCloseChat = document.querySelector(".icon-chat-close");
+
+
+var showChatModal = function(e) {
+	chatSection.classList.remove("display");
+};
+
+managerOpenChat.addEventListener('click', showChatModal);
+
+var hideChatModal = function(e) {
+	chatSection.classList.add("display");
+};
+
+btnCloseChat.addEventListener('click', hideChatModal);
+
+document.querySelector("#chat-modal-overlay").addEventListener('click', hideChatModal);

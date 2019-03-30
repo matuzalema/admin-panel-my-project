@@ -608,7 +608,8 @@ template {
       font-size: 0.8rem; }
     .sidebar .sidebar-team .wrapper {
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      cursor: pointer; }
       .sidebar .sidebar-team .wrapper .photo {
         display: inline-block;
         padding: 0 10px 5px 0; }
@@ -617,7 +618,7 @@ template {
         cursor: pointer;
         font-weight: 300; }
         .sidebar .sidebar-team .wrapper .name:hover {
-          color: #ffa200; }
+          color: #fff; }
       .sidebar .sidebar-team .wrapper .round {
         width: 12px;
         height: 11px;

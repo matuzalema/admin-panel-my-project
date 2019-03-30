@@ -81,6 +81,7 @@
 
 		.wrapper {
 			display: flex;
+			cursor: pointer;
 
 			.photo {
 				display: inline-block;
@@ -93,7 +94,7 @@
 				font-weight: 300;
 
 				&:hover {
-					color: $sixth-color-light;
+					color: $fiveth-color-bright;
 				}
 			}
 
