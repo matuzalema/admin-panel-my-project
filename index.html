@@ -1118,11 +1118,12 @@
 
 <!-- =========================== chat modal ============================= -->
 
-<section id="login-modal" class="section--login-modal section-item display">
+<section id="login-modal" class="section--login-modal section-item">
 	<div class="overlay" id="chat-modal-overlay">
 		<div class="modal-chat">
 			<header class="header">
 					<h1>Online chat with yout personal manager</h1>
+					<i class="icon-close icon-chat-close"></i>
 			</header>
 			<div class="chat-manager">
 				<img src="images/photo-team.png">
@@ -1133,11 +1134,19 @@
 					</div>
 				</div>
 			</div>
+			<div class="conversation">
+				<div class="chat chat-menager"><p>Hello. Can I help you?<p></div>
+				<div class="chat chat-user"><p>Hello! I would like to know about Postback</div>
+				<div class="chat chat-menager"><p>Ok. 5 min.</p></div>
+			</div>
 			<form action="#" method="POST">
-				<div class="down-page">
+				<div class="down-page chat-down">
 					<div class="padding-wrapper">
+						<div class="input-wrapper">
+							<i class="icon-message"></i>
 							<input type="text" name="link" placeholder="Enter the message" class="field" />
-							<button class="btn btn-save">Send</button>
+						</div>
+						<button class="btn btn-save">Send</button>
 					</div>
 				</div>
 			</form>

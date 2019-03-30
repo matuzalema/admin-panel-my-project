@@ -1,34 +1,119 @@
 .modal-chat {
 	background-color: #fff;
 	width: 80%;
-	height: 90vh;
 
 	.chat-manager {
 		border-bottom: 1px solid $fourth-color;
 		padding: 10px 0 10px 20px;
 		display: flex;
 		flex-direction: row;
+
 		img {
 			width: 70px;
 			height: 70px;
 			margin-right: 20px;
 		}
+
 		.manager-name {
 			display: flex;
 			flex-direction: column;
+
 			h1 {
 				font-size: 1.5rem;
 				margin: 0;
 				padding: 0;
 			}
-			.status {
-				p{
-				background-color: $eighth-color-dark;
-				color: #fff;
-				padding: 5px;
-				
+
+			.status p {
+			background-color: $eighth-color-dark;
+			color: #fff;
+			padding: 5px;
+			border-radius: 2px;
+			width: 40px;	
+			}	
+		}
+	}
+
+	.conversation {
+		border-bottom: 1px solid $fourth-color;
+		min-height: 270px;
+		
+		.chat {
+			padding: 2px 10px;
+			width: fit-content;
+			margin: 15px;
+			
+			
+			&.chat-menager {
+				background-color: $fiveth-color;
+				position: relative;
+				border-radius: 0 3px 3px 3px;
+				&:after {
+					content:"";
+					position: absolute;
+					top: -9px;
+					left: 0;
+					width: 0;
+					height: 0;
+					border: 5px solid transparent;
+					border-left-color: $fiveth-color;
+					border-bottom-color: $fiveth-color;
+				}
+			}
+
+			&.chat-user {
+				background-color: $third-color-dark;
+				position: relative;
+				color: $fiveth-color-bright;
+				border-radius: 3px 3px  0 3px;
+				&:after {
+					content:"";
+					position: absolute;
+					bottom: -9px;
+					right: 0;
+					width: 0;
+					height: 0;
+					border: 5px solid transparent;
+					border-right-color: $third-color-dark;
+					border-top-color: $third-color-dark;
 				}
 			}
 		}
+	}
+
+	.chat-down .padding-wrapper {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			// justify-content: space-between;
+
+			.input-wrapper {
+				position: relative; 
+				flex: 12;
+
+				i {
+					position: absolute;
+					top: 11px;
+					left: 10px;
+					color: $third-color-dark;
+				}
+
+				input {
+					padding-left: 35px;
+					color: $third-color-dark;
+					margin-bottom: 0;
+					width: 100%;
+				}
+			}
+
+			.btn-save {
+				margin-left: 15px;
+			}
+		}
+	}
+
+@media (max-width: 576px) {
+	.modal-chat h1 {
+		font-size: $fourth-font-size;
 	}
 }
