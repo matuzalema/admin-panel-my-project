@@ -116,9 +116,11 @@
 			<!-- calendar -->
 			<div class="calendar-wrapper">
 				<div class="calendar">
-					<div class="date date1">16.05.2016</div>
-					<div class="date date2">16.05.2016</div>
-					<i class="icon-calendar"></i>
+					<input id="date" type="date" value="2016-05-16" class="date date1" required="required">
+					<div class="calendar-icon">
+						<input id="date" type="date" value="2016-08-16"  class="date date2" required="required">
+						<i class="icon-calendar"></i>
+					</div>
 				</div>
 				<button class="btn icon-refresh"></button>
 			</div>
@@ -163,9 +165,11 @@
 			<!-- calendar -->
 			<div class="calendar-wrapper">
 				<div class="calendar">
-					<div class="date date1">16.05.2016</div>
-					<div class="date date2">16.05.2016</div>
-					<i class="icon-calendar"></i>
+					<input id="date" type="date" value="2016-05-16" class="date date1" required="required">
+					<div class="calendar-icon">
+						<input id="date" type="date" value="2016-08-16"  class="date date2" required="required">
+						<i class="icon-calendar"></i>
+					</div>
 				</div>
 				<button class="btn icon-refresh"></button>
 			</div>
@@ -572,9 +576,11 @@
 			<!-- calendar -->
 			<div class="calendar-wrapper">
 				<div class="calendar">
-					<div class="date date1">16.05.2016</div>
-					<div class="date date2">16.05.2016</div>
-					<i class="icon-calendar"></i>
+					<input id="date" type="date" value="2016-05-16" class="date date1" required="required">
+					<div class="calendar-icon">
+						<input id="date" type="date" value="2016-08-16"  class="date date2" required="required">
+						<i class="icon-calendar"></i>
+					</div>
 				</div>
 				<button class="btn icon-refresh"></button>
 			</div>
@@ -769,143 +775,145 @@
 
 <section id="add-banners" class="section--add-banners section-item display">
 	<div class="overlay" id="add-banners-overlay">
-		<div class="container">
-			<header class="header">
-				<h1>Add banners</h1>
-				<i class="icon-close add-banners-close"></i>
-			</header>
-			<form action="#" method="POST">
-				
-				<div class="row select-3-col">
-					<div class="col-s-12 col-m-5">
-						<label>Scheme name</label>
-						<div class="field">
-							<input type="text" name="name" placeholder="name">
-						</div>
-					</div>
-					<div class="col-s-12 col-m-5">
-						<label>Compain</label>
-						<div class="select-wrapper">
-							<select>
-								<option value="select">Select</option>
-								<option value="option1">option 1</option>
-								<option value="option2">option 2</option>
-								<option value="option 3">option 3 </option>
-							</select>
-						</div>
-					</div>
-					<div class="col-s-12 col-m-2">
-						<label>Language</label>
-						<div class="select-wrapper">
-							<select>
-								<option value="selected">EN</option>
-								<option value="en">PL</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="send">
-					<div class="row">
-						<div class="col col-s-12 col-m-6">
-							<h2> select banners</h2>				
-							<div class="select-banners">
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Banner main
-									<span class="checkmark"></span>
-								</label>						
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Sign up banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Left banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Right banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Bottom banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Long banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Personal cabinet banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Popup banner
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">option
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">option
-									<span class="checkmark"></span>
-								</label>
+		<div class="modal">
+			<div class="container">
+				<header class="header">
+					<h1>Add banners</h1>
+					<i class="icon-close add-banners-close"></i>
+				</header>
+				<form action="#" method="POST">
+					
+					<div class="row select-3-col">
+						<div class="col-s-12 col-m-5">
+							<label>Scheme name</label>
+							<div class="field">
+								<input type="text" name="name" placeholder="name">
 							</div>
 						</div>
-						<div class="col col-s-12 col-m-6">
-							<h2> select websites</h2>				
-							<div class="select-banners">
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Landing page Money
-									<span class="checkmark"></span>
-								</label>						
-								<label class="checkbox-wrapper">
-									<input type="checkbox">LP Your choise
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">LP Wallet
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">E-shop 01
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Toy store
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Book Store
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">Charity
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">LP Icons Store
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">option
-									<span class="checkmark"></span>
-								</label>
-								<label class="checkbox-wrapper">
-									<input type="checkbox">option
-									<span class="checkmark"></span>
-								</label>
+						<div class="col-s-12 col-m-5">
+							<label>Compain</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="select">Select</option>
+									<option value="option1">option 1</option>
+									<option value="option2">option 2</option>
+									<option value="option 3">option 3 </option>
+								</select>
+							</div>
+						</div>
+						<div class="col-s-12 col-m-2">
+							<label>Language</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="selected">EN</option>
+									<option value="en">PL</option>
+								</select>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="down-page">
-					<div class="padding-wrapper">
-							<input type="text" name="link" placeholder="Generated link" class="field" />
-							<button class="btn copy"><i class="icon-links"></i> Copy link</button>
-							<button class="btn btn-save">save</button>
+					<div class="send">
+						<div class="row">
+							<div class="col col-s-12 col-m-6">
+								<h2> select banners</h2>				
+								<div class="select-banners">
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Banner main
+										<span class="checkmark"></span>
+									</label>						
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Sign up banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Left banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Right banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Bottom banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Long banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Personal cabinet banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Popup banner
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">option
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">option
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="col col-s-12 col-m-6">
+								<h2> select websites</h2>				
+								<div class="select-banners">
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Landing page Money
+										<span class="checkmark"></span>
+									</label>						
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Your choise
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Wallet
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">E-shop 01
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Toy store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Book Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Charity
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Icons Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">option
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">option
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</form>			
+					<div class="down-page">
+						<div class="padding-wrapper">
+								<input type="text" name="link" placeholder="Generated link" class="field" />
+								<button class="btn copy"><i class="icon-links"></i> Copy link</button>
+								<button class="btn btn-save">save</button>
+						</div>
+					</div>
+				</form>			
+			</div>
 		</div>
 	</div>	
 </section>
@@ -914,180 +922,184 @@
 
 <section id="add-url" class="section--add-url section-item display">
 	<div class="overlay" id="add-url-overlay">
-		<div class="container">
-			<header class="header">
-				<h1>Add url</h1>
-				<i class="icon-close close-add-url"></i>
-			</header>
-			<form action="#" method="POST">
-				
-				<div class="row select-3-col">
-					<div class="col-s-12 col-m-5">
-						<label>Scheme name</label>
-						<div class="field">
-							<input type="text" name="name" placeholder="name">
+		<div class="modal">
+			<div class="container">
+				<header class="header">
+					<h1>Add url</h1>
+					<i class="icon-close close-add-url"></i>
+				</header>
+				<form action="#" method="POST">
+					
+					<div class="row select-3-col">
+						<div class="col-s-12 col-m-5">
+							<label>Scheme name</label>
+							<div class="field">
+								<input type="text" name="name" placeholder="name">
+							</div>
+						</div>
+						<div class="col-s-12 col-m-5">
+							<label>Select compain</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="select">Select compain</option>
+									<option value="option1">option 1</option>
+									<option value="option2">option 2</option>
+									<option value="option 3">option 3 </option>
+								</select>
+							</div>
+						</div>
+						<div class="col-s-12 col-m-2">
+							<label>Language</label>
+							<div class="select-wrapper">
+								<select>
+									<option value="selected">EN</option>
+									<option value="en">PL</option>
+								</select>
+							</div>
 						</div>
 					</div>
-					<div class="col-s-12 col-m-5">
-						<label>Select compain</label>
-						<div class="select-wrapper">
-							<select>
-								<option value="select">Select compain</option>
-								<option value="option1">option 1</option>
-								<option value="option2">option 2</option>
-								<option value="option 3">option 3 </option>
-							</select>
+						<div class="row">
+							<div class="select-websites">
+								<div class="padding-wrapper">
+									<h2> select websites</h2>				
+								<div class="col col-s-12 col-m-4">
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Landing page Money
+										<span class="checkmark"></span>
+									</label>						
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Your choise
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Wallet
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">E-Shop 01
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Toy Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Book Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Charity
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">PL Icons Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Templates Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Random text
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="col col-s-12 col-m-4">				
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Mobile app
+										<span class="checkmark"></span>
+									</label>						
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Senator free signals
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP DE Your choise
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Invest wisely
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Toy Store LP Sign up page
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Senator Account types
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Senator Mobile app
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Senator Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox"> Senator April Promo
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Language Learning LP
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="col col-s-12 col-m-4">			
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Your second site
+										<span class="checkmark"></span>
+									</label>						
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Your second LP
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Landing page Money
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Your choise
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Wallet
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">E-Shop 01
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Toy Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Book Store
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">Mobile app
+										<span class="checkmark"></span>
+									</label>
+									<label class="checkbox-wrapper">
+										<input type="checkbox">LP Senator free signals
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-s-12 col-m-2">
-						<label>Language</label>
-						<div class="select-wrapper">
-							<select>
-								<option value="selected">EN</option>
-								<option value="en">PL</option>
-							</select>
-						</div>
-					</div>
-				</div>
-					<div class="row">
+					</div>		
+					<div class="down-page">
 						<div class="padding-wrapper">
-							<h2> select websites</h2>				
-						<div class="col col-s-12 col-m-4">
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Landing page Money
-								<span class="checkmark"></span>
-							</label>						
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Your choise
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Wallet
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">E-Shop 01
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Toy Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Book Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Charity
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">PL Icons Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Templates Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Random text
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="col col-s-12 col-m-4">				
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Mobile app
-								<span class="checkmark"></span>
-							</label>						
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Senator free signals
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP DE Your choise
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Invest wisely
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Toy Store LP Sign up page
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Senator Account types
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Senator Mobile app
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Senator Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox"> Senator April Promo
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Language Learning LP
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="col col-s-12 col-m-4">			
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Your second site
-								<span class="checkmark"></span>
-							</label>						
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Your second LP
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Landing page Money
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Your choise
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Wallet
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">E-Shop 01
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Toy Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Book Store
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">Mobile app
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox-wrapper">
-								<input type="checkbox">LP Senator free signals
-								<span class="checkmark"></span>
-							</label>
+								<input type="text" name="link" placeholder="Generated link" class="field" />
+								<button class="btn copy"><i class="icon-links"></i> Copy link</button>
+								<button class="btn btn-save">save</button>
 						</div>
 					</div>
-				</div>		
-				<div class="down-page">
-					<div class="padding-wrapper">
-							<input type="text" name="link" placeholder="Generated link" class="field" />
-							<button class="btn copy"><i class="icon-links"></i> Copy link</button>
-							<button class="btn btn-save">save</button>
-					</div>
-				</div>
-			</form>			
+				</form>			
+			</div>
 		</div>
 	</div>	
 </section>
@@ -1095,7 +1107,7 @@
 <!-- =========================== login modal ============================= -->
 <section id="login-modal" class="section--login-modal section-item display">
 	<div class="overlay" id="login-modal-overlay">
-		<div class="modal-login">
+		<div class="modal modal-login">
 			<header class="header">
 					<h1>Login</h1>
 			</header>
@@ -1120,7 +1132,7 @@
 
 <section id="login-modal" class="section--chat-modal section-item display">
 	<div class="overlay" id="chat-modal-overlay">
-		<div class="modal-chat">
+		<div class="modal modal-chat">
 			<header class="header">
 					<h1>Online chat with yout personal manager</h1>
 					<i class="icon-close icon-chat-close"></i>

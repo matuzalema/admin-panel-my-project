@@ -169,18 +169,28 @@ var btnChatClose = document.querySelector(".icon-chat-close");
 var chatSection = document.querySelector(".section--chat-modal");
 var managerOpenChat = document.querySelector(".manager-chat");
 var btnCloseChat = document.querySelector(".icon-chat-close");
+var modals = document.querySelectorAll(".modal");
+
 
 
 var showChatModal = function(e) {
+	e.preventDefault();
 	chatSection.classList.remove("display");
 };
 
 managerOpenChat.addEventListener('click', showChatModal);
 
 var hideChatModal = function(e) {
+	e.preventDefault();
 	chatSection.classList.add("display");
 };
 
 btnCloseChat.addEventListener('click', hideChatModal);
 
 document.querySelector("#chat-modal-overlay").addEventListener('click', hideChatModal);
+
+for (var i = 0; i < modals.length; i++){
+		modals[i].addEventListener('click', function(event){
+			event.stopPropagation();
+		});
+	}

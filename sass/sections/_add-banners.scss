@@ -1,5 +1,13 @@
-.section--add-banners .container {
-	// margin: 0 auto;
+.section--add-banners
+	.modal {
+		width: 100%;
+
+		.container {
+			margin: 0 auto;
+			display: block;
+			width: 100%;
+			max-width: 1200px;	
+		}
 }
 
 .select-banners {
@@ -9,6 +17,7 @@
 	}
 
 @media (max-width: 992px) {
-	.generate-link {
+	.section--add-banners .header h1{
+		padding: 20px 0;
 	}
 }

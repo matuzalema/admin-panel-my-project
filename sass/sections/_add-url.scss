@@ -1,9 +1,22 @@
 .section--add-url {
-	.container {
-		margin-top: 20px;
-	}
-	.select-3-col {
-		border-bottom: 1px solid $fourth-color;
-		padding: 10px 0;
+	.modal {
+		width: 100%;
+
+		.container {
+			margin: 0 auto;
+			display: block;
+			width: 100%;
+			max-width: 1200px;	
+		}
+
+		.select-3-col {
+			border-bottom: 1px solid $fourth-color;
+			padding: 10px 0;
+		}
+
+		.select-websites {
+			max-height: 400px;
+			overflow-x: hidden;
+		}
 	}
 }

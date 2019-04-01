@@ -19,11 +19,45 @@
 			&:hover {
 				border: 1px solid $third-color-dark;
 			};
+			
+			input {
+				border: none;
+				&::-webkit-inner-spin-button, 
+				&::-webkit-calendar-picker-indicator  
+				{
+					display: none;
+    				-webkit-appearance: none;
+				}
+				&:focus {
+					outline: none;
+				}
+				&:onclick {
+					background-color: red;
+				}
+			}
 
+			.calendar-icon {
+				position: relative;
+
+				.icon-calendar {
+					position: absolute;
+					top: 3px;
+					right: 0;
+					max-width: 13px;
+					max-height: 13px;
+					margin-right: 10px;
+					cursor: pointer;
+
+					&:hover {
+						color: $sixth-color-light;
+					}
+				}
+			}
 			.date1 {
 				border-right: 1px solid $fourth-color;
 				padding-right: 50px;
 				cursor: pointer;
+				
 			}
 
 			.date2 {
@@ -32,19 +66,16 @@
 				cursor: pointer;
 			}
 
-			.icon-calendar{
-				max-width: 13px;
-				max-height: 13px;
-				margin-right: 10px;
-				cursor: pointer;
-
-				&:hover {
-					color: $sixth-color-light;
-				}
-			}
 		}
 
 		.btn {
 			margin-left: 15px;
 		}
 	}
+
+
+	.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}

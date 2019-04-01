@@ -767,6 +767,27 @@ template {
     color: #333333; }
     .calendar-wrapper .calendar:hover {
       border: 1px solid #BABABA; }
+    .calendar-wrapper .calendar input {
+      border: none; }
+      .calendar-wrapper .calendar input::-webkit-inner-spin-button, .calendar-wrapper .calendar input::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none; }
+      .calendar-wrapper .calendar input:focus {
+        outline: none; }
+      .calendar-wrapper .calendar input:onclick {
+        background-color: red; }
+    .calendar-wrapper .calendar .calendar-icon {
+      position: relative; }
+      .calendar-wrapper .calendar .calendar-icon .icon-calendar {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        max-width: 13px;
+        max-height: 13px;
+        margin-right: 10px;
+        cursor: pointer; }
+        .calendar-wrapper .calendar .calendar-icon .icon-calendar:hover {
+          color: #ffa200; }
     .calendar-wrapper .calendar .date1 {
       border-right: 1px solid #e3e3e3;
       padding-right: 50px;
@@ -775,15 +796,13 @@ template {
       padding-left: 17px;
       padding-right: 43px;
       cursor: pointer; }
-    .calendar-wrapper .calendar .icon-calendar {
-      max-width: 13px;
-      max-height: 13px;
-      margin-right: 10px;
-      cursor: pointer; }
-      .calendar-wrapper .calendar .icon-calendar:hover {
-        color: #ffa200; }
   .calendar-wrapper .btn {
     margin-left: 15px; }
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none; }
 
 .scroll-wrapper {
   display: block;
@@ -1199,9 +1218,7 @@ form .create-pixel {
     display: flex;
     width: 100%;
     -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        justify-content: center; }
     .down-page .padding-wrapper input {
       padding-left: 10px;
       width: 80%;
@@ -1213,6 +1230,11 @@ form .create-pixel {
       margin-right: 20px;
       margin-left: 20px;
       min-width: 140px; }
+
+@media (max-width: 576px) {
+  .down-page .padding-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .overlay {
   position: fixed;
@@ -1495,16 +1517,37 @@ form .create-pixel {
       .section--personal-data .container .fields-wrapper .field input {
         width: 100%; } }
 
+.section--add-banners
+.modal {
+  width: 100%; }
+  .section--add-banners
+.modal .container {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1200px; }
+
 .select-banners {
   overflow-x: auto;
   max-height: 340px; }
 
-.section--add-url .container {
-  margin-top: 20px; }
+@media (max-width: 992px) {
+  .section--add-banners .header h1 {
+    padding: 20px 0; } }
 
-.section--add-url .select-3-col {
-  border-bottom: 1px solid #e3e3e3;
-  padding: 10px 0; }
+.section--add-url .modal {
+  width: 100%; }
+  .section--add-url .modal .container {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1200px; }
+  .section--add-url .modal .select-3-col {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 10px 0; }
+  .section--add-url .modal .select-websites {
+    max-height: 400px;
+    overflow-x: hidden; }
 
 .overlay {
   display: -ms-flexbox;
