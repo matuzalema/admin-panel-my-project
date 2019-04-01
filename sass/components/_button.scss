@@ -13,13 +13,16 @@
 	&:hover {
 		background-color: $sixth-color-light;
 	}
+
 	&.icon-general {
 		font-family: glyphter !important;
 	}
+
 	&.add {
 		display: flex;
 		margin: 23px auto;
 	}
+	
 }
 
 .icon-refresh {
@@ -35,6 +38,13 @@
 	align-items: center;
 }
 
+.btn-cancel {
+	background-color: $second-color;
+
+	&:hover {
+		background-color: $third-color-dark;
+	}
+}
 
 .copy {
 	background-color: $third-color-dark;
@@ -47,3 +57,4 @@
 		background-color: $second-color;
 	}
 }
+

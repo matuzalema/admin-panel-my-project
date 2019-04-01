@@ -48,43 +48,43 @@ var navPostback = document.querySelector(".nav-postback");
 
 var removeDisplayClass = function(){
 	for (var i = 0; i < sectionItems.length; i++) {
-		sectionItems[i].classList.add("display");
+		sectionItems[i].classList.add("hide");
 	}
 };
 
 navGeneral.addEventListener('click', function(){
 	removeDisplayClass();
-	generlSection.classList.toggle("display");
+	generlSection.classList.toggle("hide");
 });
 
 navDetails.addEventListener('click', function(){
 	removeDisplayClass();
-	detailsSection.classList.toggle("display");
+	detailsSection.classList.toggle("hide");
 });
 
 navLinks.addEventListener('click', function(){
 	removeDisplayClass();
-	linksSection.classList.toggle("display");
+	linksSection.classList.toggle("hide");
 });
 
 navBanners.addEventListener('click', function(){
 	removeDisplayClass();
-	bannersSection.classList.toggle("display");
+	bannersSection.classList.toggle("hide");
 });
 
 navPersonalData.addEventListener('click', function(){
 	removeDisplayClass();
-	personalDataSection.classList.toggle("display");
+	personalDataSection.classList.toggle("hide");
 });
 
 navPayout.addEventListener('click', function(){
 	removeDisplayClass();
-	payoutSection.classList.toggle("display");
+	payoutSection.classList.toggle("hide");
 });
 
 navPostback.addEventListener('click', function(){
 	removeDisplayClass();
-	postbackSection.classList.toggle("display");
+	postbackSection.classList.toggle("hide");
 });
 
 for (var i = 0; i < navItems.length; i++) {
@@ -102,7 +102,7 @@ var btnAddBannersClose = document.querySelector(".add-banners-close");
 
 var showAddBanners = function(e){
 	e.preventDefault();
-	document.querySelector(".section--add-banners").classList.toggle("display");
+	document.querySelector(".section--add-banners").classList.toggle("hide");
 };
 
 for (var i=0; i<btnsAddBanners.length; i++) {
@@ -111,7 +111,7 @@ for (var i=0; i<btnsAddBanners.length; i++) {
 
 var hideModalAddBanner = function(e){
 	e.preventDefault();
-	document.querySelector(".section--add-banners").classList.add("display");
+	document.querySelector(".section--add-banners").classList.add("hide");
 };
 
 
@@ -127,7 +127,7 @@ var btnAddUrlClose = document.querySelector(".close-add-url");
 
 var showAddUrl = function(e){
 	e.preventDefault();
-	bannerAddUrl.classList.toggle("display");
+	bannerAddUrl.classList.toggle("hide");
 };
 
 for (var i=0; i<btnsAddUrl.length; i++){
@@ -136,7 +136,7 @@ for (var i=0; i<btnsAddUrl.length; i++){
 
 var hideModalAddUrl = function(e) {
 	e.preventDefault();
-	bannerAddUrl.classList.add("display");
+	bannerAddUrl.classList.add("hide");
 };
 
 btnAddUrlClose.addEventListener('click', hideModalAddUrl);
@@ -150,13 +150,13 @@ var navLogin = document.querySelector(".login");
 var btnLoginEnter = document.querySelector(".btn-login-enter");
 
 var showLogin = function(e) {
-	loginSection.classList.remove("display");
+	loginSection.classList.remove("hide");
 };
 
 navLogin.addEventListener('click', showLogin);
 
 var hideModalLogin = function(e) {
-	loginSection.classList.add("display");
+	loginSection.classList.add("hide");
 };
 
 btnLoginEnter.addEventListener('click', hideModalLogin);
@@ -175,22 +175,47 @@ var modals = document.querySelectorAll(".modal");
 
 var showChatModal = function(e) {
 	e.preventDefault();
-	chatSection.classList.remove("display");
+	chatSection.classList.remove("hide");
 };
 
 managerOpenChat.addEventListener('click', showChatModal);
 
 var hideChatModal = function(e) {
 	e.preventDefault();
-	chatSection.classList.add("display");
+	chatSection.classList.add("hide");
 };
 
 btnCloseChat.addEventListener('click', hideChatModal);
 
 document.querySelector("#chat-modal-overlay").addEventListener('click', hideChatModal);
 
+
+// ======================== modal chat =============================
+
+var navQuite = document.querySelector(".quite");
+var quiteSection = document.querySelector(".section--quit-modal");
+var btnQuit = document.querySelector(".btn-quit");
+var btnCancel = document.querySelector(".btn-cancel");
+var quitOverlay = document.querySelector("#quit-modal-overlay");
+
+navQuite.addEventListener('click', function(){
+	quiteSection.classList.remove("hide");
+});
+
+var hideQuitModal = function(e) {
+	e.preventDefault();
+	quiteSection.classList.add('hide');
+};
+
+btnQuit.addEventListener('click', hideQuitModal);
+btnCancel.addEventListener('click', hideQuitModal);
+quitOverlay.addEventListener('click', hideQuitModal);
+
+// ======================== modals - stop propagation  =============================
+
 for (var i = 0; i < modals.length; i++){
 		modals[i].addEventListener('click', function(event){
 			event.stopPropagation();
 		});
 	}
+

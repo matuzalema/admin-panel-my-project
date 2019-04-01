@@ -1,4 +1,5 @@
 form {
+
 	h2 {
 		font-size: $third-font-size;
 		color: $second-color;
@@ -16,18 +17,22 @@ form {
 
 	textarea {
 		margin-top: 10px;
-			width: 100%;
-			min-height: 200px;
-			border: 1px solid $fourth-color;
-			padding: 10px;
-			color: $third-color-dark;
-			font-size: $fiveth-font-size;
-			resize: none;
+		width: 100%;
+		min-height: 200px;
+		border: 1px solid $fourth-color;
+		padding: 10px;
+		color: $third-color-dark;
+		font-size: $fiveth-font-size;
+		resize: none;
 
-			&:hover {
-				border: 1px solid $third-color-dark;
-			}
+		&:hover {
+			border: 1px solid $third-color-dark;
 		}
+
+		&:focus {
+			outline: none;
+		}
+	}
 
 	input, select {
 		border: 1px solid $fourth-color;
@@ -224,9 +229,6 @@ form {
 		margin: 20px 10px 20px auto;
 	}
 }
-
-
-
 
 @media (max-width: 576px) {
 	.section--postback .container {

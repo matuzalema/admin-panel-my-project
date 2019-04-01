@@ -6,76 +6,71 @@
 	min-height: 110px;
 	border-bottom: 1px solid $fourth-color;
 
-		.calendar {
-			border: 1px solid $fourth-color;
-			height: 40px;
-			display: flex;
-			align-items: center;
-			padding: 17px;
-			border-radius: 3px;
-			font-size: $fourth-font-size;
-			max-width: 325px;
-			color: $main-color;
-			&:hover {
-				border: 1px solid $third-color-dark;
-			};
-			
-			input {
-				border: none;
-				&::-webkit-inner-spin-button, 
-				&::-webkit-calendar-picker-indicator  
-				{
-					display: none;
-    				-webkit-appearance: none;
-				}
-				&:focus {
-					outline: none;
-				}
-				&:onclick {
-					background-color: red;
-				}
+	.calendar {
+		border: 1px solid $fourth-color;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		padding: 17px;
+		border-radius: 3px;
+		font-size: $fourth-font-size;
+		max-width: 325px;
+		color: $main-color;
+
+		&:hover {
+			border: 1px solid $third-color-dark;
+		};
+		
+		input {
+			border: none;
+
+			&::-webkit-inner-spin-button, 
+			&::-webkit-calendar-picker-indicator  {
+				display: none;
+				-webkit-appearance: none;
 			}
 
-			.calendar-icon {
-				position: relative;
-
-				.icon-calendar {
-					position: absolute;
-					top: 3px;
-					right: 0;
-					max-width: 13px;
-					max-height: 13px;
-					margin-right: 10px;
-					cursor: pointer;
-
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
-			}
-			.date1 {
-				border-right: 1px solid $fourth-color;
-				padding-right: 50px;
-				cursor: pointer;
-				
+			&:focus {
+				outline: none;
 			}
 
-			.date2 {
-				padding-left: 17px;
-				padding-right: 43px;
-				cursor: pointer;
+			&:onclick {
+				background-color: red;
 			}
-
 		}
 
-		.btn {
-			margin-left: 15px;
+		.calendar-icon {
+			position: relative;
+
+			.icon-calendar {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				max-width: 13px;
+				max-height: 13px;
+				margin-right: 10px;
+				cursor: pointer;
+
+				&:hover {
+					color: $sixth-color-light;
+				}
+			}
+		}
+
+		.date-first {
+			border-right: 1px solid $fourth-color;
+			padding-right: 50px;
+			cursor: pointer;	
+		}
+
+		.date-second {
+			padding-left: 17px;
+			padding-right: 43px;
+			cursor: pointer;
 		}
 	}
 
-
-	.unstyled::-webkit-inner-spin-button,
-.unstyled::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+	.btn {
+		margin-left: 15px;
+	}
 }

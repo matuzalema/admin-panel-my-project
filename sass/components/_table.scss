@@ -17,6 +17,7 @@
 		}
 
 		tbody tr {
+
 			&:hover {
 				background-color: $fiveth-color;
 			}
@@ -31,6 +32,7 @@
 }
 
 @media (max-width: 767px) {
+
 	table {
 		border: 0;
 		min-width: 80%;
@@ -45,7 +47,7 @@
 			padding: 0;
 			position: absolute;
 			width: 1px;
-			}
+		}
 
 		tbody {
 

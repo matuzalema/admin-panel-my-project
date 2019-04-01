@@ -48,6 +48,7 @@
 				background-color: $fiveth-color;
 				position: relative;
 				border-radius: 0 3px 3px 3px;
+
 				&:after {
 					content:"";
 					position: absolute;
@@ -66,6 +67,7 @@
 				position: relative;
 				color: $fiveth-color-bright;
 				border-radius: 3px 3px  0 3px;
+
 				&:after {
 					content:"";
 					position: absolute;
@@ -82,35 +84,34 @@
 	}
 
 	.chat-down .padding-wrapper {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			// justify-content: space-between;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 
-			.input-wrapper {
-				position: relative; 
-				flex: 12;
+		.input-wrapper {
+			position: relative; 
+			flex: 12;
 
-				i {
-					position: absolute;
-					top: 11px;
-					left: 10px;
-					color: $third-color-dark;
-				}
-
-				input {
-					padding-left: 35px;
-					color: $third-color-dark;
-					margin-bottom: 0;
-					width: 100%;
-				}
+			i {
+				position: absolute;
+				top: 11px;
+				left: 10px;
+				color: $third-color-dark;
 			}
 
-			.btn-save {
-				margin-left: 15px;
+			input {
+				padding-left: 35px;
+				color: $third-color-dark;
+				margin-bottom: 0;
+				width: 100%;
 			}
 		}
+
+		.btn-save {
+			margin-left: 15px;
+		}
 	}
+}
 
 @media (max-width: 576px) {
 	.modal-chat h1 {

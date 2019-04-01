@@ -11,14 +11,13 @@
 @import "../sass/components/_pagination.scss";
 @import "../sass/components/_header.scss";
 @import "../sass/components/_button.scss";
-@import "../sass/components/_link_item.scss";
+// @import "../sass/components/_link_item.scss";
 @import "../sass/components/_sidebar.scss";
 @import "../sass/components/_calendar.scss";
 @import "../sass/components/_table.scss";
 @import "../sass/components/_scrollbar.scss";
-@import "../sass/components/_range-input.scss";
 @import "../sass/components/_glyphter.scss";
-@import "../sass/components/_inputs-form-3-col.scss";
+@import "../sass/components/_inputs-form.scss";
 @import "../sass/components/_checkboxes.scss";
 @import "../sass/components/_input.scss";
 @import "../sass/components/_down-page.scss";
@@ -26,9 +25,8 @@
 
 /* Sections */
 @import "../sass/sections/_general.scss";
-@import "../sass/sections/_details.scss";
+// @import "../sass/sections/_details.scss";
 @import "../sass/sections/_links.scss";
-@import "../sass/sections/_sidebar.scss";
 @import "../sass/sections/_banners.scss";
 @import "../sass/sections/_payout.scss";
 @import "../sass/sections/_postback.scss";
@@ -37,6 +35,8 @@
 @import "../sass/sections/_add-url.scss";
 @import "../sass/sections/_login.scss";
 @import "../sass/sections/_chat.scss";
+@import "../sass/sections/_quit.scss";
+
 
 
 
@@ -44,28 +44,22 @@
 
 html {
   font-size: 16px;
-}
 
-body {
-  background-color: $fiveth-color;
-}
-
-.container {
-  background-color: $fiveth-color-bright;
-  width: calc(100% - 212px);
-  margin: 70px 12px 0 200px;
-  display: inline-block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.display {
-  display: none;
-}
-
-@media (max-width: 576px)  {
   body {
-    padding-top: 0;
+    background-color: $fiveth-color;
+    
+    .container {
+      background-color: $fiveth-color-bright;
+      width: calc(100% - 212px);
+      margin: 70px 12px 0 200px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
   }
+}
+
+.hide {
+  display: none;
 }
 
 .display {
@@ -180,12 +174,17 @@ a {
 
 
 @media (max-width: 576px) {
-  .container {
-    margin: 0 0 0 50px;
-    width: calc(100% - 50px);
+  body {
+    padding-top: 0;
+    margin-top: 0;
+  
+    .container {
+      margin: 0 0 0 50px;
+      width: calc(100% - 50px);
 
-    .header {
-      text-align: center;
+      .header {
+        text-align: center;
+      }
     }
-}
+  }
 }

@@ -39,6 +39,7 @@
 				background-color: $sixth-color;
 				border: none;
 				border-radius: 1px;
+
 				&::-webkit-slider-thumb {
 					appearance: none;
 					width: 0;
@@ -48,7 +49,7 @@
 					border-bottom: 20px solid $sixth-color;
 					cursor: pointer;
 					margin-top: 25px;
-					}
+				}
 
 				&::-moz-range-thumb  {
 					border: 1px solid $third-color-dark;
@@ -58,12 +59,12 @@
 					height: 15px;
 				}
 
-				&::before{
+				&::before {
 					content: "0";
 					position: absolute;
 					bottom: 7px;
 					font-size: $third-font-size;
-					}
+				}
 
 				&::after {
 					content: "168";
@@ -74,7 +75,7 @@
 				}
 			}
 
-			.hours-range{
+			.hours-range {
 				margin: 40px 0 10px 0;
 				display: inline;
 				font-size: $fourth-font-size;

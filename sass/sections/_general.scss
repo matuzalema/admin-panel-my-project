@@ -1,4 +1,5 @@
-.section--general {	
+.section--general {
+
 	.values {
 		display: flex;
 		flex-direction: row;
@@ -47,14 +48,3 @@
 		text-align: center;
 	}
 }
-
-@media (max-width: 576px) {
-	.section--general .container {
-		margin: 0 0 0 50px;
-		width: calc(100% - 50px);
-		.header {
-			text-align: center;
-		}
-	}
-}
-

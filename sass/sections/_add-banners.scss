@@ -1,23 +1,24 @@
-.section--add-banners
-	.modal {
-		width: 100%;
+.section--add-banners .modal {
+	width: 100%;
 
-		.container {
-			margin: 0 auto;
-			display: block;
-			width: 100%;
-			max-width: 1200px;	
+	.container {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+		max-width: 1200px;
+
+		.select-banners {
+			overflow-x: auto;
+			max-height: 340px;
 		}
+	}
 }
 
-.select-banners {
-		overflow-x: auto;
-		max-height: 340px;
-
-	}
 
 @media (max-width: 992px) {
-	.section--add-banners .header h1{
-		padding: 20px 0;
+	.section--add-banners {
+		.header h1{
+			padding: 20px 0;
+		}
 	}
 }

@@ -1,8 +1,7 @@
 .section--personal-data .container {
 	padding: 0;
 
-	.fields-wrapper {
-			
+	.fields-wrapper {			
 		padding: 20px 0;
 		border-bottom: 1px solid $fourth-color;
 
@@ -14,29 +13,28 @@
 
 			input {
 			width: 70%;
-			 }
+			}
 		}
 	}
 }
 
 @media (max-width: 767px) {
 	.section--personal-data .container {
+
 		.fields-wrapper {
 			padding: 0 0 30px 0;
 
 			.field {
 				padding: 20px 20px;
-				// max-width: 726px;
-				// width: 100%;
-				// margin: 0 auto;
+		
 				.col-s-12 {
 					padding: 2.5px 0;
 				}
+				
 				input {
-				width: 100%;
-				 }
+					width: 100%;
+				}
 			}
 		}
 	}
-
 }
