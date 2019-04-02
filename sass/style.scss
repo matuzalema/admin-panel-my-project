@@ -11,7 +11,6 @@
 @import "../sass/components/_pagination.scss";
 @import "../sass/components/_header.scss";
 @import "../sass/components/_button.scss";
-// @import "../sass/components/_link_item.scss";
 @import "../sass/components/_sidebar.scss";
 @import "../sass/components/_calendar.scss";
 @import "../sass/components/_table.scss";
@@ -25,7 +24,6 @@
 
 /* Sections */
 @import "../sass/sections/_general.scss";
-// @import "../sass/sections/_details.scss";
 @import "../sass/sections/_links.scss";
 @import "../sass/sections/_banners.scss";
 @import "../sass/sections/_payout.scss";
@@ -36,11 +34,6 @@
 @import "../sass/sections/_login.scss";
 @import "../sass/sections/_chat.scss";
 @import "../sass/sections/_quit.scss";
-
-
-
-
-
 
 html {
   font-size: 16px;
@@ -58,12 +51,28 @@ html {
   }
 }
 
+@media (max-width: 576px) {
+  html body {
+    padding-top: 0;
+    margin-top: 0;
+  
+    .container {
+      margin: 0 0 0 50px;
+      width: calc(100% - 50px);
+
+      .header {
+        text-align: center;
+      }
+    }
+  }
+}
+
 .hide {
   display: none;
 }
 
-.display {
-  display: none;
+.sidebar-min {
+  width: 50px;
 }
 
 .padding-wrapper {
@@ -173,18 +182,4 @@ a {
 }
 
 
-@media (max-width: 576px) {
-  body {
-    padding-top: 0;
-    margin-top: 0;
-  
-    .container {
-      margin: 0 0 0 50px;
-      width: calc(100% - 50px);
 
-      .header {
-        text-align: center;
-      }
-    }
-  }
-}

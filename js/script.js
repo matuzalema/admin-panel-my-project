@@ -190,7 +190,7 @@ btnCloseChat.addEventListener('click', hideChatModal);
 document.querySelector("#chat-modal-overlay").addEventListener('click', hideChatModal);
 
 
-// ======================== modal chat =============================
+// ======================== modal quit =============================
 
 var navQuite = document.querySelector(".quite");
 var quiteSection = document.querySelector(".section--quit-modal");
@@ -218,4 +218,18 @@ for (var i = 0; i < modals.length; i++){
 			event.stopPropagation();
 		});
 	}
+
+if(screen.width <= 600){
+
+	var addMinSidebar = function(e){
+		e.preventDefault();
+		document.querySelector(".sidebar").classList.toggle("sidebar-mobile");
+	};
+
+	navDetails.addEventListener("click", addMinSidebar);
+}
+
+for (var i=0; i<navItems.length; i++){
+	navItems[i].addEventListener('click', addMinSidebar);
+}
 

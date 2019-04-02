@@ -4,8 +4,7 @@
 	.container {
 		margin: 0 auto;
 		display: block;
-		width: 100%;
-		max-width: 1200px;
+		width: 80%;
 
 		.select-banners {
 			overflow-x: auto;
@@ -22,3 +21,18 @@
 		}
 	}
 }
+
+// @media (max-width: 576px) {
+//  .section--add-banners .modal {
+	
+		
+// 		.container {
+			
+			
+// 		}
+
+// 		.select-banners {
+			
+// 		}
+// 	}
+// }
