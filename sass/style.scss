@@ -3,7 +3,6 @@
 @import "normalize";
 @import "layout";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
-
 @import "../images/icons/icon-font/css/Glyphter.css";
 
 /* Components */
@@ -34,59 +33,6 @@
 @import "../sass/sections/_login.scss";
 @import "../sass/sections/_chat.scss";
 @import "../sass/sections/_quit.scss";
-
-html {
-  font-size: 16px;
-
-  body {
-    background-color: $fiveth-color;
-    
-    .container {
-      background-color: $fiveth-color-bright;
-      width: calc(100% - 212px);
-      margin: 70px 12px 0 200px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  html body {
-    padding-top: 0;
-    margin-top: 0;
-  
-    .container {
-      margin: 0 0 0 50px;
-      width: calc(100% - 50px);
-
-      .header {
-        text-align: center;
-      }
-    }
-  }
-}
-
-.hide {
-  display: none;
-}
-
-.sidebar-min {
-  width: 50px;
-}
-
-.padding-wrapper {
-  padding: 0 15px;
-}
-
-.wrapper {
-  max-width: 726px;
-  margin: 0 auto;
-}
-
-.icon-close:hover {
-  color: $sixth-color;
-}
 
 .row:before,
 .row:after {
@@ -122,6 +68,7 @@ html {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
+
 @media (min-width: 768px) {
     /* For desktop: */
     .col-m-1 {width: 8.33%;}
@@ -143,43 +90,82 @@ html {
 }
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-	font-family: $main-font;
+  background-color: $fiveth-color;
+  font-family: $main-font;
+
+  .container {
+    background-color: $fiveth-color-bright;
+    width: calc(100% - 212px);
+    margin: 70px 12px 0 200px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 h1 {
-	font-size: $first-font-size;
+  font-size: $first-font-size;
 }
 
 h2 {
-	font-size: $second-font-size;
+  font-size: $second-font-size;
 }
 
 h3 {
-	font-size: $third-font-size;
+  font-size: $third-font-size;
 }
 
 h4 {
-	font-size: $fourth-font-size;
+  font-size: $fourth-font-size;
 }
 
 p {
-	font-size: $fiveth-font-size;
+  font-size: $fiveth-font-size;
 }
 
 ul>li, ol>li {
-	font-size: $fourth-font-size;
+  font-size: $fourth-font-size;
 }
 
 a {
-	font-size: $fourth-font-size;
-	font-weight: 300;
-	color: #56819f;
-	text-decoration: none;
+  font-size: $fourth-font-size;
+  font-weight: 300;
+  color: #56819f;
+  text-decoration: none;
 }
 
+.hide {
+  display: none;
+}
 
+.padding-wrapper {
+  padding: 0 15px;
+}
 
+.wrapper {
+  max-width: 726px;
+  margin: 0 auto;
+}
+
+.icon-close:hover {
+  color: $sixth-color;
+}
+
+@media (max-width: 576px) {
+  html body {
+    padding-top: 0;
+    margin-top: 0;
+  
+    .container {
+      margin: 0 0 0 50px;
+      width: calc(100% - 50px);
+
+      .header {
+        text-align: center;
+      }
+    }
+  }
+}
