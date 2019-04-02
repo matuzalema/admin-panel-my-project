@@ -223,7 +223,7 @@ if(screen.width <= 600){
 
 	var addMinSidebar = function(e){
 		e.preventDefault();
-		document.querySelector(".sidebar").classList.toggle("sidebar-mobile");
+		document.querySelector(".sidebar").classList.remove("sidebar-mobile");
 	};
 
 	navDetails.addEventListener("click", addMinSidebar);
@@ -233,3 +233,21 @@ for (var i=0; i<navItems.length; i++){
 	navItems[i].addEventListener('click', addMinSidebar);
 }
 
+// ======================== btn save =============================
+var btnsSave = document.querySelectorAll(".btn-save");
+
+for (var i=0; i<btnsSave.length; i++){
+
+}
+btnSave.addEventListener("click", hideModalAddUrl);
+
+
+// ======================== btn save =============================
+
+var modal = document.querySelectorAll('.modal');
+
+var hideModal = function(e) {
+	for (var i=0; i<modal.length; i++){
+		modal[i].classList.add("hide");
+	}
+};
