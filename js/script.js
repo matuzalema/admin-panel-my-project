@@ -7,18 +7,6 @@ hamburgerIcon.addEventListener('click', function(){
 	sidebar.classList.toggle("sidebar-mobile");
 });
 
-
-// ======================== range =====================================================
-
-var range = document.getElementById("range");
-var output = document.querySelector(".hours-range");
-output.innerHTML = range.value;
-
-range.oninput = function() {
-  output.innerHTML = this.value;
-};
-
-
 // ======================== navigation toggle class active =============================
 
 // sections items
@@ -33,6 +21,7 @@ var payoutSection = document.querySelector(".section--payout");
 var postbackSection = document.querySelector(".section--postback");
 var addBannersSection = document.querySelector(".section--add-banners");
 var addUrlSection = document.querySelector(".section--add-url");
+var bannerAddUrl = document.querySelector(".section--add-url");
 
 // navigation items
 var navItems = document.getElementsByClassName("menu-item");
@@ -45,6 +34,47 @@ var navPersonalData = document.querySelector(".nav-personal-data");
 var navPayout = document.querySelector(".nav-payout");
 var navPostback = document.querySelector(".nav-postback");
 
+// banners
+var btnsAddBanners = document.querySelectorAll(".btn-add-banners");
+var btnAddBannersClose = document.querySelector(".add-banners-close");
+
+// url
+var btnsAddUrl = document.querySelectorAll(".add-url");
+var btnAddUrlClose = document.querySelector(".close-add-url");
+
+// range
+var range = document.getElementById("range");
+var output = document.querySelector(".hours-range");
+
+//login
+var loginSection = document.querySelector(".section--login-modal");
+var navLogin = document.querySelector(".login");
+var btnLoginEnter = document.querySelector(".btn-login-enter");
+
+//chat
+var btnChatClose = document.querySelector(".icon-chat-close");
+var chatSection = document.querySelector(".section--chat-modal");
+var managerOpenChat = document.querySelector(".manager-chat");
+var btnCloseChat = document.querySelector(".icon-chat-close");
+
+// modals
+var modals = document.querySelectorAll(".modal");
+var btnsSave = document.querySelectorAll(".btn-save");
+var modal = document.querySelectorAll('.modal');
+
+//modal quit
+var navQuite = document.querySelector(".quite");
+var quiteSection = document.querySelector(".section--quit-modal");
+var btnQuit = document.querySelector(".btn-quit");
+var btnCancel = document.querySelector(".btn-cancel");
+var quitOverlay = document.querySelector("#quit-modal-overlay");
+// ======================== range =====================================================
+
+output.innerHTML = range.value;
+
+range.oninput = function() {
+  output.innerHTML = this.value;
+};
 
 var removeDisplayClass = function(){
 	for (var i = 0; i < sectionItems.length; i++) {
@@ -89,16 +119,13 @@ navPostback.addEventListener('click', function(){
 
 for (var i = 0; i < navItems.length; i++) {
 	navItems[i].addEventListener("click", function() {
-	var current = document.getElementsByClassName("active");
-	current[0].className = current[0].className.replace(" active", "");
-	this.className += " active";
-	});
-}
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+		});
+	}
 
 // ======================== modal add banners =============================
-
-var btnsAddBanners = document.querySelectorAll(".btn-add-banners");
-var btnAddBannersClose = document.querySelector(".add-banners-close");
 
 var showAddBanners = function(e){
 	e.preventDefault();
@@ -114,16 +141,11 @@ var hideModalAddBanner = function(e){
 	document.querySelector(".section--add-banners").classList.add("hide");
 };
 
-
 btnAddBannersClose.addEventListener('click', hideModalAddBanner);
 
 document.querySelector("#add-banners-overlay").addEventListener('click', hideModalAddBanner);
 
 // ======================== modal add url =============================
-
-var btnsAddUrl = document.querySelectorAll(".add-url");
-var bannerAddUrl = document.querySelector(".section--add-url");
-var btnAddUrlClose = document.querySelector(".close-add-url");
 
 var showAddUrl = function(e){
 	e.preventDefault();
@@ -145,10 +167,6 @@ document.querySelector("#add-url-overlay").addEventListener('click', hideModalAd
 
 // ======================== modal login =============================
 
-var loginSection = document.querySelector(".section--login-modal");
-var navLogin = document.querySelector(".login");
-var btnLoginEnter = document.querySelector(".btn-login-enter");
-
 var showLogin = function(e) {
 	loginSection.classList.remove("hide");
 };
@@ -164,14 +182,6 @@ btnLoginEnter.addEventListener('click', hideModalLogin);
 document.querySelector("#login-modal-overlay").addEventListener('click', hideModalLogin);
 
 // ======================== modal chat =============================
-
-var btnChatClose = document.querySelector(".icon-chat-close");
-var chatSection = document.querySelector(".section--chat-modal");
-var managerOpenChat = document.querySelector(".manager-chat");
-var btnCloseChat = document.querySelector(".icon-chat-close");
-var modals = document.querySelectorAll(".modal");
-
-
 
 var showChatModal = function(e) {
 	e.preventDefault();
@@ -191,12 +201,6 @@ document.querySelector("#chat-modal-overlay").addEventListener('click', hideChat
 
 
 // ======================== modal quit =============================
-
-var navQuite = document.querySelector(".quite");
-var quiteSection = document.querySelector(".section--quit-modal");
-var btnQuit = document.querySelector(".btn-quit");
-var btnCancel = document.querySelector(".btn-cancel");
-var quitOverlay = document.querySelector("#quit-modal-overlay");
 
 navQuite.addEventListener('click', function(){
 	quiteSection.classList.remove("hide");
@@ -231,4 +235,23 @@ if (screen.width <= 600){
 
 for (var i=0; i<navItems.length; i++){
 	navItems[i].addEventListener('click', addMinSidebar);
+}
+
+// ======================== btn save =============================
+
+for (var i=0; i<btnsSave.length; i++){
+
+}
+
+btnSave.addEventListener("click", hideModalAddUrl);
+
+
+var hideModal = function(e) {
+	for (var i=0; i<modal.length; i++){
+		modal[i].classList.add("hide");
+	}
+};
+
+for (var i=0; i<btnsSave.length; i++) {
+	btnsSave[i].addEventListener('click', hideModal);
 }
