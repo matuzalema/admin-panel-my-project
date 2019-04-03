@@ -59,7 +59,6 @@ var btnCloseChat = document.querySelector(".icon-chat-close");
 
 // modals
 var modals = document.querySelectorAll(".modal");
-var btnsSave = document.querySelectorAll(".btn-save");
 var modal = document.querySelectorAll('.modal');
 
 //modal quit
@@ -68,6 +67,8 @@ var quiteSection = document.querySelector(".section--quit-modal");
 var btnQuit = document.querySelector(".btn-quit");
 var btnCancel = document.querySelector(".btn-cancel");
 var quitOverlay = document.querySelector("#quit-modal-overlay");
+
+var btnSave = document.querySelector(".btn-save");
 // ======================== range =====================================================
 
 output.innerHTML = range.value;
@@ -237,21 +238,15 @@ for (var i=0; i<navItems.length; i++){
 	navItems[i].addEventListener('click', addMinSidebar);
 }
 
-// ======================== btn save =============================
-
-for (var i=0; i<btnsSave.length; i++){
-
-}
-
-btnSave.addEventListener("click", hideModalAddUrl);
+// // ======================== btn save =============================
 
 
-var hideModal = function(e) {
-	for (var i=0; i<modal.length; i++){
-		modal[i].classList.add("hide");
-	}
-};
+// var hideModal = function(e) {
+// 	for (var i=0; i<modal.length; i++){
+// 		modal[i].classList.add("hide");
+// 	}
+// };
 
-for (var i=0; i<btnsSave.length; i++) {
-	btnsSave[i].addEventListener('click', hideModal);
-}
+// for (var i=0; i<btnsSave.length; i++) {
+// 	btnsSave[i].addEventListener('click', hideModal);
+// }
