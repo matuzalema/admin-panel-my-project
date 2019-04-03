@@ -451,7 +451,7 @@
 				<header class="header">
 					<h1>Personal data</h1>
 				</header>
-				<form action="#" method="POST">
+				<form action="" method="POST">
 					<div class="fields-wrapper">
 						<div class="row">
 							<div class="field">
@@ -675,22 +675,22 @@
 					<h1>New postback</h1>
 				</header>
 				<p>You can insert some parameters in this postback</p>
-				<form action="#" method="POST">
+				<form action="" method="POST">
 					<div class="row">
 						<div class="col-s-12 col-m-6">
 							<label>Signup</label>
-							<textarea class="textarea">crm_userld=%user_id% <br> subid=%p%</textarea>
+							<textarea class="textarea" name="signup">crm_userld=%user_id% <br> subid=%p%</textarea>
 						</div>
 						<div class="col-s-12 col-m-6">
 							<label>Deposit</label>
-							<textarea>crm_userld=%user_id% <br> subid=%p%</textarea>
+							<textarea name="deposit">crm_userld=%user_id% <br> subid=%p%</textarea>
 						</div>
 					</div>
 					<div class="row select-3-col">
 						<div class="col-s-12 col-m-4">
 							<label>Postback type</label>
 							<div class="select-wrapper">
-								<select>
+								<select name="postback">
 									<option value="S2">S2S(http//..)</option>
 									<option value="http://www.blurax.com">http://www.blurax.com</option>
 									<option value="http://www.currently.com">http://www.currently.com</option>
@@ -701,7 +701,7 @@
 						<div class="col-s-12 col-m-4">
 							<label>To countries</label>
 							<div class="select-wrapper">
-								<select>
+								<select name="countries">
 									<option value="france">Select countries</option>
 									<option value="france">France</option>
 									<option value="poland">Poland</option>
@@ -712,7 +712,7 @@
 						<div class="col-s-12 col-m-4">
 							<label>Sending options</label>
 							<div class="select-wrapper">
-								<select>
+								<select name="select-option">
 									<option value="selected">Select</option>
 									<option value="option 1">option 1</option>
 									<option value="option 2">option 2</option>
@@ -727,35 +727,35 @@
 									<h2> <span>NOT</span> send statues </h2>				
 								<div class="statuses">
 									<label class="checkbox-wrapper">
-										<input type="checkbox">checkNumber
+										<input type="checkbox" name="check-number">checkNumber
 										<span class="checkmark"></span>
 									</label>						
 									<label class="checkbox-wrapper">
-										<input type="checkbox">noAnswer
+										<input type="checkbox" name="no-answer">noAnswer
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">noCall
+										<input type="checkbox" name="no-call">noCall
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">callAgain
+										<input type="checkbox" name="call-again">callAgain
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">option
+										<input type="checkbox" name="option-one">option
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">option2
+										<input type="checkbox" name="option-two">option2
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">option3
+										<input type="checkbox" name="option-three">option3
 										<span class="checkmark"></span>
 									</label>
 									<label class="checkbox-wrapper">
-										<input type="checkbox">option4
+										<input type="checkbox" name="option-four">option4
 										<span class="checkmark"></span>
 									</label>
 								</div>
@@ -763,7 +763,7 @@
 							<div class="col col-s-12 col-m-6">
 								<h2> Send after </h2>
 								<div class="range-wrapper">
-									<input type="range" min="1" max="168" value="104" class="range" id="range"/>
+									<input name="range" type="range" min="1" max="168" value="104" class="range" id="range"/>
 									<p class="hours-range"></p>
 									<p class="hours-value"> hours</p>
 								</div>
@@ -785,7 +785,7 @@
 							<h1>Add banners</h1>
 							<i class="icon-close add-banners-close"></i>
 						</header>
-						<form action="#" method="POST">
+						<form action="" method="POST">
 							<div class="row select-3-col">
 								<div class="col-s-12 col-m-5">
 									<label>Scheme name</label>
@@ -796,7 +796,7 @@
 								<div class="col-s-12 col-m-5">
 									<label>Compain</label>
 									<div class="select-wrapper">
-										<select>
+										<select name="compain">
 											<option value="select">Select</option>
 											<option value="option1">option 1</option>
 											<option value="option2">option 2</option>
@@ -807,7 +807,7 @@
 								<div class="col-s-12 col-m-2">
 									<label>Language</label>
 									<div class="select-wrapper">
-										<select>
+										<select name="language">
 											<option value="selected">EN</option>
 											<option value="en">PL</option>
 										</select>
@@ -820,43 +820,43 @@
 										<h2> select banners</h2>				
 										<div class="select-banners">
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Banner main
+												<input type="checkbox" name="banner-main">Banner main
 												<span class="checkmark"></span>
 											</label>						
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Sign up banner
+												<input type="checkbox" name="sign-up-banner">Sign up banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Left banner
+												<input type="checkbox" name="left-banner">Left banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Right banner
+												<input type="checkbox" name="right-banner">Right banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Bottom banner
+												<input type="checkbox" name="bottom-banner">Bottom banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Long banner
+												<input type="checkbox" name="long-banner">Long banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Personal cabinet banner
+												<input type="checkbox" name="personal-banner">Personal cabinet banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Popup banner
+												<input type="checkbox" name="popup-banner">Popup banner
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">option
+												<input type="checkbox" name="option-one-banner">option
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">option
+												<input type="checkbox" name="option-two-banner">option
 												<span class="checkmark"></span>
 											</label>
 										</div>
@@ -865,43 +865,43 @@
 										<h2> select websites</h2>				
 										<div class="select-banners">
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Landing page Money
+												<input type="checkbox" name="landing-page">Landing page Money
 												<span class="checkmark"></span>
 											</label>						
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Your choise
+												<input type="checkbox" name="lp-choise">LP Your choise
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Wallet
+												<input type="checkbox" name="lp-wallet">LP Wallet
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">E-shop 01
+												<input type="checkbox" name="e-shop">E-shop 01
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Toy store
+												<input type="checkbox" name="toy-store">Toy store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Book Store
+												<input type="checkbox" name="book-store">Book Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Charity
+												<input type="checkbox" name="charity">Charity
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Icons Store
+												<input type="checkbox" name="lp-icons">LP Icons Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">option
+												<input type="checkbox" name="option-one-web">option
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">option
+												<input type="checkbox" name="option-two-web">option
 												<span class="checkmark"></span>
 											</label>
 										</div>
@@ -931,7 +931,7 @@
 							<h1>Add url</h1>
 							<i class="icon-close close-add-url"></i>
 						</header>
-						<form action="#" method="POST">
+						<form action="" method="POST">
 							<div class="row select-3-col">
 								<div class="col-s-12 col-m-5">
 									<label>Scheme name</label>
@@ -942,7 +942,7 @@
 								<div class="col-s-12 col-m-5">
 									<label>Select compain</label>
 									<div class="select-wrapper">
-										<select>
+										<selec name="select-compain">
 											<option value="select">Select compain</option>
 											<option value="option1">option 1</option>
 											<option value="option2">option 2</option>
@@ -953,7 +953,7 @@
 								<div class="col-s-12 col-m-2">
 									<label>Language</label>
 									<div class="select-wrapper">
-										<select>
+										<select name="select-lang">
 											<option value="selected">EN</option>
 											<option value="en">PL</option>
 										</select>
@@ -966,127 +966,127 @@
 										<h2> select websites</h2>				
 										<div class="col col-s-12 col-m-4">
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Landing page Money
+												<input type="checkbox" name="url-landing-page">Landing page Money
 												<span class="checkmark"></span>
 											</label>						
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Your choise
+												<input type="checkbox" name="url-lp-choise">LP Your choise
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Wallet
+												<input type="checkbox" name="url-pl-wallet">LP Wallet
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">E-Shop 01
+												<input type="checkbox" name="url-e-shop">E-Shop 01
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Toy Store
+												<input type="checkbox" name="url-toy-store">Toy Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Book Store
+												<input type="checkbox" name="url-book-store">Book Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Charity
+												<input type="checkbox" name="url-charity">Charity
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">PL Icons Store
+												<input type="checkbox" name="url-icons">LP Icons Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Templates Store
+												<input type="checkbox" name="url-templates">Templates Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Random text
+												<input type="checkbox" name="url-random">Random text
 												<span class="checkmark"></span>
 											</label>
 										</div>
 										<div class="col col-s-12 col-m-4">				
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Mobile app
+												<input type="checkbox" name="url-mobile">Mobile app
 												<span class="checkmark"></span>
 											</label>						
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Senator free signals
+												<input type="checkbox" name="url-lp-senator">LP Senator free signals
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP DE Your choise
+												<input type="checkbox" name="url-lp-de">LP DE Your choise
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Invest wisely
+												<input type="checkbox" name="url-invest">Invest wisely
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Toy Store LP Sign up page
+												<input type="checkbox" name="url-sign-up">Toy Store LP Sign up page
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Senator Account types
+												<input type="checkbox" name="url-senator-account">Senator Account types
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Senator Mobile app
+												<input type="checkbox" name="url-senator-mobile">Senator Mobile app
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Senator Store
+												<input type="checkbox" name="url-senator-store">Senator Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox"> Senator April Promo
+												<input type="checkbox" name="url-promo"> Senator April Promo
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Language Learning LP
+												<input type="checkbox" name="url-language">Language Learning LP
 												<span class="checkmark"></span>
 											</label>
 										</div>
 										<div class="col col-s-12 col-m-4">			
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Your second site
+												<input type="checkbox" name="url-second-site">Your second site
 												<span class="checkmark"></span>
 											</label>						
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Your second LP
+												<input type="checkbox" name="url-second-lp">Your second LP
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Landing page Money
+												<input type="checkbox" name="url-money">Landing page Money
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Your choise
+												<input type="checkbox" name="url-your-choise">LP Your choise
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Wallet
+												<input type="checkbox" name="url-wallet">LP Wallet
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">E-Shop 01
+												<input type="checkbox" name="url-shop-01">E-Shop 01
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Toy Store
+												<input type="checkbox" name="url-store">Toy Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Book Store
+												<input type="checkbox" name="url-book">Book Store
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">Mobile app
+												<input type="checkbox" name="url-app">Mobile app
 												<span class="checkmark"></span>
 											</label>
 											<label class="checkbox-wrapper">
-												<input type="checkbox">LP Senator free signals
+												<input type="checkbox" name="url-signals">LP Senator free signals
 												<span class="checkmark"></span>
 											</label>
 										</div>
@@ -1114,7 +1114,7 @@
 					<header class="header">
 							<h1>Login</h1>
 					</header>
-					<form action="#" method="POST">
+					<form action="" method="POST">
 						<div class="field">
 							<div class="input-container">
 								<i class="icon-login"></i>
@@ -1154,7 +1154,7 @@
 						<div class="chat chat-user"><p>Hello! I would like to know about Postback</div>
 						<div class="chat chat-menager"><p>Ok. 5 min.</p></div>
 					</div>
-					<form action="#" method="POST">
+					<form action="" method="POST">
 						<div class="down-page chat-down">
 							<div class="padding-wrapper">
 								<div class="input-wrapper">
