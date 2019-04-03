@@ -407,7 +407,7 @@ template {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    padding: 20px; }
+    padding: 18px; }
     .top-nav .nav-item:hover {
       background-color: #f5f5f2; }
     .top-nav .nav-item h2 {
@@ -525,7 +525,8 @@ template {
 .icon-refresh {
   min-width: 41px;
   min-height: 40px;
-  padding: 0; }
+  padding: 0;
+  line-height: 45px; }
 
 .btn-wrapper {
   width: 100%;
@@ -803,6 +804,12 @@ template {
       cursor: pointer; }
   .calendar-wrapper .btn {
     margin-left: 15px; }
+
+@media (max-width: 576px) {
+  .calendar-wrapper .calendar .date-first {
+    padding-right: 30px; }
+  .calendar-wrapper .calendar .date-second {
+    padding-right: 23px; } }
 
 .scroll-wrapper {
   display: block;
@@ -1207,6 +1214,24 @@ form .create-pixel {
   border-radius: 2px;
   padding-left: 10px;
   font-size: 0.8rem; }
+  .field input:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e3e3e3;
+    font-weight: 200;
+    opacity: 1;
+    /* Firefox */ }
+  .field input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e3e3e3;
+    font-weight: 200;
+    opacity: 1;
+    /* Firefox */ }
+  .field input::-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #e3e3e3; }
+  .field input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #e3e3e3; }
   .field input:hover {
     border: 1px solid #979797; }
   .field input:focus {
@@ -1413,6 +1438,10 @@ form .create-pixel {
 .details-table .icon-arrow-up {
   margin-left: 5px; }
 
+@media (max-width: 576px) {
+  .section--payout .container {
+    margin-top: -20px; } }
+
 .section--postback p {
   margin: 20px 0 0 10px; }
 
@@ -1483,10 +1512,7 @@ form .create-pixel {
 
 @media (max-width: 576px) {
   .section--postback .container {
-    margin: 0 0 0 50px;
-    width: calc(100% - 50px); }
-    .section--postback .container .header {
-      text-align: center; } }
+    margin-top: -20px; } }
 
 .section--personal-data .container {
   padding: 0; }
@@ -1510,6 +1536,10 @@ form .create-pixel {
         padding: 2.5px 0; }
       .section--personal-data .container .fields-wrapper .field input {
         width: 100%; } }
+
+@media (max-width: 576px) {
+  .section--personal-data .container {
+    margin-top: -20px; } }
 
 .section--add-banners .modal {
   width: 100%; }

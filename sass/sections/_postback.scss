@@ -3,7 +3,6 @@
 		margin: 20px 0 0 10px;
 	}
 
-
 // =============== checkboxes ====================
 	.send {
 		border-top: 1px solid $fourth-color;
@@ -95,16 +94,8 @@
 	}
 }
 
-
-
-
 @media (max-width: 576px) {
 	.section--postback .container {
-		margin: 0 0 0 50px;
-		width: calc(100% - 50px);
-
-		.header {
-			text-align: center;
-		}
+		margin-top: -20px;
 	}
 }

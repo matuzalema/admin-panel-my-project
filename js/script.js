@@ -219,7 +219,7 @@ for (var i = 0; i < modals.length; i++){
 		});
 	}
 
-if(screen.width <= 600){
+if (screen.width <= 600){
 
 	var addMinSidebar = function(e){
 		e.preventDefault();

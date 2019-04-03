@@ -38,3 +38,9 @@
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.section--personal-data .container {
+		margin-top: -20px;
+	}
+}
