@@ -32,7 +32,6 @@
 	line-height: 45px;
 }
 
-
 .btn-wrapper {
 	width: 100%;
 	display: flex;
@@ -59,3 +58,19 @@
 	}
 }
 
+.hamburger-icon {
+	background-color: transparent;
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.hamburger-icon {
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: -10px;
+		}
+	}

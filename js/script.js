@@ -1,6 +1,6 @@
 // ======================== mobile navigation ========================================
 
-var hamburgerIcon = document.getElementsByClassName('hamburger-icon')[0];
+var hamburgerIcon = document.querySelector(".hamburger-icon");
 var sidebar = document.getElementsByClassName('sidebar')[0];
 
 hamburgerIcon.addEventListener('click', function(){
