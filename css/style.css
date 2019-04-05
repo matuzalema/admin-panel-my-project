@@ -407,7 +407,8 @@ template {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    padding: 18px; }
+    padding: 18px;
+    font-size: 1rem; }
     .top-nav .nav-item:hover {
       background-color: #f5f5f2; }
     .top-nav .nav-item h2 {
@@ -415,6 +416,8 @@ template {
       color: #979797;
       margin: 0 15px;
       font-size: 1rem; }
+    .top-nav .nav-item.quite {
+      cursor: pointer; }
     .top-nav .nav-item .icon-profile {
       width: 17px;
       height: 17px;
@@ -429,12 +432,12 @@ template {
       cursor: pointer; }
       .top-nav .nav-item .icon-wallet:hover {
         color: #ffa200; }
-    .top-nav .nav-item .icon-arrow-down {
+    .top-nav .nav-item a .icon-arrow-down {
       font-size: 11px;
       width: 11px;
       height: 7px;
       cursor: pointer; }
-      .top-nav .nav-item .icon-arrow-down:hover {
+      .top-nav .nav-item a .icon-arrow-down:hover {
         color: #ffa200; }
     .top-nav .nav-item .icon-notification {
       width: 16px;
@@ -489,12 +492,13 @@ template {
   text-transform: uppercase;
   color: #979797;
   height: 46px;
-  line-height: 46px;
   padding-left: 16px;
   border-bottom: 1px solid #e3e3e3;
   position: relative; }
   .header h1 {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    line-height: 46px;
+    margin: 0; }
   .header i {
     position: absolute;
     top: 0px;
@@ -628,7 +632,8 @@ template {
     .sidebar .sidebar-team .wrapper {
       display: -ms-flexbox;
       display: flex;
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 0; }
       .sidebar .sidebar-team .wrapper .photo {
         display: inline-block;
         padding: 0 10px 5px 0; }
@@ -764,61 +769,62 @@ template {
             color: #ffa200; } }
 
 .calendar-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  min-height: 110px;
   border-bottom: 1px solid #e3e3e3; }
-  .calendar-wrapper .calendar {
-    border: 1px solid #e3e3e3;
-    height: 40px;
+  .calendar-wrapper .calendar-form {
+    min-height: 110px;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-align: center;
-        align-items: center;
-    padding: 17px;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    max-width: 325px;
-    color: #333333; }
-    .calendar-wrapper .calendar:hover {
-      border: 1px solid #BABABA; }
-    .calendar-wrapper .calendar input {
-      border: none; }
-      .calendar-wrapper .calendar input::-webkit-inner-spin-button, .calendar-wrapper .calendar input::-webkit-calendar-picker-indicator {
-        display: none;
-        -webkit-appearance: none; }
-      .calendar-wrapper .calendar input:focus {
-        outline: none; }
-      .calendar-wrapper .calendar input:onclick {
-        background-color: red; }
-    .calendar-wrapper .calendar .calendar-icon {
-      position: relative; }
-      .calendar-wrapper .calendar .calendar-icon .icon-calendar {
-        position: absolute;
-        top: 3px;
-        right: 0;
-        max-width: 13px;
-        max-height: 13px;
-        margin-right: 10px;
+        align-items: center; }
+    .calendar-wrapper .calendar-form .calendar {
+      border: 1px solid #e3e3e3;
+      height: 40px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 17px;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      max-width: 325px;
+      color: #333333; }
+      .calendar-wrapper .calendar-form .calendar:hover {
+        border: 1px solid #BABABA; }
+      .calendar-wrapper .calendar-form .calendar input {
+        border: none; }
+        .calendar-wrapper .calendar-form .calendar input::-webkit-inner-spin-button, .calendar-wrapper .calendar-form .calendar input::-webkit-calendar-picker-indicator {
+          display: none;
+          -webkit-appearance: none; }
+        .calendar-wrapper .calendar-form .calendar input:focus {
+          outline: none; }
+        .calendar-wrapper .calendar-form .calendar input:onclick {
+          background-color: red; }
+      .calendar-wrapper .calendar-form .calendar .calendar-icon {
+        position: relative; }
+        .calendar-wrapper .calendar-form .calendar .calendar-icon .icon-calendar {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          max-width: 13px;
+          max-height: 13px;
+          margin-right: 10px;
+          cursor: pointer; }
+          .calendar-wrapper .calendar-form .calendar .calendar-icon .icon-calendar:hover {
+            color: #ffa200; }
+      .calendar-wrapper .calendar-form .calendar .date-first {
+        border-right: 1px solid #e3e3e3;
+        padding-right: 50px;
         cursor: pointer; }
-        .calendar-wrapper .calendar .calendar-icon .icon-calendar:hover {
-          color: #ffa200; }
-    .calendar-wrapper .calendar .date-first {
-      border-right: 1px solid #e3e3e3;
-      padding-right: 50px;
-      cursor: pointer; }
-    .calendar-wrapper .calendar .date-second {
-      padding-left: 17px;
-      padding-right: 43px;
-      cursor: pointer; }
-  .calendar-wrapper .btn {
-    margin-left: 15px; }
+      .calendar-wrapper .calendar-form .calendar .date-second {
+        padding-left: 17px;
+        padding-right: 43px;
+        cursor: pointer; }
+    .calendar-wrapper .calendar-form .btn {
+      margin-left: 15px; }
 
 @media (max-width: 576px) {
   .calendar-wrapper .calendar .date-first {
@@ -993,19 +999,19 @@ template {
 .icon-wallet:before {
   content: '\0062'; }
 
-form h2 {
+.form h2 {
   font-size: 0.8rem;
   color: #979797; }
 
-form p {
+.form p {
   margin: 20px 0 0 10px; }
 
-form label {
+.form label {
   font-size: 0.8rem;
   color: #979797;
   font-weight: 500; }
 
-form textarea {
+.form textarea {
   margin-top: 10px;
   width: 100%;
   min-height: 200px;
@@ -1014,22 +1020,22 @@ form textarea {
   color: #BABABA;
   font-size: 0.65rem;
   resize: none; }
-  form textarea:hover {
+  .form textarea:hover {
     border: 1px solid #BABABA; }
-  form textarea:focus {
+  .form textarea:focus {
     outline: none; }
 
-form input, form select {
+.form input, .form select {
   border: 1px solid #e3e3e3;
   border-radius: 2px;
   width: 100%;
   margin-top: 10px; }
-  form input:hover, form select:hover {
+  .form input:hover, .form select:hover {
     border: 1px solid #BABABA; }
-  form input:focus, form select:focus {
+  .form input:focus, .form select:focus {
     outline: none; }
 
-form select {
+.form select {
   font-size: 0.7rem;
   color: #979797;
   width: 100%;
@@ -1039,9 +1045,9 @@ form select {
           appearance: none;
   background-color: #fff; }
 
-form .select-wrapper {
+.form .select-wrapper {
   position: relative; }
-  form .select-wrapper:after {
+  .form .select-wrapper:after {
     font-family: Glyphter;
     content: '\0041';
     font-size: 12px;
@@ -1051,20 +1057,20 @@ form .select-wrapper {
     color: #e3e3e3;
     pointer-events: none; }
 
-form .send {
+.form .send {
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   margin: 0; }
-  form .send .col:first-child {
+  .form .send .col:first-child {
     border-right: 1px solid #e3e3e3; }
-  form .send .col h2 {
+  .form .send .col h2 {
     margin-bottom: 10px; }
-    form .send .col h2 span {
+    .form .send .col h2 span {
       color: #ff0000; }
-  form .send .col .statuses {
+  .form .send .col .statuses {
     overflow-x: auto;
     height: 170px; }
-    form .send .col .statuses .checkbox-wrapper {
+    .form .send .col .statuses .checkbox-wrapper {
       display: block;
       position: relative;
       padding: 14px 0 14px 35px;
@@ -1074,27 +1080,27 @@ form .send {
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none; }
-      form .send .col .statuses .checkbox-wrapper:hover {
+      .form .send .col .statuses .checkbox-wrapper:hover {
         background-color: #f5f5f2; }
-      form .send .col .statuses .checkbox-wrapper input {
+      .form .send .col .statuses .checkbox-wrapper input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
         height: 0;
         width: 0; }
-        form .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark {
+        .form .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark {
           background-color: #74b67a;
           border: 1px solid #74b67a; }
-        form .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark:after {
+        .form .send .col .statuses .checkbox-wrapper input:checked ~ .checkmark:after {
           display: block; }
-      form .send .col .statuses .checkbox-wrapper .checkmark {
+      .form .send .col .statuses .checkbox-wrapper .checkmark {
         position: absolute;
         top: 10;
         left: 10px;
         height: 15px;
         width: 15px;
         border: 1px solid #e3e3e3; }
-        form .send .col .statuses .checkbox-wrapper .checkmark:after {
+        .form .send .col .statuses .checkbox-wrapper .checkmark:after {
           content: "";
           position: absolute;
           display: none;
@@ -1105,14 +1111,14 @@ form .send {
           border: solid white;
           border-width: 0 1.5px 1.5px 0;
           transform: rotate(45deg); }
-      form .send .col .statuses .checkbox-wrapper:focus {
+      .form .send .col .statuses .checkbox-wrapper:focus {
         outline: none; }
-      form .send .col .statuses .checkbox-wrapper:hover input ~ .checkmark {
+      .form .send .col .statuses .checkbox-wrapper:hover input ~ .checkmark {
         background-color: #96cc9b;
         border: 1px solid #96cc9b; }
-  form .send .range-wrapper {
+  .form .send .range-wrapper {
     width: 100%; }
-    form .send .range-wrapper .range {
+    .form .send .range-wrapper .range {
       position: relative;
       -webkit-appearance: none;
          -moz-appearance: none;
@@ -1124,7 +1130,7 @@ form .send {
       background-color: #f58220;
       border: none;
       border-radius: 1px; }
-      form .send .range-wrapper .range::-webkit-slider-thumb {
+      .form .send .range-wrapper .range::-webkit-slider-thumb {
         -webkit-appearance: none;
                 appearance: none;
         width: 0;
@@ -1134,34 +1140,34 @@ form .send {
         border-bottom: 20px solid #f58220;
         cursor: pointer;
         margin-top: 25px; }
-      form .send .range-wrapper .range::-moz-range-thumb {
+      .form .send .range-wrapper .range::-moz-range-thumb {
         border: 1px solid #BABABA;
         background-color: #f5f5f2;
         -moz-appearance: none;
              appearance: none;
         width: 7px;
         height: 15px; }
-      form .send .range-wrapper .range::before {
+      .form .send .range-wrapper .range::before {
         content: "0";
         position: absolute;
         bottom: 7px;
         font-size: 0.8rem; }
-      form .send .range-wrapper .range::after {
+      .form .send .range-wrapper .range::after {
         content: "168";
         position: absolute;
         bottom: 7px;
         right: 0;
         font-size: 0.8rem; }
-    form .send .range-wrapper .hours-range {
+    .form .send .range-wrapper .hours-range {
       margin: 40px 0 10px 0;
       display: inline;
       font-size: 0.7rem; }
-    form .send .range-wrapper .hours-value {
+    .form .send .range-wrapper .hours-value {
       margin: 0;
       display: inline;
       font-size: 0.7rem; }
 
-form .create-pixel {
+.form .create-pixel {
   display: block;
   margin: 20px 10px 20px auto; }
 

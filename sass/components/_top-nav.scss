@@ -10,6 +10,7 @@
 	background-color: $fiveth-color-bright;
 	z-index: 1;
 
+
 	.nav-item {
 		border-left: 1px solid $fourth-color;
 		height: 60px;
@@ -17,6 +18,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 18px;
+		font-size: 1rem;
 
 		&:hover {
 			background-color: $fiveth-color;
@@ -27,6 +29,10 @@
 			color: $second-color;
 			margin: 0 15px;
 			font-size: $first-font-size;
+		}
+
+		&.quite{
+			cursor: pointer;
 		}
 
 		.icon-profile {
@@ -53,7 +59,7 @@
 			}
 		}
 
-		.icon-arrow-down {
+		a .icon-arrow-down {
 			font-size: 11px;
 			width: 11px;
 			height: 7px;

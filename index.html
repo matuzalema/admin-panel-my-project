@@ -11,9 +11,9 @@
 	<!-- =========================== top nav ============================= -->
 
 		<nav class="top-nav">
-			<div class="nav-item quite">
+			<a class="nav-item quite">
 				<i class="icon-quit"></i>
-			</div>
+			</a>
 			<div class="nav-item login">
 				<i class="icon-profile"></i>
 				<p class="name"> Leonardo Dicaprio </p>
@@ -25,7 +25,7 @@
 			<div class="nav-item">
 				<i class="icon-wallet"></i>
 				<h2>$1,500.00</h2>
-				<i class="icon-arrow-down"></i>
+				<a href="#"><i class="icon-arrow-down"></i></a>
 			</div>		
 		</nav>
 
@@ -83,10 +83,10 @@
 				</ul>
 			</nav>
 			<section class="sidebar-team">
-				<h2 class="head">Your manager</h2>
+				<h1 class="head">Your manager</h1>
 				<div class="wrapper manager-chat">
 					<img class="photo" src="images/photo-team.png" alt="">
-					<h3 class="name ">Mikhael E.</h3>
+					<h2 class="name ">Mikhael E.</h2>
 					<div class="round"></div>
 				</div>
 			</section>
@@ -120,14 +120,16 @@
 				
 				<!-- calendar -->
 				<section class="calendar-wrapper">
-					<div class="calendar">
-						<input type="date" value="2016-05-16" class="date date-first" required="required">
-						<div class="calendar-icon">
-							<input type="date" value="2016-08-16"  class="date date-second" required="required">
-							<i class="icon-calendar"></i>
+					<form class="calendar-form">
+						<div class="calendar">
+							<input type="date" value="2016-05-16" class="date date-first" required="required">
+							<div class="calendar-icon">
+								<input type="date" value="2016-08-16"  class="date date-second" required="required">
+								<i class="icon-calendar"></i>
+							</div>
 						</div>
-					</div>
-					<button type="reset" class="btn icon-refresh"></button>
+						<button type="reset" class="btn icon-refresh"></button>
+					</form>
 				</section>
 
 				<!-- current values -->
@@ -171,14 +173,16 @@
 
 				<!-- calendar -->
 				<section class="calendar-wrapper">
-					<div class="calendar">
-						<input  type="date" value="2016-05-16" class="date date-first" required="required">
-						<div class="calendar-icon">
-							<input type="date" value="2016-08-16"  class="date date-second" required="required">
-							<i class="icon-calendar"></i>
+					<form class="calendar-form">
+						<div class="calendar">
+							<input  type="date" value="2016-05-16" class="date date-first" required="required">
+							<div class="calendar-icon">
+								<input type="date" value="2016-08-16"  class="date date-second" required="required">
+								<i class="icon-calendar"></i>
+							</div>
 						</div>
-					</div>
-					<button type="reset" class="btn icon-refresh"></button>
+						<button type="reset" class="btn icon-refresh"></button>
+					</form>
 				</section>
 				<!-- table -->
 				<section class="scroll-wrapper">
@@ -582,14 +586,16 @@
 
 				<!-- calendar -->
 				<section class="calendar-wrapper">
-					<div class="calendar">
-						<input id="date" type="date" value="2016-05-16" class="date date-first" required="required">
-						<div class="calendar-icon">
-							<input id="date" type="date" value="2016-08-16"  class="date date-second" required="required">
-							<i class="icon-calendar"></i>
+					<form class="calendar-form">
+						<div class="calendar">
+							<input id="date" type="date" value="2016-05-16" class="date date-first" required="required">
+							<div class="calendar-icon">
+								<input id="date" type="date" value="2016-08-16"  class="date date-second" required="required">
+								<i class="icon-calendar"></i>
+							</div>
 						</div>
-					</div>
-					<button type="reset" class="btn icon-refresh"></button>
+						<button type="reset" class="btn icon-refresh"></button>
+					</form>
 				</section>
 
 				<!-- table -->
@@ -680,7 +686,7 @@
 					<h1>New postback</h1>
 				</header>
 				<p>You can insert some parameters in this postback</p>
-				<form action="" method="POST">
+				<form action="" method="POST" class="form">
 					<div class="row">
 						<div class="col-s-12 col-m-6">
 							<label>Signup</label>
