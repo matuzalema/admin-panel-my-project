@@ -10,9 +10,13 @@
 			max-width: 726px;
 			width: 100%;
 			margin: 0 auto;
+			height: 40px;
+			line-height: 40px;
 
 			input {
-			width: 70%;
+				width: 70%;
+				margin: 0;
+				border-color: $third-color-dark;
 			}
 		}
 	}
@@ -28,7 +32,7 @@
 				padding: 20px 20px;
 		
 				.col-s-12 {
-					padding: 2.5px 0;
+					padding: 0.5px 0;
 				}
 				
 				input {

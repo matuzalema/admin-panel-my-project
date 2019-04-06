@@ -55,6 +55,10 @@
 				border-bottom: 3px solid $fourth-color;
 				display: block;
 				margin-bottom: .625em;
+
+				&:hover {
+				background-color: transparent;
+				}
 			}
 
 			td {
