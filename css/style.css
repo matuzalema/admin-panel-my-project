@@ -501,7 +501,7 @@ template {
     margin: 0; }
   .header i {
     position: absolute;
-    top: 0px;
+    top: 16px;
     right: 20px;
     cursor: pointer;
     font-size: 0.8rem; }
@@ -1618,8 +1618,10 @@ template {
       max-height: 340px; }
 
 @media (max-width: 992px) {
-  .section--add-banners .header h1 {
-    padding: 20px 0; } }
+  .section--add-banners {
+    overflow-y: auto; }
+    .section--add-banners .header h1 {
+      padding: 20px 0; } }
 
 .section--add-url .modal {
   width: 100%; }

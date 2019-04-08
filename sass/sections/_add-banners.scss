@@ -16,6 +16,8 @@
 
 @media (max-width: 992px) {
 	.section--add-banners {
+		overflow-y: auto;
+
 		.header h1{
 			padding: 20px 0;
 		}
