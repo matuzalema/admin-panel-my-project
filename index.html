@@ -157,7 +157,7 @@
 					<div class="wrapper">
 						<div class="padding-wrapper">
 							<h1 class="header-graph">Earnings chart</h1>
-							<img class="graph" src="images/graph.png" alt="graph">
+							<canvas id="myChart"></canvas>
 						</div>
 					</div>
 				</section>
@@ -312,7 +312,7 @@
 						</table>
 					</div>
 					<div class="pagination">
-						<a href="#"><span class="icon-arrow-left"></span></a>
+						<a href="#"><i class="icon-arrow-left"></i></a>
 						<a href="#">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
@@ -322,7 +322,7 @@
 						<a href="#">7</a>
 						<a href="#">8</a>
 						<a href="#">9</a>
-						<a href="#"><span class="icon-arrow-right"></span></a>
+						<a href="#"><i class="icon-arrow-right"></i></a>
 					</div>
 				</section>
 			</div>
@@ -415,38 +415,38 @@
 						<div class="link">
 							<h2 class="link-desc">Banner main</h2>
 							<h2 class="link-item">http://www.website.com/banner.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>
 						</div>
 						<div class="link">
 							<h2 class="link-desc">Sign up banner</h2>
 							<h2 class="link-item">http://www.website.com/signup.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>
 						</div>
 						<div class="link">
 							<h2 class="link-desc">Banner left side</h2>
 							<h2 class="link-item">http://www.website.com/leftside.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>
 						</div>
 						<div class="link">
 							<h2 class="link-desc">Vertical banner</h2>
 							<h2 class="link-item">http://www.website.com/vert.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>
 						</div>
 						<div class="link">
 							<h2 class="link-desc">Front banner</h2>
 							<h2 class="link-item">http://www.website.com/front.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>					
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>					
 						</div>
 						<div class="link">
 							<h2 class="link-desc">Horizontal</h2>
 							<h2 class="link-item">http://www.website.com/horiz.gif</h2>
-							<i class="icon-links"></i>
-							<i class="icon-trash"></i>
+							<span class="icon-links"></span>
+							<span class="icon-trash"></span>
 						</div>
 					</div>
 				</div>
@@ -591,7 +591,7 @@
 							<input id="date" type="date" value="2016-05-16" class="date date-first" required="required">
 							<div class="calendar-icon">
 								<input id="date-two" type="date" value="2016-08-16"  class="date date-second" required="required">
-								<i class="icon-calendar"></i>
+								<span class="icon-calendar"></span>
 							</div>
 						</div>
 						<button type="reset" class="btn icon-refresh"></button>
@@ -603,7 +603,7 @@
 					<table class="details-table">
 						<thead>
 							<tr>
-								<th scope="col">Date <i class="icon-arrow-up"></i></th>
+								<th scope="col">Date <span class="icon-arrow-up"></span></th>
 								<th scope="col">Amount ($)</th>
 								<th scope="col">Deal</th>
 								<th scope="col">Account</th>
@@ -794,7 +794,7 @@
 					<div class="container">
 						<header class="header">
 							<h1>Add banners</h1>
-							<i class="icon-close add-banners-close"></i>
+							<span class="icon-close add-banners-close"></span>
 						</header>
 						<form action="" method="POST">
 							<div class="row select-3-col">
@@ -922,7 +922,7 @@
 							<div class="down-page">
 								<div class="padding-wrapper">
 									<input type="text" name="link" placeholder="Generated link" class="field" />
-									<button type="button" class="btn copy"><i class="icon-links"></i> Copy link</button>
+									<button type="button" class="btn copy"><span class="icon-links"></span> Copy link</button>
 									<button type= "submit" class="btn btn-save">save</button>
 								</div>
 							</div>
@@ -940,7 +940,7 @@
 					<div class="container">
 						<header class="header">
 							<h1>Add url</h1>
-							<i class="icon-close close-add-url"></i>
+							<span class="icon-close close-add-url"></span>
 						</header>
 						<form action="" method="POST">
 							<div class="row select-3-col">
@@ -1106,7 +1106,7 @@
 							<div class="down-page">
 								<div class="padding-wrapper">
 									<input type="text" name="link" placeholder="Generated link" class="field" />
-									<button type="button" class="btn copy"><i class="icon-links"></i> Copy link</button>
+									<button type="button" class="btn copy"><span class="icon-links"></span> Copy link</button>
 									<button type="submit" class="btn btn-save">save</button>
 								</div>
 							</div>
@@ -1127,11 +1127,11 @@
 					<form action="" method="POST">
 						<div class="field">
 							<div class="input-container">
-								<i class="icon-login"></i>
+								<span class="icon-login"></span>
 								<input type="text" name="name" placeholder="login name">
 							</div>
 							<div class="input-container">
-								<i class="icon-password"></i>
+								<span class="icon-password"></span>
 								<input type="password" name="name" placeholder="password">
 							</div>
 							<button type="submit" class="btn btn-login-enter">Enter</button>
@@ -1148,7 +1148,7 @@
 				<div class="modal modal-chat">
 					<header class="header">
 							<h1>Online chat with yout personal manager</h1>
-							<i class="icon-close icon-chat-close"></i>
+							<span class="icon-close icon-chat-close"></span>
 					</header>
 					<div class="chat-manager">
 						<img src="images/photo-team.png" alt="">
@@ -1168,7 +1168,7 @@
 						<div class="down-page chat-down">
 							<div class="padding-wrapper">
 								<div class="input-wrapper">
-									<i class="icon-message"></i>
+									<span class="icon-message"></span>
 									<input type="text" name="link" placeholder="Enter the message" class="field" />
 								</div>
 								<button type="submit" class="btn btn-save">Send</button>
@@ -1195,6 +1195,11 @@
 			</div>
 		</section>
 
+	<!-- =========================== interactive chart ============================= -->
+		
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script src="js/script.js"></script>
 	</body>
 </html>
