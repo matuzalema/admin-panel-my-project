@@ -1,10 +1,9 @@
 .section--general {
-
 	.values {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		margin: 40px auto 80px;
+		margin: 20px auto 40px;
 		flex-wrap: wrap;
 
 		.current-values {
@@ -32,6 +31,10 @@
 
 	.header-graph {
 		color: $third-color-dark;
+	}
+	
+	.graph {
+		padding-bottom: 20px;
 	}
 }
 
