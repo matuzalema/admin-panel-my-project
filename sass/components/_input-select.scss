@@ -1,0 +1,28 @@
+.select, .input {
+
+	font-size: 0.7rem;
+    color: #979797;
+    width: 100%;
+    padding: 8px;
+    	-webkit-appearance: none;
+    	-moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    width: 100%;
+    margin-top: 4px;
+    &:focus {
+    	outline: none;
+    }
+
+    &:hover {
+    	border-color:$third-color-dark;
+    }
+}
+
+.label {
+	font-size: 0.8rem;
+    color: #979797;
+    font-weight: 500;
+}
