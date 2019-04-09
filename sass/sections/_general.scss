@@ -39,7 +39,18 @@
 }
 
 @media (max-width: 768px) {
-	.header-graph {
-		text-align: center;
+	.section--general {
+		height: 100vh;
+		background-color: $fiveth-color-bright;
+		
+		.values {
+		margin: 30px auto 80px;
+		}
+		.header-graph {
+			text-align: center;
+		}
+		.myChart {
+			padding-bottom: 130px;
+		}
 	}
 }

@@ -21,12 +21,14 @@
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 992px){
  .section--add-url .modal {
 		width: 100%;
 		
 		.container {
 			width: 100%;
+			overflow-y: auto;
+			height: 100vh;
 		}
 
 		.select-websites {

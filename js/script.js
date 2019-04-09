@@ -275,3 +275,40 @@ var chart = new Chart(ctx, {
 });
 
  //  ================ range ===============================
+
+$(window).on("load resize", function() {
+  // Get the current width of the slider
+  var sliderWidth = $('[type=range]').width();
+
+  // Remove previously created style elements
+  $('.custom-style-element-related-to-range').remove();
+
+  // Add our updated styling
+  $('<style class="custom-style-element-related-to-range">input[type="range"]::-webkit-slider-thumb { box-shadow: -' + 1000 + 'px 0 0 ' + 1000 + 'px;}<style/>').appendTo('head');
+});
+
+ //  ================ range ===============================
+
+var selectFlag = document.querySelector(".select-flag");
+var flagSelected = document.querySelector(".flag-selected");
+var flagList = document.querySelector(".select-flag ul");
+var flagInput = document.querySelector(".input-flag");
+
+
+selectFlag.addEventListener("click", function() {
+  if(flagList.style.display === "block") flagList.style.display = "none";
+  else flagList.style.display = "block";
+});
+
+flagList.addEventListener("click", function(event) {
+  if(event.target.tagName === "LI") {
+    chooseOption(event.target);
+  }
+});
+
+function chooseOption(elem) {
+  flagSelected.innerHTML = elem.innerHTML;
+  flagInput.value = elem.dataset.index;
+}
+
+chooseOption(flagList.querySelector('li'));

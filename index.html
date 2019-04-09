@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
+		<script
+		  src="https://code.jquery.com/jquery-1.9.1.min.js"
+		  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+		  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -818,10 +822,15 @@
 								<div class="col-s-12 col-m-2">
 									<label class="label">Language</label>
 									<div class="select-wrapper">
-										<select name="language" class="select">
-											<option value="selected">EN</option>
-											<option value="en">PL</option>
-										</select>
+										<div class="select select-flag">
+											<div class="flag-selected"></div>
+											<ul>
+												<li data-index="EN"><img src="images/flags/united-kingdom.svg"></li>
+												<li data-index="PL"><img src="images/flags/poland.svg"></li>
+												<li data-index="FI"><img src="images/flags/finland.svg"></li>
+											</ul>
+										</div>
+										<input name="flag" type="hidden" class="input-flag">
 									</div>
 								</div>
 							</div>

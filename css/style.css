@@ -1128,46 +1128,6 @@ template {
         border: 1px solid #96cc9b; }
   .form .send .range-wrapper {
     width: 100%; }
-    .form .send .range-wrapper .range {
-      position: relative;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      width: 100%;
-      height: 7px;
-      background-color: #f58220;
-      border: none;
-      border-radius: 1px; }
-      .form .send .range-wrapper .range::-webkit-slider-thumb {
-        -webkit-appearance: none;
-                appearance: none;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 20px solid #f58220;
-        cursor: pointer;
-        margin-top: 25px; }
-      .form .send .range-wrapper .range::-moz-range-thumb {
-        border: 1px solid #BABABA;
-        background-color: #f5f5f2;
-        -moz-appearance: none;
-             appearance: none;
-        width: 7px;
-        height: 15px; }
-      .form .send .range-wrapper .range::before {
-        content: "0";
-        position: absolute;
-        bottom: 7px;
-        font-size: 0.8rem; }
-      .form .send .range-wrapper .range::after {
-        content: "168";
-        position: absolute;
-        bottom: 7px;
-        right: 0;
-        font-size: 0.8rem; }
     .form .send .range-wrapper .hours-range {
       margin: 40px 0 10px 0;
       display: inline;
@@ -1326,6 +1286,34 @@ template {
   color: #979797;
   font-weight: 500; }
 
+.select-flag {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  z-index: 2; }
+  .select-flag ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: -1px; }
+    .select-flag ul li {
+      border: 1px solid #e3e3e3;
+      width: 100px;
+      margin: 0 auto;
+      text-align: center; }
+      .select-flag ul li:hover {
+        background-color: #e3e3e3; }
+      .select-flag ul li img {
+        width: 30px; }
+  .select-flag .flag-selected {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 34px; }
+    .select-flag .flag-selected img {
+      width: 30px; }
+
 /* Sections */
 .section--general .values {
   display: -ms-flexbox;
@@ -1364,8 +1352,15 @@ template {
   padding-bottom: 20px; }
 
 @media (max-width: 768px) {
-  .header-graph {
-    text-align: center; } }
+  .section--general {
+    height: 100vh;
+    background-color: #fff; }
+    .section--general .values {
+      margin: 30px auto 80px; }
+    .section--general .header-graph {
+      text-align: center; }
+    .section--general .myChart {
+      padding-bottom: 130px; } }
 
 .links {
   display: -ms-flexbox;
@@ -1513,47 +1508,20 @@ template {
     .section--postback .send .col h2 span {
       color: #ff0000; }
   .section--postback .send .range-wrapper {
-    width: 100%; }
-    .section--postback .send .range-wrapper .range {
-      position: relative;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      width: 100%;
-      height: 7px;
-      background-color: #f58220;
-      border: none;
-      border-radius: 1px; }
-      .section--postback .send .range-wrapper .range::-webkit-slider-thumb {
-        -webkit-appearance: none;
-                appearance: none;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 20px solid #f58220;
-        cursor: pointer;
-        margin-top: 25px; }
-      .section--postback .send .range-wrapper .range::-moz-range-thumb {
-        border: 1px solid #BABABA;
-        background-color: #f5f5f2;
-        -moz-appearance: none;
-             appearance: none;
-        width: 7px;
-        height: 15px; }
-      .section--postback .send .range-wrapper .range::before {
-        content: "0";
-        position: absolute;
-        bottom: 7px;
-        font-size: 0.8rem; }
-      .section--postback .send .range-wrapper .range::after {
-        content: "168";
-        position: absolute;
-        bottom: 7px;
-        right: 0;
-        font-size: 0.8rem; }
+    width: 100%;
+    position: relative;
+    padding-top: 50px; }
+    .section--postback .send .range-wrapper::before {
+      content: "0";
+      position: absolute;
+      bottom: 37px;
+      font-size: 0.8rem; }
+    .section--postback .send .range-wrapper::after {
+      content: "168";
+      position: absolute;
+      bottom: 37px;
+      right: 0;
+      font-size: 0.8rem; }
     .section--postback .send .range-wrapper .hours-range {
       margin: 40px 0 10px 0;
       display: inline;
@@ -1570,6 +1538,24 @@ template {
 @media (max-width: 576px) {
   .section--postback .container {
     margin-top: -20px; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #f5f5f2; }
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px; }
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 40px;
+    cursor: ew-resize;
+    background: #979797;
+    color: #f58220; } }
 
 .section--personal-data .container {
   padding: 0; }
@@ -1613,10 +1599,10 @@ template {
       max-height: 340px; }
 
 @media (max-width: 992px) {
-  .section--add-banners {
-    overflow-y: auto; }
-    .section--add-banners .header h1 {
-      padding: 20px 0; } }
+  .section--add-banners .modal .container {
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%; } }
 
 .section--add-url .modal {
   width: 100%; }
@@ -1631,11 +1617,13 @@ template {
     max-height: 400px;
     overflow-x: hidden; }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .section--add-url .modal {
     width: 100%; }
     .section--add-url .modal .container {
-      width: 100%; }
+      width: 100%;
+      overflow-y: auto;
+      height: 100vh; }
     .section--add-url .modal .select-websites {
       max-height: 180px; } }
 

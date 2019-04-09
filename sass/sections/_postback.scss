@@ -27,52 +27,23 @@
 	// =============== input range ====================
 		.range-wrapper {
 			width: 100%;
-
-			.range {
-				position: relative;
-				appearance: none;
-				margin-top: 30px;
-				margin-bottom: 30px;
-				width: 100%;
-				height: 7px;
-				background-color: $sixth-color;
-				border: none;
-				border-radius: 1px;
-
-				&::-webkit-slider-thumb {
-					appearance: none;
-					width: 0;
-					height: 0;
-					border-left: 10px solid transparent;
-					border-right: 10px solid transparent;
-					border-bottom: 20px solid $sixth-color;
-					cursor: pointer;
-					margin-top: 25px;
-				}
-
-				&::-moz-range-thumb  {
-					border: 1px solid $third-color-dark;
-					background-color: $fiveth-color;
-					appearance: none;
-					width: 7px;
-					height: 15px;
-				}
+			position: relative;
+			padding-top: 50px;
 
 				&::before {
 					content: "0";
 					position: absolute;
-					bottom: 7px;
+					bottom: 37px;
 					font-size: $third-font-size;
 				}
 
 				&::after {
 					content: "168";
 					position: absolute;
-					bottom: 7px;
+					bottom: 37px;
 					right: 0;
 					font-size: $third-font-size;
 				}
-			}
 
 			.hours-range {
 				margin: 40px 0 10px 0;
@@ -98,4 +69,26 @@
 	.section--postback .container {
 		margin-top: -20px;
 	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: $fiveth-color;
+  }
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 40px;
+    cursor: ew-resize;
+    background: $second-color;
+    color: $sixth-color;
+  }
 }

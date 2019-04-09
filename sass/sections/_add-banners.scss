@@ -15,11 +15,10 @@
 
 
 @media (max-width: 992px) {
-	.section--add-banners {
+	.section--add-banners .modal .container {
 		overflow-y: auto;
-
-		.header h1{
-			padding: 20px 0;
-		}
+		height: 100vh;
+		width: 100%;
+		
 	}
 }
