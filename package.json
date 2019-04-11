@@ -10,6 +10,7 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
+    "build:format": "prettier --write \"**/**/*.{js,html,scss}\"",
     "build:sass": "node-sass --output-style extended -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     
@@ -27,7 +28,8 @@
     "globstar": "^1.0.0",
     "node-sass": "^4.10.0",
     "nu-html-checker": "^0.1.0",
-    "onchange": "^5.1.0"
+    "onchange": "^5.1.0",
+    "prettier": "^1.16.4"
   },
   "dependencies": {
     "mkdirp": "^0.5.1",

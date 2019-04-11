@@ -1,24 +1,22 @@
 .section--add-banners .modal {
-	width: 100%;
+  width: 100%;
 
-	.container {
-		margin: 0 auto;
-		display: block;
-		width: 80%;
+  .container {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
 
-		.select-banners {
-			overflow-x: auto;
-			max-height: 340px;
-		}
-	}
+    .select-banners {
+      overflow-x: auto;
+      max-height: 340px;
+    }
+  }
 }
 
-
 @media (max-width: 992px) {
-	.section--add-banners .modal .container {
-		overflow-y: auto;
-		height: 100vh;
-		width: 100%;
-		
-	}
+  .section--add-banners .modal .container {
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+  }
 }

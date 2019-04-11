@@ -3,7 +3,7 @@ $main-color: #333333; //black
 
 // grey
 $second-color: #979797; //dark-grey, button
-$third-color-dark: #BABABA; //grey:hover; button:hover;
+$third-color-dark: #bababa; //grey:hover; button:hover;
 $fourth-color: #e3e3e3; //light-grey, border
 
 $fiveth-color: #f5f5f2; //bright-grey bg:hover
@@ -15,19 +15,15 @@ $sixth-color-light: #ffa200; //orange-light:hover
 
 // green
 $eighth-color-dark: #04ae00; //dark-green
-$eighth-color:#74b67a; //bright green:hover;
+$eighth-color: #74b67a; //bright green:hover;
 $eight-color-bright: #96cc9b; //very bright green
 
 //pink
 $nineth-color-dark: #de5252; //dark-pink:hover;
 $nineth-color: #ec7171; //light-pink;
 
-
 $link-color: #56819f; //blue
 $danger-color: #ff0000; //red
-
-
-
 
 // /* Font sizes */
 $first-font-size: 1rem; //16px
@@ -39,6 +35,6 @@ $fiveth-font-size: 0.65rem;
 // $paragraph-font-size: 16px;
 $sidebar-active-bg: #282828;
 // /* Fonts */
-$main-font: 'Roboto', sans-serif;
+$main-font: "Roboto", sans-serif;
 // $brand-font: "Open Sans", Helvetica, Arial;
 // $paragraph-font: "Open Sans", Helvetica, Arial;

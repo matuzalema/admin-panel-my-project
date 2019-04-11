@@ -1,60 +1,60 @@
 .checkbox-wrapper {
-	display: block;
-	position: relative;
-	padding: 14px 0 14px 35px;
-	cursor: pointer;
-	font-size: $third-font-size;
-	user-select: none;
+  display: block;
+  position: relative;
+  padding: 14px 0 14px 35px;
+  cursor: pointer;
+  font-size: $third-font-size;
+  user-select: none;
 
-	&:hover {
-		background-color: $fiveth-color;
-	}
+  &:hover {
+    background-color: $fiveth-color;
+  }
 
-	input {
-		position: absolute;
-		opacity: 0;
-		cursor: pointer;
-		height: 0;
-		width: 0;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 
-		&:checked ~ .checkmark {
-		  background-color: $eighth-color;
-		  border: 1px solid $eighth-color;
-		}
+    &:checked ~ .checkmark {
+      background-color: $eighth-color;
+      border: 1px solid $eighth-color;
+    }
 
-		&:checked ~ .checkmark:after {
-		  display: block;
-		}
-	}
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
 
-	.checkmark {
-		position: absolute;
-		top: 10;
-		left: 10px;
-		height: 15px;
-		width: 15px;
-		border: 1px solid $fourth-color;
+  .checkmark {
+    position: absolute;
+    top: 10;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $fourth-color;
 
-		&:after {
-			content: "";
-			position: absolute;
-			display: none;
-			left: 5px;
-			top: 2px;
-			width: 2px;
-			height: 5px;
-			border: solid white;
-			border-width: 0 1.5px 1.5px 0;
-			transform: rotate(45deg);
-		}
-	}
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 2px;
+      width: 2px;
+      height: 5px;
+      border: solid white;
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(45deg);
+    }
+  }
 
-	&:focus {
-		outline: none;
-	}
+  &:focus {
+    outline: none;
+  }
 
-	&:hover input ~ .checkmark {
-		background-color: $eight-color-bright;
-		border: 1px solid $eight-color-bright;	
-	}
+  &:hover input ~ .checkmark {
+    background-color: $eight-color-bright;
+    border: 1px solid $eight-color-bright;
+  }
 }

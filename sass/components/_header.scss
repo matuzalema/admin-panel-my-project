@@ -1,22 +1,22 @@
 .header {
-	text-transform: uppercase;
-	color: $second-color;
-	height: 46px;
-	padding-left: 16px;
-	border-bottom: 1px solid $fourth-color;
-	position: relative;
+  text-transform: uppercase;
+  color: $second-color;
+  height: 46px;
+  padding-left: 16px;
+  border-bottom: 1px solid $fourth-color;
+  position: relative;
 
-	h1 {
-		font-size: $second-font-size;
-		line-height: 46px;
-		margin: 0;
-	}
-	
-	span {
-		position: absolute;
-		top: 16px;
-		right: 20px;
-		cursor: pointer;
-		font-size: $third-font-size;
-	}
+  h1 {
+    font-size: $second-font-size;
+    line-height: 46px;
+    margin: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    font-size: $third-font-size;
+  }
 }

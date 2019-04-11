@@ -1,10 +1,10 @@
 // ======================== mobile navigation ========================================
 
 var hamburgerIcon = document.querySelector(".hamburger-icon");
-var sidebar = document.getElementsByClassName('sidebar')[0];
+var sidebar = document.getElementsByClassName("sidebar")[0];
 
-hamburgerIcon.addEventListener('click', function(){
-	sidebar.classList.toggle("sidebar-mobile");
+hamburgerIcon.addEventListener("click", function() {
+  sidebar.classList.toggle("sidebar-mobile");
 });
 
 // ======================== navigation toggle class active =============================
@@ -59,7 +59,7 @@ var btnCloseChat = document.querySelector(".icon-chat-close");
 
 // modals
 var modals = document.querySelectorAll(".modal");
-var modal = document.querySelectorAll('.modal');
+var modal = document.querySelectorAll(".modal");
 
 //modal quit
 var navQuite = document.querySelector(".quite");
@@ -77,231 +77,244 @@ range.oninput = function() {
   output.innerHTML = this.value;
 };
 
-var removeDisplayClass = function(){
-	for (var i = 0; i < sectionItems.length; i++) {
-		sectionItems[i].classList.add("hide");
-	}
+var removeDisplayClass = function() {
+  for (var i = 0; i < sectionItems.length; i++) {
+    sectionItems[i].classList.add("hide");
+  }
 };
 
-navGeneral.addEventListener('click', function(){
-	removeDisplayClass();
-	generlSection.classList.toggle("hide");
+navGeneral.addEventListener("click", function() {
+  removeDisplayClass();
+  generlSection.classList.toggle("hide");
 });
 
-navDetails.addEventListener('click', function(){
-	removeDisplayClass();
-	detailsSection.classList.toggle("hide");
+navDetails.addEventListener("click", function() {
+  removeDisplayClass();
+  detailsSection.classList.toggle("hide");
 });
 
-navLinks.addEventListener('click', function(){
-	removeDisplayClass();
-	linksSection.classList.toggle("hide");
+navLinks.addEventListener("click", function() {
+  removeDisplayClass();
+  linksSection.classList.toggle("hide");
 });
 
-navBanners.addEventListener('click', function(){
-	removeDisplayClass();
-	bannersSection.classList.toggle("hide");
+navBanners.addEventListener("click", function() {
+  removeDisplayClass();
+  bannersSection.classList.toggle("hide");
 });
 
-navPersonalData.addEventListener('click', function(){
-	removeDisplayClass();
-	personalDataSection.classList.toggle("hide");
+navPersonalData.addEventListener("click", function() {
+  removeDisplayClass();
+  personalDataSection.classList.toggle("hide");
 });
 
-navPayout.addEventListener('click', function(){
-	removeDisplayClass();
-	payoutSection.classList.toggle("hide");
+navPayout.addEventListener("click", function() {
+  removeDisplayClass();
+  payoutSection.classList.toggle("hide");
 });
 
-navPostback.addEventListener('click', function(){
-	removeDisplayClass();
-	postbackSection.classList.toggle("hide");
+navPostback.addEventListener("click", function() {
+  removeDisplayClass();
+  postbackSection.classList.toggle("hide");
 });
 
 for (var i = 0; i < navItems.length; i++) {
-	navItems[i].addEventListener("click", function() {
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
-		});
-	}
+  navItems[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 
 // ======================== modal add banners =============================
 
-var showAddBanners = function(e){
-	e.preventDefault();
-	document.querySelector(".section--add-banners").classList.toggle("hide");
+var showAddBanners = function(e) {
+  e.preventDefault();
+  document.querySelector(".section--add-banners").classList.toggle("hide");
 };
 
-for (var i=0; i<btnsAddBanners.length; i++) {
-	btnsAddBanners[i].addEventListener('click', showAddBanners);	
+for (var i = 0; i < btnsAddBanners.length; i++) {
+  btnsAddBanners[i].addEventListener("click", showAddBanners);
 }
 
-var hideModalAddBanner = function(e){
-	e.preventDefault();
-	document.querySelector(".section--add-banners").classList.add("hide");
+var hideModalAddBanner = function(e) {
+  e.preventDefault();
+  document.querySelector(".section--add-banners").classList.add("hide");
 };
 
-btnAddBannersClose.addEventListener('click', hideModalAddBanner);
+btnAddBannersClose.addEventListener("click", hideModalAddBanner);
 
-document.querySelector("#add-banners-overlay").addEventListener('click', hideModalAddBanner);
+document
+  .querySelector("#add-banners-overlay")
+  .addEventListener("click", hideModalAddBanner);
 
 // ======================== modal add url =============================
 
-var showAddUrl = function(e){
-	e.preventDefault();
-	bannerAddUrl.classList.toggle("hide");
+var showAddUrl = function(e) {
+  e.preventDefault();
+  bannerAddUrl.classList.toggle("hide");
 };
 
-for (var i=0; i<btnsAddUrl.length; i++){
-	btnsAddUrl[i].addEventListener('click', showAddUrl);
+for (var i = 0; i < btnsAddUrl.length; i++) {
+  btnsAddUrl[i].addEventListener("click", showAddUrl);
 }
 
 var hideModalAddUrl = function(e) {
-	e.preventDefault();
-	bannerAddUrl.classList.add("hide");
+  e.preventDefault();
+  bannerAddUrl.classList.add("hide");
 };
 
-btnAddUrlClose.addEventListener('click', hideModalAddUrl);
+btnAddUrlClose.addEventListener("click", hideModalAddUrl);
 
-document.querySelector("#add-url-overlay").addEventListener('click', hideModalAddUrl);
+document
+  .querySelector("#add-url-overlay")
+  .addEventListener("click", hideModalAddUrl);
 
 // ======================== modal login =============================
 
 var showLogin = function(e) {
-	loginSection.classList.remove("hide");
+  loginSection.classList.remove("hide");
 };
 
-navLogin.addEventListener('click', showLogin);
+navLogin.addEventListener("click", showLogin);
 
 var hideModalLogin = function(e) {
-	loginSection.classList.add("hide");
+  loginSection.classList.add("hide");
 };
 
-btnLoginEnter.addEventListener('click', hideModalLogin);
+btnLoginEnter.addEventListener("click", hideModalLogin);
 
-document.querySelector("#login-modal-overlay").addEventListener('click', hideModalLogin);
+document
+  .querySelector("#login-modal-overlay")
+  .addEventListener("click", hideModalLogin);
 
 // ======================== modal chat =============================
 
 var showChatModal = function(e) {
-	e.preventDefault();
-	chatSection.classList.remove("hide");
+  e.preventDefault();
+  chatSection.classList.remove("hide");
 };
 
-managerOpenChat.addEventListener('click', showChatModal);
+managerOpenChat.addEventListener("click", showChatModal);
 
 var hideChatModal = function(e) {
-	e.preventDefault();
-	chatSection.classList.add("hide");
+  e.preventDefault();
+  chatSection.classList.add("hide");
 };
 
-btnCloseChat.addEventListener('click', hideChatModal);
+btnCloseChat.addEventListener("click", hideChatModal);
 
-document.querySelector("#chat-modal-overlay").addEventListener('click', hideChatModal);
-
+document
+  .querySelector("#chat-modal-overlay")
+  .addEventListener("click", hideChatModal);
 
 // ======================== modal quit =============================
 
-navQuite.addEventListener('click', function(){
-	quiteSection.classList.remove("hide");
+navQuite.addEventListener("click", function() {
+  quiteSection.classList.remove("hide");
 });
 
 var hideQuitModal = function(e) {
-	e.preventDefault();
-	quiteSection.classList.add('hide');
+  e.preventDefault();
+  quiteSection.classList.add("hide");
 };
 
-btnQuit.addEventListener('click', hideQuitModal);
-btnCancel.addEventListener('click', hideQuitModal);
-quitOverlay.addEventListener('click', hideQuitModal);
+btnQuit.addEventListener("click", hideQuitModal);
+btnCancel.addEventListener("click", hideQuitModal);
+quitOverlay.addEventListener("click", hideQuitModal);
 
 // ======================== modals - stop propagation  =============================
 
-for (var i = 0; i < modals.length; i++){
-		modals[i].addEventListener('click', function(event){
-			event.stopPropagation();
-		});
-	}
-
-if (screen.width <= 600){
-
-	var addMinSidebar = function(e){
-		e.preventDefault();
-		document.querySelector(".sidebar").classList.remove("sidebar-mobile");
-	};
-
-	navDetails.addEventListener("click", addMinSidebar);
+for (var i = 0; i < modals.length; i++) {
+  modals[i].addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
 }
 
-for (var i=0; i<navItems.length; i++){
-	navItems[i].addEventListener('click', addMinSidebar);
+if (screen.width <= 600) {
+  var addMinSidebar = function(e) {
+    e.preventDefault();
+    document.querySelector(".sidebar").classList.remove("sidebar-mobile");
+  };
+
+  navDetails.addEventListener("click", addMinSidebar);
+}
+
+for (var i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener("click", addMinSidebar);
 }
 
 // ======================== interactive chart  =============================
 
-var ctx = document.getElementById('myChart').getContext('2d');
+var ctx = document.getElementById("myChart").getContext("2d");
 var chart = new Chart(ctx, {
-    // 1
-    type: 'bar',
-    data: {
-        // 2
-        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
-        // 3
-        datasets: [{
-            // 4
-            label: "Signups",
-            // 5
-            backgroundColor: '#8DBEC8',
-            borderColor: '#8DBEC8',
-            // 6
-            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
-        },
-        {
-            label: "FTD",
-            backgroundColor: '#F29E4E',
-            borderColor: '#F29E4E',
-            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
-        },
-        {
-            label: "Earned",
-            backgroundColor: '#71B374',
-            borderColor: '#71B374',
-            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
-            // 7
-            hidden: true,
-        }]
-    },
+  // 1
+  type: "bar",
+  data: {
+    // 2
+    labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    // 3
+    datasets: [
+      {
+        // 4
+        label: "Signups",
+        // 5
+        backgroundColor: "#8DBEC8",
+        borderColor: "#8DBEC8",
+        // 6
+        data: [52, 51, 41, 94, 26, 6, 72, 9, 21, 88]
+      },
+      {
+        label: "FTD",
+        backgroundColor: "#F29E4E",
+        borderColor: "#F29E4E",
+        data: [6, 72, 1, 0, 47, 11, 50, 44, 63, 76]
+      },
+      {
+        label: "Earned",
+        backgroundColor: "#71B374",
+        borderColor: "#71B374",
+        data: [59, 49, 68, 90, 67, 41, 13, 38, 48, 48],
+        // 7
+        hidden: true
+      }
+    ]
+  }
 });
 
- //  ================ range ===============================
+//  ================ range ===============================
 
 $(window).on("load resize", function() {
   // Get the current width of the slider
-  var sliderWidth = $('[type=range]').width();
+  var sliderWidth = $("[type=range]").width();
 
   // Remove previously created style elements
-  $('.custom-style-element-related-to-range').remove();
+  $(".custom-style-element-related-to-range").remove();
 
   // Add our updated styling
-  $('<style class="custom-style-element-related-to-range">input[type="range"]::-webkit-slider-thumb { box-shadow: -' + 1000 + 'px 0 0 ' + 1000 + 'px;}<style/>').appendTo('head');
+  $(
+    '<style class="custom-style-element-related-to-range">input[type="range"]::-webkit-slider-thumb { box-shadow: -' +
+      1000 +
+      "px 0 0 " +
+      1000 +
+      "px;}<style/>"
+  ).appendTo("head");
 });
 
- //  ================ range ===============================
+//  ================ range ===============================
 
 var selectFlag = document.querySelector(".select-flag");
 var flagSelected = document.querySelector(".flag-selected");
 var flagList = document.querySelector(".select-flag ul");
 var flagInput = document.querySelector(".input-flag");
 
-
 selectFlag.addEventListener("click", function() {
-  if(flagList.style.display === "block") flagList.style.display = "none";
+  if (flagList.style.display === "block") flagList.style.display = "none";
   else flagList.style.display = "block";
 });
 
 flagList.addEventListener("click", function(event) {
-  if(event.target.tagName === "LI") {
+  if (event.target.tagName === "LI") {
     chooseOption(event.target);
   }
 });
@@ -311,4 +324,4 @@ function chooseOption(elem) {
   flagInput.value = elem.dataset.index;
 }
 
-chooseOption(flagList.querySelector('li'));
+chooseOption(flagList.querySelector("li"));

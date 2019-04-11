@@ -1,58 +1,58 @@
 .section--banners .container {
-	position: absolute;
-	top: 20px;
-	margin-top: 50px; 
+  position: absolute;
+  top: 20px;
+  margin-top: 50px;
 }
 
 @media (max-width: 992px) {
-	.section--banners .link-desc {
-		min-width: 100px;
+  .section--banners .link-desc {
+    min-width: 100px;
 
-		.icon-links {
-			min-width: 20px;
-			opacity: 1;
-			color: $sixth-color-light;
-			margin-top: 10px;
-		}
-		
-		.icon-trash {
-			min-width: 10px;
-			opacity: 1;
-			margin-top: 10px;
-		}
-	}
+    .icon-links {
+      min-width: 20px;
+      opacity: 1;
+      color: $sixth-color-light;
+      margin-top: 10px;
+    }
+
+    .icon-trash {
+      min-width: 10px;
+      opacity: 1;
+      margin-top: 10px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
-	.section--banners .container {
-		margin-top: -20px;
+  .section--banners .container {
+    margin-top: -20px;
 
-		.links .link {
-			.link-desc {
-				min-width: 75px;
-				font-size: 10px;
-			}
+    .links .link {
+      .link-desc {
+        min-width: 75px;
+        font-size: 10px;
+      }
 
-			.link-item {
-				font-size: 10px;
-			}
+      .link-item {
+        font-size: 10px;
+      }
 
-			.icon-links {
-				color: $sixth-color-light;
-				min-width: 20px;
-				line-height: 75px;
-				opacity: 1;
-				font-size: 10px;
-				margin-top: 0;
-			}
-			
-			.icon-trash {
-				min-width: 15px;
-				line-height: 75px;
-				opacity: 1;
-				font-size: 10px;
-				margin-top: 0;
-			}
-		}
-	}
+      .icon-links {
+        color: $sixth-color-light;
+        min-width: 20px;
+        line-height: 75px;
+        opacity: 1;
+        font-size: 10px;
+        margin-top: 0;
+      }
+
+      .icon-trash {
+        min-width: 15px;
+        line-height: 75px;
+        opacity: 1;
+        font-size: 10px;
+        margin-top: 0;
+      }
+    }
+  }
 }

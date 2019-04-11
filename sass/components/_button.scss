@@ -1,76 +1,75 @@
 .btn {
-	height: 40px;
-	background-color: $sixth-color;
-	border-radius: 3px;
-	font-size: $second-font-size;
-	color: $fiveth-color;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 0 20px;
-	line-height: 40px;
+  height: 40px;
+  background-color: $sixth-color;
+  border-radius: 3px;
+  font-size: $second-font-size;
+  color: $fiveth-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px;
+  line-height: 40px;
 
-	&:hover {
-		background-color: $sixth-color-light;
-	}
+  &:hover {
+    background-color: $sixth-color-light;
+  }
 
-	&.icon-general {
-		font-family: glyphter !important;
-	}
+  &.icon-general {
+    font-family: glyphter !important;
+  }
 
-	&.add {
-		display: flex;
-		margin: 23px auto;
-	}
-	
+  &.add {
+    display: flex;
+    margin: 23px auto;
+  }
 }
 
 .icon-refresh {
-	min-width: 41px;
-	min-height: 40px;
-	padding: 0;
-	line-height: 45px;
+  min-width: 41px;
+  min-height: 40px;
+  padding: 0;
+  line-height: 45px;
 }
 
 .btn-wrapper {
-	width: 100%;
-	display: flex;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .btn-cancel {
-	background-color: $second-color;
+  background-color: $second-color;
 
-	&:hover {
-		background-color: $third-color-dark;
-	}
+  &:hover {
+    background-color: $third-color-dark;
+  }
 }
 
 .copy {
-	background-color: $third-color-dark;
+  background-color: $third-color-dark;
 
-	i {
-		padding-right: 5px;
-	}
+  i {
+    padding-right: 5px;
+  }
 
-	&:hover {
-		background-color: $second-color;
-	}
+  &:hover {
+    background-color: $second-color;
+  }
 }
 
 .hamburger-icon {
-	background-color: transparent;
-	border: none;
-	&:focus {
-		outline: none;
-	}
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 @media (max-width: 576px) {
-	.hamburger-icon {
-		margin: 0 auto;
-		position: absolute;
-		top: 0;
-		left: -10px;
-		}
-	}
+  .hamburger-icon {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+}

@@ -1,301 +1,297 @@
 .sidebar {
-	background-color: #191919;
-	color: $fiveth-color;
-	width: 188px;
-	height: 100%;
-	position: fixed;
-	z-index: 2;
-	top: 0;
+  background-color: #191919;
+  color: $fiveth-color;
+  width: 188px;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
 
-	.top {
-		line-height: 60px;
-		display: flex;
-		justify-content: space-between;
-		padding: 20px;
+  .top {
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 
-		.hamburger-icon {
-			width: 18px;
-			height: 16px;
-			cursor: pointer;
-		}
-	}
+    .hamburger-icon {
+      width: 18px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
 
-	ul  {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		
-		li {
-			margin: 0;
-			border-left: 4px solid transparent;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-			&:hover{
-				background-color: $main-color;
-			}
+    li {
+      margin: 0;
+      border-left: 4px solid transparent;
 
-			&.active  {
-				background-color: $main-color;
-				border-left: 4px solid $sixth-color;
-			}
+      &:hover {
+        background-color: $main-color;
+      }
 
-			a {
-				text-decoration: none;
-				color: $fiveth-color;
-				display: flex;
-				flex-direction: row;
-				
-				.icon {
-					width: 15px;
-					height: 14px;
-					font-weight: 200;
-					cursor: pointer;
-					padding: 14px 0 22px 13px;
-				}
+      &.active {
+        background-color: $main-color;
+        border-left: 4px solid $sixth-color;
+      }
 
-				.desc {
-					font-size: $fourth-font-size;
-					font-weight: 300;
-					margin: 0 0 0 36px;
-					cursor: pointer;
-					line-height: 40px;
-					height: 40px;
-				}
-			}
-		}
-	}
+      a {
+        text-decoration: none;
+        color: $fiveth-color;
+        display: flex;
+        flex-direction: row;
 
-	.sidebar-team {
-		padding: 20px 0 0 20px;
-		display: flex;
-		flex-direction: column;
-		border-top: 1px solid #333;
+        .icon {
+          width: 15px;
+          height: 14px;
+          font-weight: 200;
+          cursor: pointer;
+          padding: 14px 0 22px 13px;
+        }
 
-		.head {
-			text-transform: uppercase;
-			font-size: $fourth-font-size;
-			font-weight: 500;
-			letter-spacing: -0.28px;
-			color: $fiveth-color;
-			font-size: $third-font-size;
-		}
+        .desc {
+          font-size: $fourth-font-size;
+          font-weight: 300;
+          margin: 0 0 0 36px;
+          cursor: pointer;
+          line-height: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
 
-		.wrapper {
-			display: flex;
-			cursor: pointer;
-			margin: 0;
+  .sidebar-team {
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #333;
 
-			.photo {
-				display: inline-block;
-				padding: 0 10px 5px 0;
-			}
+    .head {
+      text-transform: uppercase;
+      font-size: $fourth-font-size;
+      font-weight: 500;
+      letter-spacing: -0.28px;
+      color: $fiveth-color;
+      font-size: $third-font-size;
+    }
 
-			.name {
-				color: $link-color;
-				cursor: pointer;
-				font-weight: 300;
+    .wrapper {
+      display: flex;
+      cursor: pointer;
+      margin: 0;
 
-				&:hover {
-					color: $fiveth-color-bright;
-				}
-			}
+      .photo {
+        display: inline-block;
+        padding: 0 10px 5px 0;
+      }
 
-			.round {
-				width: 12px;
-				height: 11px;
-				background-color: $eighth-color-dark;
-				border-radius: 50%;
-				position: relative;
-				bottom: 0;
-			    right: 80px;
-			}
-		}
-	}
+      .name {
+        color: $link-color;
+        cursor: pointer;
+        font-weight: 300;
 
-	.top-nav-mobile {
-		display: none;
-	}
+        &:hover {
+          color: $fiveth-color-bright;
+        }
+      }
+
+      .round {
+        width: 12px;
+        height: 11px;
+        background-color: $eighth-color-dark;
+        border-radius: 50%;
+        position: relative;
+        bottom: 0;
+        right: 80px;
+      }
+    }
+  }
+
+  .top-nav-mobile {
+    display: none;
+  }
 }
 
-
-
 @media (max-width: 576px) {
-	.sidebar {
-		width: 50px;
+  .sidebar {
+    width: 50px;
 
-		.hamburger-icon {
-			position: relative;
-			right: 4px;
-			&:active .sidebar {
-			background-color: red;
-				}
-			}
+    .hamburger-icon {
+      position: relative;
+      right: 4px;
+      &:active .sidebar {
+        background-color: red;
+      }
+    }
 
-		.logo {
-			display: none;
-		}
+    .logo {
+      display: none;
+    }
 
-		nav ul li .icon {
-			bottom: 10px;
-		}
+    nav ul li .icon {
+      bottom: 10px;
+    }
 
-		.desc{
-			display: none;
-		}
+    .desc {
+      display: none;
+    }
 
-		.sidebar-team {
-			display: none;
-		}
-	}
+    .sidebar-team {
+      display: none;
+    }
+  }
 
-	.top-nav {
-		display: none;
-	}
-	
-	.sidebar-mobile {
-		width: 100%;
-		.hamburger-icon{
-			display: none;
-		}
+  .top-nav {
+    display: none;
+  }
 
-		nav {
-			margin-left: 30%;
+  .sidebar-mobile {
+    width: 100%;
+    .hamburger-icon {
+      display: none;
+    }
 
+    nav {
+      margin-left: 30%;
 
-			ul li {
-				border-left: 0;
-				border-bottom: 1px solid $main-color;
-				width: 60%;
-				margin-bottom: 20px;
+      ul li {
+        border-left: 0;
+        border-bottom: 1px solid $main-color;
+        width: 60%;
+        margin-bottom: 20px;
 
-				&:hover, &.nav-active {
-					border-left: 0;
-					border-bottom: 1px solid $sixth-color;
-				}
-			
-				a {
-					.icon {
-						bottom: 10px;
-						font-size: 16px;
+        &:hover,
+        &.nav-active {
+          border-left: 0;
+          border-bottom: 1px solid $sixth-color;
+        }
 
-					}
+        a {
+          .icon {
+            bottom: 10px;
+            font-size: 16px;
+          }
 
-					.desc {
-						display: block;
-						font-size: 16px;
-					}
+          .desc {
+            display: block;
+            font-size: 16px;
+          }
+        }
+      }
+    }
 
-				}
-			}
-		}
+    .sidebar-team .head {
+      text-align: center;
+      margin-bottom: 15x;
+    }
 
-		.sidebar-team .head {
-			text-align: center;
-			margin-bottom: 15x;
-		}
-		
-		.top-nav-mobile {
-			display: block;
-			margin: 0;
-			width: 100%;
-			position: fixed;
-			bottom: 0;
-			display: flex;
-			flex-direction: row-reverse;
-			color: $second-color;
-			background-color: $fiveth-color-bright;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+    .top-nav-mobile {
+      display: block;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      color: $second-color;
+      background-color: $fiveth-color-bright;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-			.nav-item {
-				border-left: 1px solid $fourth-color;
-				height: 60px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding: 10px;
-				width: 100%;
+      .nav-item {
+        border-left: 1px solid $fourth-color;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
 
-				&:last-child {
-					border-left: none;
-				}
+        &:last-child {
+          border-left: none;
+        }
 
-				span {
-					font-weight: 400;
-					color: $second-color;
-					margin: 0 15px;
-					font-size: $first-font-size;
-				}
+        span {
+          font-weight: 400;
+          color: $second-color;
+          margin: 0 15px;
+          font-size: $first-font-size;
+        }
 
-				.icon-profile {
-					width: 17px;
-					height: 17px;
-					margin-right: 12px;
+        .icon-profile {
+          width: 17px;
+          height: 17px;
+          margin-right: 12px;
 
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
+          &:hover {
+            color: $sixth-color-light;
+          }
+        }
 
-				.name {
-					font-size: 13px;
-				}
+        .name {
+          font-size: 13px;
+        }
 
-				.icon-wallet {
-					width: 17px;
-					height: 18px;
-					cursor: pointer;
-					margin: 5px;
+        .icon-wallet {
+          width: 17px;
+          height: 18px;
+          cursor: pointer;
+          margin: 5px;
 
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
+          &:hover {
+            color: $sixth-color-light;
+          }
+        }
 
-				.icon-arrow-down {
-					font-size: 11px;
-					width: 11px;
-					height: 7px;
-					cursor: pointer;
-					margin: 5px;
+        .icon-arrow-down {
+          font-size: 11px;
+          width: 11px;
+          height: 7px;
+          cursor: pointer;
+          margin: 5px;
 
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
+          &:hover {
+            color: $sixth-color-light;
+          }
+        }
 
-				.icon-notification {
-					width: 16px;
-					height: 17px;
-					position: relative;
-					left: 5px;
-					cursor: pointer;
+        .icon-notification {
+          width: 16px;
+          height: 17px;
+          position: relative;
+          left: 5px;
+          cursor: pointer;
 
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
+          &:hover {
+            color: $sixth-color-light;
+          }
+        }
 
-				.notification-icon-round {
-					width: 9px;
-					height: 8px;
-					background-color: $sixth-color;
-					border-radius: 50%;
-					position: relative;
-					bottom: 7px;
-					right: 4px;
-				}
+        .notification-icon-round {
+          width: 9px;
+          height: 8px;
+          background-color: $sixth-color;
+          border-radius: 50%;
+          position: relative;
+          bottom: 7px;
+          right: 4px;
+        }
 
-				.icon-quit {
-					width: 19px;
-					height: 15px;
-					cursor: pointer;
+        .icon-quit {
+          width: 19px;
+          height: 15px;
+          cursor: pointer;
 
-					&:hover {
-						color: $sixth-color-light;
-					}
-				}
-			}
-		}	
-	}
+          &:hover {
+            color: $sixth-color-light;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,1214 +1,1360 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<script
-		  src="https://code.jquery.com/jquery-1.9.1.min.js"
-		  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
-		  crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body class="registration-form-template">
-		
-	<!-- =========================== top nav ============================= -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-1.9.1.min.js"
+      integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="registration-form-template">
+    <!-- =========================== top nav ============================= -->
 
-		<nav class="top-nav">
-			<a class="nav-item quite">
-				<i class="icon-quit"></i>
-			</a>
-			<div class="nav-item login">
-				<span class="icon-profile"></span>
-				<p class="name"> Leonardo Dicaprio </p>
-			</div>
-			<div class="nav-item">
-				<span class="icon-notification"></span>
-				<div class="notification-icon-round"></div>
-			</div>
-			<div class="nav-item">
-				<span class="icon-wallet"></span>
-				<h2>$1,500.00</h2>
-				<a href="#"><i class="icon-arrow-down"></i></a>
-			</div>		
-		</nav>
+    <nav class="top-nav">
+      <a class="nav-item quite">
+        <i class="icon-quit"></i>
+      </a>
+      <div class="nav-item login">
+        <span class="icon-profile"></span>
+        <p class="name">Leonardo Dicaprio</p>
+      </div>
+      <div class="nav-item">
+        <span class="icon-notification"></span>
+        <div class="notification-icon-round"></div>
+      </div>
+      <div class="nav-item">
+        <span class="icon-wallet"></span>
+        <h2>$1,500.00</h2>
+        <a href="#"><i class="icon-arrow-down"></i></a>
+      </div>
+    </nav>
 
-	<!-- =========================== sidebar ============================= -->
+    <!-- =========================== sidebar ============================= -->
 
-		<aside class="sidebar">
-			<div class="top">
-				<img class="logo" src="images/logo.png" alt="logo">
-				<button type="button" class="hamburger-icon" > <img src="images/icons/hamburger.png" alt=""> </button>
-			</div>
-			<nav>
-				<ul>
-					<li class="menu-item nav-general active">
-						<a href="#general">
-							<span class="icon icon-general"></span>
-							<p class="desc general">General</p>
-						</a>	
-					</li>
-					<li class="menu-item nav-details">
-						<a href="#details">
-							<span class="icon icon-details"></span>
-							<p class="desc">Details</p>
-						</a>
-					</li>
-					<li class="menu-item nav-links">
-						<a href="#links">
-							<span class="icon icon-links"></span>
-							<p class="desc">Links</p>
-						</a>
-					</li>
-					<li class="menu-item nav-banners">
-						<a href="#banners">
-							<span class="icon icon-banners"></span>
-							<p class="desc">Banners</p>
-						</a>
-					</li>
-					<li class="menu-item nav-personal-data">
-						<a href="#personal-data">
-							<span class="icon icon-personaldata"></span>
-							<p class="desc">Personal data</p>
-						</a>
-					</li>
-					<li class="menu-item nav-payout">
-						<a href="#payout">
-							<span class="icon icon-payout"></span>
-							<p class="desc">Payout</p>
-						</a>
-					</li>
-					<li class="menu-item nav-postback">
-						<a href="#postback">
-							<span class="icon icon-postback"></span>
-							<p class="desc">Postback</p>
-						</a>	
-					</li>
-				</ul>
-			</nav>
-			<section class="sidebar-team">
-				<h1 class="head">Your manager</h1>
-				<div class="wrapper manager-chat">
-					<img class="photo" src="images/photo-team.png" alt="">
-					<h2 class="name ">Mikhael E.</h2>
-					<div class="round"></div>
-				</div>
-			</section>
-			<nav class="top-nav-mobile">
-				<div class="nav-item">
-					<span class="icon-quit"></span>
-				</div>
-				<div class="nav-item">
-					<span class="icon-profile"></span>
-					<p class="name"> Leonardo Dicaprio </p>
-				</div>
-				<div class="nav-item">
-					<span class="icon-notification"></span>
-					<div class="notification-icon-round"></div>
-				</div>
-				<div class="nav-item">
-					<span class="icon-wallet"></span>
-					<h2>$1,500.00</h2>
-					<span class="icon-arrow-down"></span>
-				</div>		
-			</nav>
-		</aside>
+    <aside class="sidebar">
+      <div class="top">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <button type="button" class="hamburger-icon">
+          <img src="images/icons/hamburger.png" alt="" />
+        </button>
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-item nav-general active">
+            <a href="#general">
+              <span class="icon icon-general"></span>
+              <p class="desc general">General</p>
+            </a>
+          </li>
+          <li class="menu-item nav-details">
+            <a href="#details">
+              <span class="icon icon-details"></span>
+              <p class="desc">Details</p>
+            </a>
+          </li>
+          <li class="menu-item nav-links">
+            <a href="#links">
+              <span class="icon icon-links"></span>
+              <p class="desc">Links</p>
+            </a>
+          </li>
+          <li class="menu-item nav-banners">
+            <a href="#banners">
+              <span class="icon icon-banners"></span>
+              <p class="desc">Banners</p>
+            </a>
+          </li>
+          <li class="menu-item nav-personal-data">
+            <a href="#personal-data">
+              <span class="icon icon-personaldata"></span>
+              <p class="desc">Personal data</p>
+            </a>
+          </li>
+          <li class="menu-item nav-payout">
+            <a href="#payout">
+              <span class="icon icon-payout"></span>
+              <p class="desc">Payout</p>
+            </a>
+          </li>
+          <li class="menu-item nav-postback">
+            <a href="#postback">
+              <span class="icon icon-postback"></span>
+              <p class="desc">Postback</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="sidebar-team">
+        <h1 class="head">Your manager</h1>
+        <div class="wrapper manager-chat">
+          <img class="photo" src="images/photo-team.png" alt="" />
+          <h2 class="name ">Mikhael E.</h2>
+          <div class="round"></div>
+        </div>
+      </section>
+      <nav class="top-nav-mobile">
+        <div class="nav-item">
+          <span class="icon-quit"></span>
+        </div>
+        <div class="nav-item">
+          <span class="icon-profile"></span>
+          <p class="name">Leonardo Dicaprio</p>
+        </div>
+        <div class="nav-item">
+          <span class="icon-notification"></span>
+          <div class="notification-icon-round"></div>
+        </div>
+        <div class="nav-item">
+          <span class="icon-wallet"></span>
+          <h2>$1,500.00</h2>
+          <span class="icon-arrow-down"></span>
+        </div>
+      </nav>
+    </aside>
 
-	<!-- =========================== general section ============================= -->
+    <!-- =========================== general section ============================= -->
 
-		<section id="general" class="section--general section-item">
-			<div class="container">
-				<header class="header">
-					<h1>General statistic</h1>
-				</header>
-				
-				<!-- calendar -->
-				<section class="calendar-wrapper">
-					<form class="calendar-form">
-						<div class="calendar">
-							<input type="date" value="2016-05-16" class="date date-first" required="required">
-							<div class="calendar-icon">
-								<input type="date" value="2016-08-16"  class="date date-second" required="required">
-								<span class="icon-calendar"></span>
-							</div>
-						</div>
-						<button type="reset" class="btn icon-refresh"></button>
-					</form>
-				</section>
+    <section id="general" class="section--general section-item">
+      <div class="container">
+        <header class="header">
+          <h1>General statistic</h1>
+        </header>
 
-				<!-- current values -->
-				<section class="values wrapper">
-					<div class="current-values">
-						<h2 class="values-name">Visit Signups</h2>
-						<h2 class="values-data">124</h2>
-					</div>
-					<div class="current-values">
-						<h2 class="values-name">Net deposit</h2>
-						<h2 class="values-data">564</h2>
-					</div>
-					<div class="current-values">
-						<h2 class="values-name">FTD</h2>
-						<h2 class="values-data">445</h2>
-					</div>
-					<div class="current-values">
-						<h2 class="values-name">Turn over</h2>
-						<h2 class="values-data">432</h2>
-					</div>
-				</section>
-				
-				<!-- graph -->
-				<section>
-					<div class="wrapper">
-						<div class="padding-wrapper">
-							<h1 class="header-graph">Earnings chart</h1>
-							<canvas id="myChart" class="graph"></canvas>
-						</div>
-					</div>
-				</section>
-			</div>
-		</section>
+        <!-- calendar -->
+        <section class="calendar-wrapper">
+          <form class="calendar-form">
+            <div class="calendar">
+              <input
+                type="date"
+                value="2016-05-16"
+                class="date date-first"
+                required="required"
+              />
+              <div class="calendar-icon">
+                <input
+                  type="date"
+                  value="2016-08-16"
+                  class="date date-second"
+                  required="required"
+                />
+                <span class="icon-calendar"></span>
+              </div>
+            </div>
+            <button type="reset" class="btn icon-refresh"></button>
+          </form>
+        </section>
 
-	<!-- =========================== details section ============================= -->
-		<section id="details" class="section--details section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>Details</h1>
-				</header>
+        <!-- current values -->
+        <section class="values wrapper">
+          <div class="current-values">
+            <h2 class="values-name">Visit Signups</h2>
+            <h2 class="values-data">124</h2>
+          </div>
+          <div class="current-values">
+            <h2 class="values-name">Net deposit</h2>
+            <h2 class="values-data">564</h2>
+          </div>
+          <div class="current-values">
+            <h2 class="values-name">FTD</h2>
+            <h2 class="values-data">445</h2>
+          </div>
+          <div class="current-values">
+            <h2 class="values-name">Turn over</h2>
+            <h2 class="values-data">432</h2>
+          </div>
+        </section>
 
-				<!-- calendar -->
-				<section class="calendar-wrapper">
-					<form class="calendar-form">
-						<div class="calendar">
-							<input  type="date" value="2016-05-16" class="date date-first" required="required">
-							<div class="calendar-icon">
-								<input type="date" value="2016-08-16"  class="date date-second" required="required">
-								<span class="icon-calendar"></span>
-							</div>
-						</div>
-						<button type="reset" class="btn icon-refresh"></button>
-					</form>
-				</section>
-				<!-- table -->
-				<section class="scroll-wrapper">
-					<div class="padding-wrapper">
-						<table class="details-table">
-							<thead>
-								<tr>
-									<th scope="col">Trancker name</th>
-									<th scope="col">Initialed date</th>
-									<th scope="col">Visits</th>
-									<th scope="col">Unique</th>
-									<th scope="col">Signups</th>
-									<th scope="col">FTD</th>
-									<th scope="col">Depositors</th>
-									<th scope="col">Deposits ($)</th>
-									<th scope="col">Payout($)</th>
-									<th scope="col">Turnover</th>
-									<th scope="col">Deal</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/sarn_test</td>
-									<td data-label="Initialed date">17/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^ ">34,425.00</td>
-									<td data-label="Payout($)">234.00</td>
-									<td data-label="Turnover">421,342.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/leo_test</td>
-									<td data-label="Initialed date">15/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">29,436.00</td>
-									<td data-label="Payout($)">941.00</td>
-									<td data-label="Turnover">784,435.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/sarn_test</td>
-									<td data-label="Initialed date">17/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">34,425.00</td>
-									<td data-label="Payout($)">234.00</td>
-									<td data-label="Turnover">421,342.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/leo_test</td>
-									<td data-label="Initialed date">15/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">29,436.00</td>
-									<td data-label="Payout($)">941.00</td>
-									<td data-label="Turnover">784,435.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/sarn_test</td>
-									<td data-label="Initialed date">17/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">34,425.00</td>
-									<td data-label="Payout($)">234.00</td>
-									<td data-label="Turnover">421,342.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/leo_test</td>
-									<td data-label="Initialed date">15/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">29,436.00</td>
-									<td data-label="Payout($)">941.00</td>
-									<td data-label="Turnover">784,435.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/sarn_test</td>
-									<td data-label="Initialed date">17/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">34,425.00</td>
-									<td data-label="Payout($)">234.00</td>
-									<td data-label="Turnover">421,342.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-								<tr>
-									<td scope="row" data-label="Trancker name">aff/leo_test</td>
-									<td data-label="Initialed date">15/08.02 (12:58)</td>
-									<td data-label="Visits">232</td>
-									<td data-label="Unique">114</td>
-									<td data-label="Signups">12</td>
-									<td data-label="FTD">6</td>
-									<td data-label="Depositors">3</td>
-									<td data-label="Deposits ($) ^">29,436.00</td>
-									<td data-label="Payout($)">941.00</td>
-									<td data-label="Turnover">784,435.00</td>
-									<td data-label="Deal">cpl(200)</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="pagination">
-						<a href="#"><i class="icon-arrow-left"></i></a>
-						<a href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">6</a>
-						<a href="#">7</a>
-						<a href="#">8</a>
-						<a href="#">9</a>
-						<a href="#"><i class="icon-arrow-right"></i></a>
-					</div>
-				</section>
-			</div>
-		</section>>
+        <!-- graph -->
+        <section>
+          <div class="wrapper">
+            <div class="padding-wrapper">
+              <h1 class="header-graph">Earnings chart</h1>
+              <canvas id="myChart" class="graph"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
-	<!-- =========================== links section ============================= -->
-		<section id="links" class="section--links section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>Links</h1>
-				</header>
-				<div class="padding-wrapper">
-					<div class="links wrapper">
-						<button type="button" class="btn add add-url"> + add new</button>
-						<div class="link">
-							<h2 class="link-desc">Home page</h2>
-							<h2 class="link-item">http://www.homepage.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Currently offer</h2>
-							<h2 class="link-item">http://www.currently.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Blurpix</h2>
-							<h2 class="link-item">http://www.blurpix.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Your Site</h2>
-							<h2 class="link-item">http://www.yoursite.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Google</h2>
-							<h2 class="link-item">http://www.google.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>					
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Facebook</h2>
-							<h2 class="link-item">http://www.facebook.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Dashboard</h2>
-							<h2 class="link-item">http://www.dashboard.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Blurax</h2>
-							<h2 class="link-item">http://www.blurax.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Piece of Wine</h2>
-							<h2 class="link-item">http://www.pieceofwine.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Twitter</h2>
-							<h2 class="link-item">http://www.twitter.com</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-					</div>
-				</div>
-				<button type="button" class="btn add bottom add-url"> + add new</button>
-			</div>
-		</section>
+    <!-- =========================== details section ============================= -->
+    <section id="details" class="section--details section-item hide">
+      <div class="container">
+        <header class="header">
+          <h1>Details</h1>
+        </header>
 
-	<!-- =========================== banners section ============================= -->
-		<section id="banners" class="section--banners section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>Banners</h1>
-				</header>
-				<div class="padding-wrapper">
-					<div class="links wrapper">
-						<button type="button" class="btn add btn-add-banners"> + add new</button>
-						<div class="link">
-							<h2 class="link-desc">Banner main</h2>
-							<h2 class="link-item">http://www.website.com/banner.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Sign up banner</h2>
-							<h2 class="link-item">http://www.website.com/signup.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Banner left side</h2>
-							<h2 class="link-item">http://www.website.com/leftside.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Vertical banner</h2>
-							<h2 class="link-item">http://www.website.com/vert.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Front banner</h2>
-							<h2 class="link-item">http://www.website.com/front.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>					
-						</div>
-						<div class="link">
-							<h2 class="link-desc">Horizontal</h2>
-							<h2 class="link-item">http://www.website.com/horiz.gif</h2>
-							<span class="icon-links"></span>
-							<span class="icon-trash"></span>
-						</div>
-					</div>
-				</div>
-				<button type="button" class="btn add bottom btn-add-banners"> + add new</button>
-			</div>
-		</section>
+        <!-- calendar -->
+        <section class="calendar-wrapper">
+          <form class="calendar-form">
+            <div class="calendar">
+              <input
+                type="date"
+                value="2016-05-16"
+                class="date date-first"
+                required="required"
+              />
+              <div class="calendar-icon">
+                <input
+                  type="date"
+                  value="2016-08-16"
+                  class="date date-second"
+                  required="required"
+                />
+                <span class="icon-calendar"></span>
+              </div>
+            </div>
+            <button type="reset" class="btn icon-refresh"></button>
+          </form>
+        </section>
+        <!-- table -->
+        <section class="scroll-wrapper">
+          <div class="padding-wrapper">
+            <table class="details-table">
+              <thead>
+                <tr>
+                  <th scope="col">Trancker name</th>
+                  <th scope="col">Initialed date</th>
+                  <th scope="col">Visits</th>
+                  <th scope="col">Unique</th>
+                  <th scope="col">Signups</th>
+                  <th scope="col">FTD</th>
+                  <th scope="col">Depositors</th>
+                  <th scope="col">Deposits ($)</th>
+                  <th scope="col">Payout($)</th>
+                  <th scope="col">Turnover</th>
+                  <th scope="col">Deal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/sarn_test</td>
+                  <td data-label="Initialed date">17/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^ ">34,425.00</td>
+                  <td data-label="Payout($)">234.00</td>
+                  <td data-label="Turnover">421,342.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/leo_test</td>
+                  <td data-label="Initialed date">15/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">29,436.00</td>
+                  <td data-label="Payout($)">941.00</td>
+                  <td data-label="Turnover">784,435.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/sarn_test</td>
+                  <td data-label="Initialed date">17/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">34,425.00</td>
+                  <td data-label="Payout($)">234.00</td>
+                  <td data-label="Turnover">421,342.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/leo_test</td>
+                  <td data-label="Initialed date">15/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">29,436.00</td>
+                  <td data-label="Payout($)">941.00</td>
+                  <td data-label="Turnover">784,435.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/sarn_test</td>
+                  <td data-label="Initialed date">17/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">34,425.00</td>
+                  <td data-label="Payout($)">234.00</td>
+                  <td data-label="Turnover">421,342.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/leo_test</td>
+                  <td data-label="Initialed date">15/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">29,436.00</td>
+                  <td data-label="Payout($)">941.00</td>
+                  <td data-label="Turnover">784,435.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/sarn_test</td>
+                  <td data-label="Initialed date">17/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">34,425.00</td>
+                  <td data-label="Payout($)">234.00</td>
+                  <td data-label="Turnover">421,342.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Trancker name">aff/leo_test</td>
+                  <td data-label="Initialed date">15/08.02 (12:58)</td>
+                  <td data-label="Visits">232</td>
+                  <td data-label="Unique">114</td>
+                  <td data-label="Signups">12</td>
+                  <td data-label="FTD">6</td>
+                  <td data-label="Depositors">3</td>
+                  <td data-label="Deposits ($) ^">29,436.00</td>
+                  <td data-label="Payout($)">941.00</td>
+                  <td data-label="Turnover">784,435.00</td>
+                  <td data-label="Deal">cpl(200)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <a href="#"><i class="icon-arrow-left"></i></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#"><i class="icon-arrow-right"></i></a>
+          </div>
+        </section>
+      </div>
+    </section>
+    >
 
-	<!-- =========================== personal data section ============================= -->
-		<section id="personal-data" class="section--personal-data section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>Personal data</h1>
-				</header>
-				<form action="" method="POST">
-					<div class="fields-wrapper">
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Name</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="text" name="user-name" placeholder="Leonardo" required autofocus/>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Surname</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="text" name="surname" placeholder="Dicaprio" required>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Email</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="email" name="email" placeholder="leo.gmail.com" required>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Phone number</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="tel" name="phone" placeholder="+1 432 555 00 44">
-								</div>
-							</div>
-						</div>
-					</div>
+    <!-- =========================== links section ============================= -->
+    <section id="links" class="section--links section-item hide">
+      <div class="container">
+        <header class="header">
+          <h1>Links</h1>
+        </header>
+        <div class="padding-wrapper">
+          <div class="links wrapper">
+            <button type="button" class="btn add add-url">+ add new</button>
+            <div class="link">
+              <h2 class="link-desc">Home page</h2>
+              <h2 class="link-item">http://www.homepage.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Currently offer</h2>
+              <h2 class="link-item">http://www.currently.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Blurpix</h2>
+              <h2 class="link-item">http://www.blurpix.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Your Site</h2>
+              <h2 class="link-item">http://www.yoursite.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Google</h2>
+              <h2 class="link-item">http://www.google.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Facebook</h2>
+              <h2 class="link-item">http://www.facebook.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Dashboard</h2>
+              <h2 class="link-item">http://www.dashboard.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Blurax</h2>
+              <h2 class="link-item">http://www.blurax.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Piece of Wine</h2>
+              <h2 class="link-item">http://www.pieceofwine.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Twitter</h2>
+              <h2 class="link-item">http://www.twitter.com</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn add bottom add-url">+ add new</button>
+      </div>
+    </section>
 
-					<div class="fields-wrapper">
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Skype</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="text" name="skype" placeholder="Leonardo D.">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>ICQ</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="text" name="icq">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Msn</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="text" name="msn">
-								</div>
-							</div>
-						</div>
-					</div>
+    <!-- =========================== banners section ============================= -->
+    <section id="banners" class="section--banners section-item hide">
+      <div class="container">
+        <header class="header">
+          <h1>Banners</h1>
+        </header>
+        <div class="padding-wrapper">
+          <div class="links wrapper">
+            <button type="button" class="btn add btn-add-banners">
+              + add new
+            </button>
+            <div class="link">
+              <h2 class="link-desc">Banner main</h2>
+              <h2 class="link-item">http://www.website.com/banner.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Sign up banner</h2>
+              <h2 class="link-item">http://www.website.com/signup.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Banner left side</h2>
+              <h2 class="link-item">http://www.website.com/leftside.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Vertical banner</h2>
+              <h2 class="link-item">http://www.website.com/vert.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Front banner</h2>
+              <h2 class="link-item">http://www.website.com/front.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+            <div class="link">
+              <h2 class="link-desc">Horizontal</h2>
+              <h2 class="link-item">http://www.website.com/horiz.gif</h2>
+              <span class="icon-links"></span>
+              <span class="icon-trash"></span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn add bottom btn-add-banners">
+          + add new
+        </button>
+      </div>
+    </section>
 
-					<div class="fields-wrapper">
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Wallet</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="number" name="wallet">
-								</div>
-							</div>
-						</div>
-					</div>
+    <!-- =========================== personal data section ============================= -->
+    <section
+      id="personal-data"
+      class="section--personal-data section-item hide"
+    >
+      <div class="container">
+        <header class="header">
+          <h1>Personal data</h1>
+        </header>
+        <form action="" method="POST">
+          <div class="fields-wrapper">
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Name</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input
+                    type="text"
+                    name="user-name"
+                    placeholder="Leonardo"
+                    required
+                    autofocus
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Surname</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input
+                    type="text"
+                    name="surname"
+                    placeholder="Dicaprio"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Email</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="leo.gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Phone number</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+1 432 555 00 44"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<div class="fields-wrapper">
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Password</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="password" name="password" required>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="field">
-								<div class="col-s-12 col-m-4">
-									<label>Repeat</label>
-								</div>
-								<div class="col-s-12 col-m-8">
-									<input type="password" name="password-repeat" required>
-								</div>
-							</div>
-						</div>
-					</div>					
-				<button type="submit" class="btn add bottom">save</button>
-				</form>			
-			</div>
-		</section>
+          <div class="fields-wrapper">
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Skype</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="text" name="skype" placeholder="Leonardo D." />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>ICQ</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="text" name="icq" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Msn</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="text" name="msn" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<!-- =========================== payout section ============================= -->
-		<section id="payout" class="section--payout section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>Payout history</h1>
-				</header>
+          <div class="fields-wrapper">
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Wallet</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="number" name="wallet" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<!-- calendar -->
-				<section class="calendar-wrapper">
-					<form class="calendar-form">
-						<div class="calendar">
-							<input id="date" type="date" value="2016-05-16" class="date date-first" required="required">
-							<div class="calendar-icon">
-								<input id="date-two" type="date" value="2016-08-16"  class="date date-second" required="required">
-								<span class="icon-calendar"></span>
-							</div>
-						</div>
-						<button type="reset" class="btn icon-refresh"></button>
-					</form>
-				</section>
+          <div class="fields-wrapper">
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Password</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="password" name="password" required />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <div class="col-s-12 col-m-4">
+                  <label>Repeat</label>
+                </div>
+                <div class="col-s-12 col-m-8">
+                  <input type="password" name="password-repeat" required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn add bottom">save</button>
+        </form>
+      </div>
+    </section>
 
-				<!-- table -->
-				<section class="scroll-wrapper">
-					<table class="details-table">
-						<thead>
-							<tr>
-								<th scope="col">Date <span class="icon-arrow-up"></span></th>
-								<th scope="col">Amount ($)</th>
-								<th scope="col">Deal</th>
-								<th scope="col">Account</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td scope="row" data-label="Date">17/08/02 (12:58)</td>
-								<td data-label="Amount">34,425.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">15/08/02 (12:58)</td>
-								<td data-label="Amount">29,436.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">17/08/02 (12:58)</td>
-								<td data-label="Amount">34,425.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">15/08/02 (12:58)</td>
-								<td data-label="Amount">29,436.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">17/08/02 (12:58)</td>
-								<td data-label="Amount">34,425.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">15/08/02 (12:58)</td>
-								<td data-label="Amount">29,436.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">17/08/02 (12:58)</td>
-								<td data-label="Amount">34,425.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							<tr>
-								<td scope="row" data-label="Date">15/08/02 (12:58)</td>
-								<td data-label="Amount">29,436.00</td>
-								<td data-label="Deal">cpl(200)</td>
-								<td data-label="Account">bank</td>
-							</tr>
-							
-						</tbody>
-					</table>
-					<div class="pagination">
-						<a href="#"><i class="icon-arrow-left"></i></a>
-						<a href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">6</a>
-						<a href="#">7</a>
-						<a href="#">8</a>
-						<a href="#">9</a>
-						<a href="#"><i class="icon-arrow-right"></i></a>
-					</div>
-				</section>
-			</div>
-		</section>
+    <!-- =========================== payout section ============================= -->
+    <section id="payout" class="section--payout section-item hide">
+      <div class="container">
+        <header class="header">
+          <h1>Payout history</h1>
+        </header>
 
-	<!-- =========================== postback section ============================= -->
+        <!-- calendar -->
+        <section class="calendar-wrapper">
+          <form class="calendar-form">
+            <div class="calendar">
+              <input
+                id="date"
+                type="date"
+                value="2016-05-16"
+                class="date date-first"
+                required="required"
+              />
+              <div class="calendar-icon">
+                <input
+                  id="date-two"
+                  type="date"
+                  value="2016-08-16"
+                  class="date date-second"
+                  required="required"
+                />
+                <span class="icon-calendar"></span>
+              </div>
+            </div>
+            <button type="reset" class="btn icon-refresh"></button>
+          </form>
+        </section>
 
-		<section id="postback" class="section--postback section-item hide">
-			<div class="container">
-				<header class="header">
-					<h1>New postback</h1>
-				</header>
-				<p>You can insert some parameters in this postback</p>
-				<form action="" method="POST" class="form">
-					<div class="row">
-						<div class="col-s-12 col-m-6">
-							<label>Signup</label>
-							<textarea class="textarea" name="signup">crm_userld=%user_id% <br> subid=%p%</textarea>
-						</div>
-						<div class="col-s-12 col-m-6">
-							<label>Deposit</label>
-							<textarea name="deposit">crm_userld=%user_id% <br> subid=%p%</textarea>
-						</div>
-					</div>
-					<div class="row select-3-col">
-						<div class="col-s-12 col-m-4">
-							<label>Postback type</label>
-							<div class="select-wrapper">
-								<select name="postback">
-									<option value="S2">S2S(http//..)</option>
-									<option value="http://www.blurax.com">http://www.blurax.com</option>
-									<option value="http://www.currently.com">http://www.currently.com</option>
-									<option value="http://www.dashboard.com">http://www.dashboard.com</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-s-12 col-m-4">
-							<label>To countries</label>
-							<div class="select-wrapper">
-								<select name="countries">
-									<option value="france">Select countries</option>
-									<option value="france">France</option>
-									<option value="poland">Poland</option>
-									<option value="switzeland">Switzeland</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-s-12 col-m-4">
-							<label>Sending options</label>
-							<div class="select-wrapper">
-								<select name="select-option">
-									<option value="selected">Select</option>
-									<option value="option 1">option 1</option>
-									<option value="option 2">option 2</option>
-									<option value="option 3">option 3</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="send">
-						<div class="row">
-							<div class="col col-s-12 col-m-6">
-									<h2> <span>NOT</span> send statues </h2>				
-								<div class="statuses">
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="check-number">checkNumber
-										<span class="checkmark"></span>
-									</label>						
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="no-answer">noAnswer
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="no-call">noCall
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="call-again">callAgain
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="option-one">option
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="option-two">option2
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="option-three">option3
-										<span class="checkmark"></span>
-									</label>
-									<label class="checkbox-wrapper">
-										<input type="checkbox" name="option-four">option4
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-							<div class="col col-s-12 col-m-6">
-								<h2> Send after </h2>
-								<div class="range-wrapper">
-									<input name="range" type="range" min="1" max="168" value="104" class="range" id="range"/>
-									<p class="hours-range"></p>
-									<p class="hours-value"> hours</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="btn create-pixel">create pixel</button>
-				</form>			
-			</div>		
-		</section>
+        <!-- table -->
+        <section class="scroll-wrapper">
+          <table class="details-table">
+            <thead>
+              <tr>
+                <th scope="col">Date <span class="icon-arrow-up"></span></th>
+                <th scope="col">Amount ($)</th>
+                <th scope="col">Deal</th>
+                <th scope="col">Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" data-label="Date">17/08/02 (12:58)</td>
+                <td data-label="Amount">34,425.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">15/08/02 (12:58)</td>
+                <td data-label="Amount">29,436.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">17/08/02 (12:58)</td>
+                <td data-label="Amount">34,425.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">15/08/02 (12:58)</td>
+                <td data-label="Amount">29,436.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">17/08/02 (12:58)</td>
+                <td data-label="Amount">34,425.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">15/08/02 (12:58)</td>
+                <td data-label="Amount">29,436.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">17/08/02 (12:58)</td>
+                <td data-label="Amount">34,425.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="Date">15/08/02 (12:58)</td>
+                <td data-label="Amount">29,436.00</td>
+                <td data-label="Deal">cpl(200)</td>
+                <td data-label="Account">bank</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <a href="#"><i class="icon-arrow-left"></i></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#"><i class="icon-arrow-right"></i></a>
+          </div>
+        </section>
+      </div>
+    </section>
 
-	<!-- =========================== add banners section ============================= -->
+    <!-- =========================== postback section ============================= -->
 
-		<section id="add-banners" class="section--add-banners section-item hide">
-			<div class="overlay" id="add-banners-overlay">
-				<div class="modal">
-					<div class="container">
-						<header class="header">
-							<h1>Add banners</h1>
-							<span class="icon-close add-banners-close"></span>
-						</header>
-						<form action="" method="POST">
-							<div class="row select-3-col">
-								<div class="col-s-12 col-m-5">
-									<label class="label">Scheme name</label>
-									<div class="field">
-										<input type="text" name="name" placeholder="name" class="input">
-									</div>
-								</div>
-								<div class="col-s-12 col-m-5">
-									<label class="label">Compain</label>
-									<div class="select-wrapper">
-										<select name="compain" class="select">
-											<option value="select">Select</option>
-											<option value="option1">option 1</option>
-											<option value="option2">option 2</option>
-											<option value="option3">option 3 </option>
-										</select>
-									</div>
-								</div>
-								<div class="col-s-12 col-m-2">
-									<label class="label">Language</label>
-									<div class="select-wrapper">
-										<div class="select select-flag">
-											<div class="flag-selected"></div>
-											<ul>
-												<li data-index="EN"><img src="images/flags/united-kingdom.svg"></li>
-												<li data-index="PL"><img src="images/flags/poland.svg"></li>
-												<li data-index="FI"><img src="images/flags/finland.svg"></li>
-											</ul>
-										</div>
-										<input name="flag" type="hidden" class="input-flag">
-									</div>
-								</div>
-							</div>
-							<div class="send">
-								<div class="row">
-									<div class="col col-s-12 col-m-6">
-										<h2> select banners</h2>				
-										<div class="select-banners">
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="banner-main">Banner main
-												<span class="checkmark"></span>
-											</label>						
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="sign-up-banner">Sign up banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="left-banner">Left banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="right-banner">Right banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="bottom-banner">Bottom banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="long-banner">Long banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="personal-banner">Personal cabinet banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="popup-banner">Popup banner
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="option-one-banner">option
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="option-two-banner">option
-												<span class="checkmark"></span>
-											</label>
-										</div>
-									</div>
-									<div class="col col-s-12 col-m-6">
-										<h2> select websites</h2>				
-										<div class="select-banners">
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="landing-page">Landing page Money
-												<span class="checkmark"></span>
-											</label>						
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="lp-choise">LP Your choise
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="lp-wallet">LP Wallet
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="e-shop">E-shop 01
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="toy-store">Toy store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="book-store">Book Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="charity">Charity
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="lp-icons">LP Icons Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="option-one-web">option
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="option-two-web">option
-												<span class="checkmark"></span>
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="down-page">
-								<div class="padding-wrapper">
-									<input type="text" name="link" placeholder="Generated link" class="field" />
-									<button type="button" class="btn copy"><span class="icon-links"></span> Copy link</button>
-									<button type= "submit" class="btn btn-save">save</button>
-								</div>
-							</div>
-						</form>			
-					</div>
-				</div>
-			</div>	
-		</section>
+    <section id="postback" class="section--postback section-item hide">
+      <div class="container">
+        <header class="header">
+          <h1>New postback</h1>
+        </header>
+        <p>You can insert some parameters in this postback</p>
+        <form action="" method="POST" class="form">
+          <div class="row">
+            <div class="col-s-12 col-m-6">
+              <label>Signup</label>
+              <textarea class="textarea" name="signup">
+crm_userld=%user_id% <br> subid=%p%</textarea
+              >
+            </div>
+            <div class="col-s-12 col-m-6">
+              <label>Deposit</label>
+              <textarea name="deposit">
+crm_userld=%user_id% <br> subid=%p%</textarea
+              >
+            </div>
+          </div>
+          <div class="row select-3-col">
+            <div class="col-s-12 col-m-4">
+              <label>Postback type</label>
+              <div class="select-wrapper">
+                <select name="postback">
+                  <option value="S2">S2S(http//..)</option>
+                  <option value="http://www.blurax.com"
+                    >http://www.blurax.com</option
+                  >
+                  <option value="http://www.currently.com"
+                    >http://www.currently.com</option
+                  >
+                  <option value="http://www.dashboard.com"
+                    >http://www.dashboard.com</option
+                  >
+                </select>
+              </div>
+            </div>
+            <div class="col-s-12 col-m-4">
+              <label>To countries</label>
+              <div class="select-wrapper">
+                <select name="countries">
+                  <option value="france">Select countries</option>
+                  <option value="france">France</option>
+                  <option value="poland">Poland</option>
+                  <option value="switzeland">Switzeland</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-s-12 col-m-4">
+              <label>Sending options</label>
+              <div class="select-wrapper">
+                <select name="select-option">
+                  <option value="selected">Select</option>
+                  <option value="option 1">option 1</option>
+                  <option value="option 2">option 2</option>
+                  <option value="option 3">option 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="send">
+            <div class="row">
+              <div class="col col-s-12 col-m-6">
+                <h2><span>NOT</span> send statues</h2>
+                <div class="statuses">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="check-number" />checkNumber
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="no-answer" />noAnswer
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="no-call" />noCall
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="call-again" />callAgain
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="option-one" />option
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="option-two" />option2
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="option-three" />option3
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="option-four" />option4
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col col-s-12 col-m-6">
+                <h2>Send after</h2>
+                <div class="range-wrapper">
+                  <input
+                    name="range"
+                    type="range"
+                    min="1"
+                    max="168"
+                    value="104"
+                    class="range"
+                    id="range"
+                  />
+                  <p class="hours-range"></p>
+                  <p class="hours-value">hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn create-pixel">create pixel</button>
+        </form>
+      </div>
+    </section>
 
-	<!-- =========================== add url ============================= -->
+    <!-- =========================== add banners section ============================= -->
 
-		<section id="add-url" class="section--add-url section-item hide">
-			<div class="overlay" id="add-url-overlay">
-				<div class="modal">
-					<div class="container">
-						<header class="header">
-							<h1>Add url</h1>
-							<span class="icon-close close-add-url"></span>
-						</header>
-						<form action="" method="POST">
-							<div class="row select-3-col">
-								<div class="col-s-12 col-m-5">
-									<label class="label">Scheme name</label>
-									<div class="field">
-										<input type="text" name="name" placeholder="name" class="input">
-									</div>
-								</div>
-								<div class="col-s-12 col-m-5">
-									<label class="label">Select compain</label>
-									<div class="select-wrapper">
-										<select name="select-compain" class="select">
-											<option value="option1">option</option>
-											<option value="option2">option 2</option>
-											<option value="option3">option 3 </option>
-										</select>
-									</div>
-								</div>
-								<div class="col-s-12 col-m-2">
-									<label>Language</label>
-									<div class="select-wrapper">
-										<select name="select-lang" class="select">
-											<option value="selected">EN</option>
-											<option value="en">PL</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="select-websites">
-									<div class="padding-wrapper">
-										<h2> select websites</h2>				
-										<div class="col col-s-12 col-m-4">
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-landing-page">Landing page Money
-												<span class="checkmark"></span>
-											</label>						
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-lp-choise">LP Your choise
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-pl-wallet">LP Wallet
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-e-shop">E-Shop 01
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-toy-store">Toy Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-book-store">Book Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-charity">Charity
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-icons">LP Icons Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-templates">Templates Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-random">Random text
-												<span class="checkmark"></span>
-											</label>
-										</div>
-										<div class="col col-s-12 col-m-4">				
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-mobile">Mobile app
-												<span class="checkmark"></span>
-											</label>						
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-lp-senator">LP Senator free signals
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-lp-de">LP DE Your choise
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-invest">Invest wisely
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-sign-up">Toy Store LP Sign up page
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-senator-account">Senator Account types
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-senator-mobile">Senator Mobile app
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-senator-store">Senator Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-promo"> Senator April Promo
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-language">Language Learning LP
-												<span class="checkmark"></span>
-											</label>
-										</div>
-										<div class="col col-s-12 col-m-4">			
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-second-site">Your second site
-												<span class="checkmark"></span>
-											</label>						
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-second-lp">Your second LP
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-money">Landing page Money
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-your-choise">LP Your choise
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-wallet">LP Wallet
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-shop-01">E-Shop 01
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-store">Toy Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-book">Book Store
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-app">Mobile app
-												<span class="checkmark"></span>
-											</label>
-											<label class="checkbox-wrapper">
-												<input type="checkbox" name="url-signals">LP Senator free signals
-												<span class="checkmark"></span>
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>		
-							<div class="down-page">
-								<div class="padding-wrapper">
-									<input type="text" name="link" placeholder="Generated link" class="field" />
-									<button type="button" class="btn copy"><span class="icon-links"></span> Copy link</button>
-									<button type="submit" class="btn btn-save">save</button>
-								</div>
-							</div>
-						</form>			
-					</div>
-				</div>
-			</div>	
-		</section>
+    <section id="add-banners" class="section--add-banners section-item hide">
+      <div class="overlay" id="add-banners-overlay">
+        <div class="modal">
+          <div class="container">
+            <header class="header">
+              <h1>Add banners</h1>
+              <span class="icon-close add-banners-close"></span>
+            </header>
+            <form action="" method="POST">
+              <div class="row select-3-col">
+                <div class="col-s-12 col-m-5">
+                  <label class="label">Scheme name</label>
+                  <div class="field">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="name"
+                      class="input"
+                    />
+                  </div>
+                </div>
+                <div class="col-s-12 col-m-5">
+                  <label class="label">Compain</label>
+                  <div class="select-wrapper">
+                    <select name="compain" class="select">
+                      <option value="select">Select</option>
+                      <option value="option1">option 1</option>
+                      <option value="option2">option 2</option>
+                      <option value="option3">option 3 </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-s-12 col-m-2">
+                  <label class="label">Language</label>
+                  <div class="select-wrapper">
+                    <div class="select select-flag">
+                      <div class="flag-selected"></div>
+                      <ul>
+                        <li data-index="EN">
+                          <img src="images/flags/united-kingdom.svg" alt="" />
+                        </li>
+                        <li data-index="PL">
+                          <img src="images/flags/poland.svg" alt="" />
+                        </li>
+                        <li data-index="FI">
+                          <img src="images/flags/finland.svg" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                    <input name="flag" type="hidden" class="input-flag" />
+                  </div>
+                </div>
+              </div>
+              <div class="send">
+                <div class="row">
+                  <div class="col col-s-12 col-m-6">
+                    <h2>select banners</h2>
+                    <div class="select-banners">
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="banner-main" />Banner main
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="sign-up-banner" />Sign up
+                        banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="left-banner" />Left banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="right-banner" />Right
+                        banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="bottom-banner" />Bottom
+                        banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="long-banner" />Long banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="personal-banner" />Personal
+                        cabinet banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="popup-banner" />Popup
+                        banner
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="option-one-banner" />option
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="option-two-banner" />option
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col col-s-12 col-m-6">
+                    <h2>select websites</h2>
+                    <div class="select-banners">
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="landing-page" />Landing
+                        page Money
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="lp-choise" />LP Your choise
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="lp-wallet" />LP Wallet
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="e-shop" />E-shop 01
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="toy-store" />Toy store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="book-store" />Book Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="charity" />Charity
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="lp-icons" />LP Icons Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="option-one-web" />option
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="option-two-web" />option
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="down-page">
+                <div class="padding-wrapper">
+                  <input
+                    type="text"
+                    name="link"
+                    placeholder="Generated link"
+                    class="field"
+                  />
+                  <button type="button" class="btn copy">
+                    <span class="icon-links"></span> Copy link
+                  </button>
+                  <button type="submit" class="btn btn-save">save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- =========================== login modal ============================= -->
+    <!-- =========================== add url ============================= -->
 
-		<section id="login-modal" class="section--login-modal section-item hide">
-			<div class="overlay" id="login-modal-overlay">
-				<div class="modal modal-login">
-					<header class="header">
-							<h1>Login</h1>
-					</header>
-					<form action="" method="POST">
-						<div class="field">
-							<div class="input-container">
-								<span class="icon-login"></span>
-								<input type="text" name="name" placeholder="login name">
-							</div>
-							<div class="input-container">
-								<span class="icon-password"></span>
-								<input type="password" name="name" placeholder="password">
-							</div>
-							<button type="submit" class="btn btn-login-enter">Enter</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
+    <section id="add-url" class="section--add-url section-item hide">
+      <div class="overlay" id="add-url-overlay">
+        <div class="modal">
+          <div class="container">
+            <header class="header">
+              <h1>Add url</h1>
+              <span class="icon-close close-add-url"></span>
+            </header>
+            <form action="" method="POST">
+              <div class="row select-3-col">
+                <div class="col-s-12 col-m-5">
+                  <label class="label">Scheme name</label>
+                  <div class="field">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="name"
+                      class="input"
+                    />
+                  </div>
+                </div>
+                <div class="col-s-12 col-m-5">
+                  <label class="label">Select compain</label>
+                  <div class="select-wrapper">
+                    <select name="select-compain" class="select">
+                      <option value="option1">option</option>
+                      <option value="option2">option 2</option>
+                      <option value="option3">option 3 </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-s-12 col-m-2">
+                  <label>Language</label>
+                  <div class="select-wrapper">
+                    <select name="select-lang" class="select">
+                      <option value="selected">EN</option>
+                      <option value="en">PL</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="select-websites">
+                  <div class="padding-wrapper">
+                    <h2>select websites</h2>
+                    <div class="col col-s-12 col-m-4">
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-landing-page" />Landing
+                        page Money
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-lp-choise" />LP Your
+                        choise
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-pl-wallet" />LP Wallet
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-e-shop" />E-Shop 01
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-toy-store" />Toy Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-book-store" />Book
+                        Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-charity" />Charity
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-icons" />LP Icons Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-templates" />Templates
+                        Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-random" />Random text
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col col-s-12 col-m-4">
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-mobile" />Mobile app
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-lp-senator" />LP
+                        Senator free signals
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-lp-de" />LP DE Your
+                        choise
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-invest" />Invest wisely
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-sign-up" />Toy Store LP
+                        Sign up page
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input
+                          type="checkbox"
+                          name="url-senator-account"
+                        />Senator Account types
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input
+                          type="checkbox"
+                          name="url-senator-mobile"
+                        />Senator Mobile app
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input
+                          type="checkbox"
+                          name="url-senator-store"
+                        />Senator Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-promo" /> Senator April
+                        Promo
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-language" />Language
+                        Learning LP
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col col-s-12 col-m-4">
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-second-site" />Your
+                        second site
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-second-lp" />Your
+                        second LP
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-money" />Landing page
+                        Money
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-your-choise" />LP Your
+                        choise
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-wallet" />LP Wallet
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-shop-01" />E-Shop 01
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-store" />Toy Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-book" />Book Store
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-app" />Mobile app
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox-wrapper">
+                        <input type="checkbox" name="url-signals" />LP Senator
+                        free signals
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="down-page">
+                <div class="padding-wrapper">
+                  <input
+                    type="text"
+                    name="link"
+                    placeholder="Generated link"
+                    class="field"
+                  />
+                  <button type="button" class="btn copy">
+                    <span class="icon-links"></span> Copy link
+                  </button>
+                  <button type="submit" class="btn btn-save">save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- =========================== chat modal ============================= -->
+    <!-- =========================== login modal ============================= -->
 
-		<section id="chat-modal" class="section--chat-modal section-item hide">
-			<div class="overlay" id="chat-modal-overlay">
-				<div class="modal modal-chat">
-					<header class="header">
-							<h1>Online chat with yout personal manager</h1>
-							<span class="icon-close icon-chat-close"></span>
-					</header>
-					<div class="chat-manager">
-						<img src="images/photo-team.png" alt="">
-						<div class="manager-name">
-							<h1>Michael E.</h1>
-							<div class="status">
-								<p>online</p>
-							</div>
-						</div>
-					</div>
-					<div class="conversation">
-						<div class="chat chat-menager"><p>Hello. Can I help you?<p></div>
-						<div class="chat chat-user"><p>Hello! I would like to know about Postback</div>
-						<div class="chat chat-menager"><p>Ok. 5 min.</p></div>
-					</div>
-					<form action="" method="POST">
-						<div class="down-page chat-down">
-							<div class="padding-wrapper">
-								<div class="input-wrapper">
-									<span class="icon-message"></span>
-									<input type="text" name="link" placeholder="Enter the message" class="field" />
-								</div>
-								<button type="submit" class="btn btn-save">Send</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
+    <section id="login-modal" class="section--login-modal section-item hide">
+      <div class="overlay" id="login-modal-overlay">
+        <div class="modal modal-login">
+          <header class="header">
+            <h1>Login</h1>
+          </header>
+          <form action="" method="POST">
+            <div class="field">
+              <div class="input-container">
+                <span class="icon-login"></span>
+                <input type="text" name="name" placeholder="login name" />
+              </div>
+              <div class="input-container">
+                <span class="icon-password"></span>
+                <input type="password" name="name" placeholder="password" />
+              </div>
+              <button type="submit" class="btn btn-login-enter">Enter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-	<!-- =========================== quit modal ============================= -->
+    <!-- =========================== chat modal ============================= -->
 
-		<section id="quit-modal" class="section--quit-modal section-item hide">
-			<div class="overlay" id="quit-modal-overlay">
-				<div class="modal modal-quit">
-					<header class="header">
-							<h1>Do you really want to Quit?</h1>
-					</header>
-					<div class="buttons-quit">
-						<button type="reset" class="btn btn-cancel">Cancel</button>
-						<button type="submit" class="btn btn-quit">Quit</button>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="chat-modal" class="section--chat-modal section-item hide">
+      <div class="overlay" id="chat-modal-overlay">
+        <div class="modal modal-chat">
+          <header class="header">
+            <h1>Online chat with yout personal manager</h1>
+            <span class="icon-close icon-chat-close"></span>
+          </header>
+          <div class="chat-manager">
+            <img src="images/photo-team.png" alt="" />
+            <div class="manager-name">
+              <h1>Michael E.</h1>
+              <div class="status">
+                <p>online</p>
+              </div>
+            </div>
+          </div>
+          <div class="conversation">
+            <div class="chat chat-menager">
+              <p>Hello. Can I help you?</p>
+              <p></p>
+            </div>
+            <div class="chat chat-user">
+              <p>Hello! I would like to know about Postback</p>
+            </div>
+            <div class="chat chat-menager"><p>Ok. 5 min.</p></div>
+          </div>
+          <form action="" method="POST">
+            <div class="down-page chat-down">
+              <div class="padding-wrapper">
+                <div class="input-wrapper">
+                  <span class="icon-message"></span>
+                  <input
+                    type="text"
+                    name="link"
+                    placeholder="Enter the message"
+                    class="field"
+                  />
+                </div>
+                <button type="submit" class="btn btn-save">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-	<!-- =========================== interactive chart ============================= -->
-		
+    <!-- =========================== quit modal ============================= -->
 
+    <section id="quit-modal" class="section--quit-modal section-item hide">
+      <div class="overlay" id="quit-modal-overlay">
+        <div class="modal modal-quit">
+          <header class="header">
+            <h1>Do you really want to Quit?</h1>
+          </header>
+          <div class="buttons-quit">
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+            <button type="submit" class="btn btn-quit">Quit</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-	<script src="js/script.js"></script>
-	</body>
+    <!-- =========================== interactive chart ============================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -1,28 +1,27 @@
 .pagination {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-size: 36px;
-	color: $link-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 36px;
+  color: $link-color;
 
-	a {
-		width: 25px;
-		height: 25px;
-		text-align: center;
-		margin: 20px 0;
-		line-height: 25px;
+  a {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 25px;
 
-		i {
-			line-height: 30px;
-		}
+    i {
+      line-height: 30px;
+    }
 
-		&:hover {
-			color: $sixth-color-light;
-			
-		};
+    &:hover {
+      color: $sixth-color-light;
+    }
 
-		&:nth-child(2) {
-			background-color: $fiveth-color;
-		}
-	}
+    &:nth-child(2) {
+      background-color: $fiveth-color;
+    }
+  }
 }

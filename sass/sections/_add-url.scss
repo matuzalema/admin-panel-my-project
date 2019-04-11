@@ -1,38 +1,37 @@
 .section--add-url {
-	.modal {
-		width: 100%;
+  .modal {
+    width: 100%;
 
-		.container {
-			margin: 0 auto;
-			display: block;
-			width: 80%;
-		}
+    .container {
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+    }
 
-		.select-3-col {
-			border-bottom: 1px solid $fourth-color;
-			padding: 10px 0;
-		}
+    .select-3-col {
+      border-bottom: 1px solid $fourth-color;
+      padding: 10px 0;
+    }
 
-		.select-websites {
-			max-height: 400px;
-			overflow-x: hidden;
-		}
-	}
+    .select-websites {
+      max-height: 400px;
+      overflow-x: hidden;
+    }
+  }
 }
 
+@media (max-width: 992px) {
+  .section--add-url .modal {
+    width: 100%;
 
-@media (max-width: 992px){
- .section--add-url .modal {
-		width: 100%;
-		
-		.container {
-			width: 100%;
-			overflow-y: auto;
-			height: 100vh;
-		}
+    .container {
+      width: 100%;
+      overflow-y: auto;
+      height: 100vh;
+    }
 
-		.select-websites {
-			max-height: 180px;
-		}
-	}
+    .select-websites {
+      max-height: 180px;
+    }
+  }
 }

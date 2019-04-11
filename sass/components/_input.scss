@@ -1,37 +1,39 @@
 .field {
-	
-	label {
-		color: $third-color-dark;
-		font-size: $third-font-size;
-	}
+  label {
+    color: $third-color-dark;
+    font-size: $third-font-size;
+  }
 
-	input {
-		height: 30px;
-		border: 1px solid $fourth-color;
-		border-radius: 2px;
-		padding-left: 10px;
-		font-size: $third-font-size;
-		&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		  color: $fourth-color;
-		  font-weight: 200;
-		  opacity: 1; /* Firefox */
-		}
+  input {
+    height: 30px;
+    border: 1px solid $fourth-color;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: $third-font-size;
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $fourth-color;
+      font-weight: 200;
+      opacity: 1; /* Firefox */
+    }
 
-		&::-ms-input-placeholder { /* Internet Explorer 10-11 */
-		  color: $fourth-color;
-		}
+    &::-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $fourth-color;
+    }
 
-		&::-ms-input-placeholder { /* Microsoft Edge */
-		  color: $fourth-color;
-		}
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $fourth-color;
+    }
 
-		&:hover {
-			border: 1px solid $second-color;
-		};
+    &:hover {
+      border: 1px solid $second-color;
+    }
 
-		&:focus {
-			outline: none;
-			border: 1px solid $second-color;
-		}
-	}
+    &:focus {
+      outline: none;
+      border: 1px solid $second-color;
+    }
+  }
 }
