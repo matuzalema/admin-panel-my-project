@@ -31,13 +31,15 @@
           display: none;
           -webkit-appearance: none;
         }
+        &::-moz-clear {
+          display: none;
+        }
+        &::-ms-clear {
+          display: none;
+        }
 
         &:focus {
           outline: none;
-        }
-
-        &:onclick {
-          background-color: red;
         }
       }
 

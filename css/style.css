@@ -807,10 +807,12 @@ template {
         .calendar-wrapper .calendar-form .calendar input::-webkit-inner-spin-button, .calendar-wrapper .calendar-form .calendar input::-webkit-calendar-picker-indicator {
           display: none;
           -webkit-appearance: none; }
+        .calendar-wrapper .calendar-form .calendar input::-moz-clear {
+          display: none; }
+        .calendar-wrapper .calendar-form .calendar input::-ms-clear {
+          display: none; }
         .calendar-wrapper .calendar-form .calendar input:focus {
           outline: none; }
-        .calendar-wrapper .calendar-form .calendar input:onclick {
-          background-color: red; }
       .calendar-wrapper .calendar-form .calendar .calendar-icon {
         position: relative; }
         .calendar-wrapper .calendar-form .calendar .calendar-icon .icon-calendar {
@@ -1431,28 +1433,26 @@ template {
     min-width: 100px; } }
 
 @media (max-width: 576px) {
-  .section--links .container {
-    margin-top: -20px; }
-    .section--links .container .links .link .link-desc {
-      min-width: 80px;
-      font-size: 10px; }
-    .section--links .container .links .link .link-item {
-      width: 140px;
-      font-size: 10px; }
-    .section--links .container .links .link .icon-links {
-      min-width: 20px;
-      color: #ffa200;
-      opacity: 1;
-      font-size: 10px;
-      line-height: 75px;
-      margin-left: 20px;
-      margin-top: 0; }
-    .section--links .container .links .link .icon-trash {
-      min-width: 15px;
-      opacity: 1;
-      font-size: 10px;
-      line-height: 75px;
-      margin-top: 0; } }
+  .section--links .container .links .link .link-desc {
+    min-width: 80px;
+    font-size: 10px; }
+  .section--links .container .links .link .link-item {
+    width: 140px;
+    font-size: 10px; }
+  .section--links .container .links .link .icon-links {
+    min-width: 20px;
+    color: #ffa200;
+    opacity: 1;
+    font-size: 10px;
+    line-height: 75px;
+    margin-left: 20px;
+    margin-top: 0; }
+  .section--links .container .links .link .icon-trash {
+    min-width: 15px;
+    opacity: 1;
+    font-size: 10px;
+    line-height: 75px;
+    margin-top: 0; } }
 
 .section--banners .container {
   position: absolute;
@@ -1497,10 +1497,6 @@ template {
 .details-table .icon-arrow-up {
   margin-left: 5px; }
 
-@media (max-width: 576px) {
-  .section--payout .container {
-    margin-top: -20px; } }
-
 .section--postback p {
   margin: 20px 0 0 10px; }
 
@@ -1541,10 +1537,6 @@ template {
 .section--postback .create-pixel {
   display: block;
   margin: 20px 10px 20px auto; }
-
-@media (max-width: 576px) {
-  .section--postback .container {
-    margin-top: -20px; } }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="range"] {
@@ -1590,10 +1582,6 @@ template {
         padding: 0.5px 0; }
       .section--personal-data .container .fields-wrapper .field input {
         width: 100%; } }
-
-@media (max-width: 576px) {
-  .section--personal-data .container {
-    margin-top: -20px; } }
 
 .section--add-banners .modal {
   width: 100%; }

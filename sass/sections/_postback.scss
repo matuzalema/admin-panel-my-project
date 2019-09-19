@@ -64,12 +64,6 @@
   }
 }
 
-@media (max-width: 576px) {
-  .section--postback .container {
-    margin-top: -20px;
-  }
-}
-
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="range"] {
     overflow: hidden;
